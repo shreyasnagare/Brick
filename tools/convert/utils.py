@@ -42,21 +42,7 @@ def execute_conversions(conversion, model_graph, prov):
     :param model_graph: the model to update
     :param prov: use provenance data
     """
-    if not prov:
-        # Load conversion scripts
-        directory = dirname(sys.argv[0]) or '.'
-        with open(directory + '/conversions/{}-{}.json'.format(*conversion), 'r') as file:
-            conversion_data = load(file)
-
-        # Add query namespaces
-        namespaces = {}
-        for prefix, namespace in conversion_data['namespaces'].items():
-            namespaces[prefix] = Namespace(namespace)
-        with tqdm(conversion_data['operations'], bar_format='{l_bar}{bar}') as operations:
-            for operation in operations:
-                info(operation['description'])
-                model_graph.update(operation['query'], initNs=namespaces)
-    else:
+    if prov:
         # Load provenance data to the graph
         directory = dirname(sys.argv[0]) or '.'
         model_graph.parse(directory + '/conversions/{}-{}.ttl'.format(*conversion), format='turtle')
@@ -109,6 +95,20 @@ def execute_conversions(conversion, model_graph, prov):
                             WHERE { 
                                 ?s prov:wasDerivedFrom ?o .
                             }""")
+    else:
+        # Load conversion scripts
+        directory = dirname(sys.argv[0]) or '.'
+        with open(directory + '/conversions/{}-{}.json'.format(*conversion), 'r') as file:
+            conversion_data = load(file)
+
+        # Add query namespaces
+        namespaces = {}
+        for prefix, namespace in conversion_data['namespaces'].items():
+            namespaces[prefix] = Namespace(namespace)
+        with tqdm(conversion_data['operations'], bar_format='{l_bar}{bar}') as operations:
+            for operation in operations:
+                info(operation['description'])
+                model_graph.update(operation['query'], initNs=namespaces)
 
 
 def standardize_namespaces(filename):
