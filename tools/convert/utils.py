@@ -7,6 +7,7 @@ from tqdm import tqdm
 from os.path import dirname
 import sys
 
+
 def find_conversions(source, target, versions_graph):
     """
     This finds the minimum number of version upgrades required to reach the target version.
@@ -60,7 +61,7 @@ def execute_conversions(conversion, model_graph, prov):
         directory = dirname(sys.argv[0]) or '.'
         model_graph.parse(directory + '/conversions/{}-{}.ttl'.format(*conversion), format='turtle')
 
-        # Update the graph
+        # Add updated classes
         model_graph.update("""
                             INSERT{ 
                                 ?entity ?p ?new . 
@@ -69,6 +70,8 @@ def execute_conversions(conversion, model_graph, prov):
                                 ?new prov:wasDerivedFrom ?old .
                                 ?entity ?p ?old .
                             }""")
+
+        # Remove old classes
         model_graph.update("""
                             DELETE{ 
                                 ?entity ?p ?old . 
@@ -77,6 +80,8 @@ def execute_conversions(conversion, model_graph, prov):
                                 ?new prov:wasDerivedFrom ?old .
                                 ?entity ?p ?old .
                             }""")
+
+        # Add updated relationships
         model_graph.update("""
                             INSERT{ 
                                 ?s ?new ?o . 
@@ -85,6 +90,8 @@ def execute_conversions(conversion, model_graph, prov):
                                 ?s ?old ?o .
                                 ?new prov:wasDerivedFrom ?old .
                             }""")
+
+        # Remove old relationships
         model_graph.update("""
                             DELETE{ 
                                 ?s ?old ?o . 
@@ -93,6 +100,8 @@ def execute_conversions(conversion, model_graph, prov):
                                 ?s ?old ?o .
                                 ?new prov:wasDerivedFrom ?old .
                             }""")
+
+        # Remove provenance data
         model_graph.update("""
                             DELETE{ 
                                 ?s prov:wasDerivedFrom ?o . 
@@ -100,8 +109,6 @@ def execute_conversions(conversion, model_graph, prov):
                             WHERE { 
                                 ?s prov:wasDerivedFrom ?o .
                             }""")
-
-
 
 
 def standardize_namespaces(filename):
