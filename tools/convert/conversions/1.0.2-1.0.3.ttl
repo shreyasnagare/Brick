@@ -2,31 +2,57 @@
 @prefix brick103: <https://brickschema.org/schema/1.0.3/Brick#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 
+# Classes
 
 brick103:AHU_Occupancy_Command prov:wasDerivedFrom brick102:AHU_Occupied_Command .
+
 brick103:CWS_Chilled_Water_Pump_Differential_Pressure_Integral_Time_Setpoint prov:wasDerivedFrom brick102:CWS_Chilled_Water_Pump_Differential_Pressure_Integration_Time_Setpoint .
+
 brick103:Chilled_Water_Pump_Differential_Pressure_Integral_Time prov:wasDerivedFrom brick102:Chilled_Water_Pump_Differential_Pressure_Integration_Time .
+
 brick103:Chilled_Water_Pump_Differential_Pressure_Integral_Time_Setpoint prov:wasDerivedFrom brick102:Chilled_Water_Pump_Differential_Pressure_Integration_Time_Setpoint .
+
 brick103:Cooling_Thermal_Power_Sensor prov:wasDerivedFrom brick102:Cooling_Thermal_Power_Meter .
+
 brick103:Current_Steam_Usage_Sensor prov:wasDerivedFrom brick102:Current_Steam_Usage_Meter .
+
 brick103:Electricity_Energy_Sensor prov:wasDerivedFrom brick102:Electrical_Power_Meter .
+
 brick103:Energy_Sensor prov:wasDerivedFrom brick102:Energy_Meter .
+
 brick103:Flow_Sensor prov:wasDerivedFrom brick102:Flow_Meter .
+
 brick103:Heating_Thermal_Power_Sensor prov:wasDerivedFrom brick102:Heating_Thermal_Power_Meter .
+
 brick103:Hot_Water_Flow_Sensor prov:wasDerivedFrom brick102:Hot_Water_Flow_Meter .
+
 brick103:Monthly_Steam_Usage_Sensor prov:wasDerivedFrom brick102:Monthly_Steam_Usage_Meter .
+
 brick103:Motor_Power_Sensor prov:wasDerivedFrom brick102:Motor_Power_Meter .
-brick103:Occupied_Mode prov:wasDerivedFrom brick102:Occupied .
+
 brick103:Occupancy_Command prov:wasDerivedFrom brick102:Occupied_Command .
+
 brick103:Power_Sensor prov:wasDerivedFrom brick102:Power_Meter .
+
 brick103:Current_Steam_Usage_Sensor prov:wasDerivedFrom brick102:Steam_System_Current_Steam_Usage_Meter .
+
 brick103:Monthly_Steam_Usage_Sensor prov:wasDerivedFrom brick102:Steam_System_Monthly_Steam_Usage_Meter .
+
 brick103:Today_Steam_Usage_Sensor prov:wasDerivedFrom brick102:Steam_System_Steam_Usage_Today_Meter .
+
 brick103:Yearly_Steam_Usage_Sensor prov:wasDerivedFrom brick102:Steam_System_Yearly_Steam_Usage_Meter .
+
 brick103:Steam_Usage_Sensor prov:wasDerivedFrom brick102:Steam_Usage_Meter .
+
 brick103:Today_Steam_Usage_Sensor prov:wasDerivedFrom brick102:Steam_Usage_Today_Meter .
+
 brick103:Override_Occupancy_Command prov:wasDerivedFrom brick102:Temporary_Occupancy_Status .
+
 brick103:Thermal_Power_Sensor prov:wasDerivedFrom brick102:Thermal_Power_Meter .
+
 brick103:VAV_Occupancy_Command prov:wasDerivedFrom brick102:VAV_Occupied_Command .
+
 brick103:VFD_Energy_Sensor prov:wasDerivedFrom brick102:VFD_Power_Meter .
+
 brick103:Yearly_Steam_Usage_Sensor prov:wasDerivedFrom brick102:Yearly_Steam_Usage_Meter .
+
