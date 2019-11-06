@@ -21,6 +21,8 @@ parser.add_argument('--target',
                     help='target version', required=True)
 parser.add_argument('--info',
                     help='get information related to ongoing operations', action='store_true')
+parser.add_argument('--prov',
+                    help='use provenance data for the conversions', action='store_true')
 args = parser.parse_args()
 
 
@@ -29,7 +31,7 @@ if args.info:
     getLogger().setLevel("INFO")
 
 
-def convert(source=args.source, target=args.target, models=args.models):
+def convert(source=args.source, target=args.target, models=args.models, prov=args.prov):
     # Load the versions graph which has information about possible conversions.
     versions_graph = Graph()
     directory = dirname(sys.argv[0]) or '.'
@@ -61,9 +63,10 @@ def convert(source=args.source, target=args.target, models=args.models):
                     model_graph = Graph()
                     model_graph.parse(model, format='turtle')
                     print("Converting to {}...".format(conversion[1]))
-                    execute_conversions(conversion, model_graph)
+                    execute_conversions(conversion, model_graph, prov)
                     model_graph.serialize(model, format='turtle')
-                    bump_versions(model, conversion[0], conversion[1])
+                    if not prov:
+                        bump_versions(model, conversion[0], conversion[1])
                 print('Output stored: {}'.format(model))
         else:
             print("No conversions available from {} to {}.".format(source, target))

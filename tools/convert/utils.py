@@ -34,26 +34,74 @@ def find_conversions(source, target, versions_graph):
     return conversions[1:]
 
 
-def execute_conversions(conversion, model_graph):
+def execute_conversions(conversion, model_graph, prov):
     """
     This function coverts the model graph from one version to another
     :param conversion: a tuple (from_version, to_version)
     :param model_graph: the model to update
+    :param prov: use provenance data
     """
+    if not prov:
+        # Load conversion scripts
+        directory = dirname(sys.argv[0]) or '.'
+        with open(directory + '/conversions/{}-{}.json'.format(*conversion), 'r') as file:
+            conversion_data = load(file)
 
-    # Load conversion scripts
-    directory = dirname(sys.argv[0]) or '.'
-    with open(directory + '/conversions/{}-{}.json'.format(*conversion), 'r') as file:
-        conversion_data = load(file)
+        # Add query namespaces
+        namespaces = {}
+        for prefix, namespace in conversion_data['namespaces'].items():
+            namespaces[prefix] = Namespace(namespace)
+        with tqdm(conversion_data['operations'], bar_format='{l_bar}{bar}') as operations:
+            for operation in operations:
+                info(operation['description'])
+                model_graph.update(operation['query'], initNs=namespaces)
+    else:
+        # Load provenance data to the graph
+        directory = dirname(sys.argv[0]) or '.'
+        model_graph.parse(directory + '/conversions/{}-{}.ttl'.format(*conversion), format='turtle')
 
-    # Add query namespaces
-    namespaces = {}
-    for prefix, namespace in conversion_data['namespaces'].items():
-        namespaces[prefix] = Namespace(namespace)
-    with tqdm(conversion_data['operations'], bar_format='{l_bar}{bar}') as operations:
-        for operation in operations:
-            info(operation['description'])
-            model_graph.update(operation['query'], initNs=namespaces)
+        # Update the graph
+        model_graph.update("""
+                            INSERT{ 
+                                ?entity ?p ?new . 
+                            } 
+                            WHERE { 
+                                ?new prov:wasDerivedFrom ?old .
+                                ?entity ?p ?old .
+                            }""")
+        model_graph.update("""
+                            DELETE{ 
+                                ?entity ?p ?old . 
+                            } 
+                            WHERE { 
+                                ?new prov:wasDerivedFrom ?old .
+                                ?entity ?p ?old .
+                            }""")
+        model_graph.update("""
+                            INSERT{ 
+                                ?s ?new ?o . 
+                            } 
+                            WHERE { 
+                                ?s ?old ?o .
+                                ?new prov:wasDerivedFrom ?old .
+                            }""")
+        model_graph.update("""
+                            DELETE{ 
+                                ?s ?old ?o . 
+                            } 
+                            WHERE { 
+                                ?s ?old ?o .
+                                ?new prov:wasDerivedFrom ?old .
+                            }""")
+        model_graph.update("""
+                            DELETE{ 
+                                ?s prov:wasDerivedFrom ?o . 
+                            } 
+                            WHERE { 
+                                ?s prov:wasDerivedFrom ?o .
+                            }""")
+
+
 
 
 def standardize_namespaces(filename):
