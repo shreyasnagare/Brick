@@ -35,80 +35,65 @@ def find_conversions(source, target, versions_graph):
     return conversions[1:]
 
 
-def execute_conversions(conversion, model_graph, prov):
+def execute_conversions(conversion, model_graph):
     """
     This function coverts the model graph from one version to another
     :param conversion: a tuple (from_version, to_version)
     :param model_graph: the model to update
     :param prov: use provenance data
     """
-    if prov:
-        # Load provenance data to the graph
-        directory = dirname(sys.argv[0]) or '.'
-        model_graph.parse(directory + '/conversions/{}-{}.ttl'.format(*conversion), format='turtle')
+    # Load provenance data to the graph
+    directory = dirname(sys.argv[0]) or '.'
+    model_graph.parse(directory + '/conversions/{}-{}.ttl'.format(*conversion), format='turtle')
 
-        # Add updated classes
-        model_graph.update("""
-                            INSERT{ 
-                                ?entity ?p ?new . 
-                            } 
-                            WHERE { 
-                                ?new prov:wasDerivedFrom ?old .
-                                ?entity ?p ?old .
-                            }""")
+    # Add updated classes
+    model_graph.update("""
+                        INSERT{ 
+                            ?entity ?p ?new . 
+                        } 
+                        WHERE { 
+                            ?new prov:wasDerivedFrom ?old .
+                            ?entity ?p ?old .
+                        }""")
 
-        # Remove old classes
-        model_graph.update("""
-                            DELETE{ 
-                                ?entity ?p ?old . 
-                            } 
-                            WHERE { 
-                                ?new prov:wasDerivedFrom ?old .
-                                ?entity ?p ?old .
-                            }""")
+    # Remove old classes
+    model_graph.update("""
+                        DELETE{ 
+                            ?entity ?p ?old . 
+                        } 
+                        WHERE { 
+                            ?new prov:wasDerivedFrom ?old .
+                            ?entity ?p ?old .
+                        }""")
 
-        # Add updated relationships
-        model_graph.update("""
-                            INSERT{ 
-                                ?s ?new ?o . 
-                            } 
-                            WHERE { 
-                                ?s ?old ?o .
-                                ?new prov:wasDerivedFrom ?old .
-                            }""")
+    # Add updated relationships
+    model_graph.update("""
+                        INSERT{ 
+                            ?s ?new ?o . 
+                        } 
+                        WHERE { 
+                            ?s ?old ?o .
+                            ?new prov:wasDerivedFrom ?old .
+                        }""")
 
-        # Remove old relationships
-        model_graph.update("""
-                            DELETE{ 
-                                ?s ?old ?o . 
-                            } 
-                            WHERE { 
-                                ?s ?old ?o .
-                                ?new prov:wasDerivedFrom ?old .
-                            }""")
+    # Remove old relationships
+    model_graph.update("""
+                        DELETE{ 
+                            ?s ?old ?o . 
+                        } 
+                        WHERE { 
+                            ?s ?old ?o .
+                            ?new prov:wasDerivedFrom ?old .
+                        }""")
 
-        # Remove provenance data
-        model_graph.update("""
-                            DELETE{ 
-                                ?s prov:wasDerivedFrom ?o . 
-                            } 
-                            WHERE { 
-                                ?s prov:wasDerivedFrom ?o .
-                            }""")
-    else:
-        # Load conversion scripts
-        directory = dirname(sys.argv[0]) or '.'
-        with open(directory + '/conversions/{}-{}.json'.format(*conversion), 'r') as file:
-            conversion_data = load(file)
-
-        # Add query namespaces
-        namespaces = {}
-        for prefix, namespace in conversion_data['namespaces'].items():
-            namespaces[prefix] = Namespace(namespace)
-        with tqdm(conversion_data['operations'], bar_format='{l_bar}{bar}') as operations:
-            for operation in operations:
-                info(operation['description'])
-                model_graph.update(operation['query'], initNs=namespaces)
+    # Remove provenance data
+    model_graph.update("""
+                        DELETE{ 
+                            ?s prov:wasDerivedFrom ?o . 
+                        } 
+                        WHERE { 
+                            ?s prov:wasDerivedFrom ?o .
+                        }""")
 
 
 def standardize_namespaces(filename):
@@ -118,16 +103,6 @@ def standardize_namespaces(filename):
                                    'https://brickschema.org')
     with open(filename, "w") as f:
         f.write(standardized_turtle)
-
-
-def bump_versions(filename, source, target):
-    # This function updates the version numbers of the model.
-    with open(filename) as f:
-        updated_turtle = f.read().replace('https://brickschema.org/schema/{}/Brick'.format(source),
-                                   'https://brickschema.org/schema/{}/Brick'.format(target))
-
-    with open(filename, "w") as f:
-        f.write(updated_turtle)
 
 
 def backup(model):

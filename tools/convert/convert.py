@@ -1,6 +1,6 @@
 from argparse import ArgumentParser
 from rdflib import Graph, Namespace
-from utils import find_conversions, execute_conversions, standardize_namespaces, bump_versions, backup
+from utils import find_conversions, execute_conversions, standardize_namespaces, backup
 from logging import getLogger
 from os.path import dirname
 import sys
@@ -21,8 +21,6 @@ parser.add_argument('--target',
                     help='target version', required=True)
 parser.add_argument('--info',
                     help='get information related to ongoing operations', action='store_true')
-parser.add_argument('--prov',
-                    help='use provenance data for the conversions', action='store_true')
 args = parser.parse_args()
 
 
@@ -31,7 +29,7 @@ if args.info:
     getLogger().setLevel("INFO")
 
 
-def convert(source=args.source, target=args.target, models=args.models, prov=args.prov):
+def convert(source=args.source, target=args.target, models=args.models):
     # Load the versions graph which has information about possible conversions.
     versions_graph = Graph()
     directory = dirname(sys.argv[0]) or '.'
@@ -63,10 +61,8 @@ def convert(source=args.source, target=args.target, models=args.models, prov=arg
                     model_graph = Graph()
                     model_graph.parse(model, format='turtle')
                     print("Converting to {}...".format(conversion[1]))
-                    execute_conversions(conversion, model_graph, prov)
+                    execute_conversions(conversion, model_graph)
                     model_graph.serialize(model, format='turtle')
-                    if not prov:
-                        bump_versions(model, conversion[0], conversion[1])
                 print('Output stored: {}'.format(model))
         else:
             print("No conversions available from {} to {}.".format(source, target))
