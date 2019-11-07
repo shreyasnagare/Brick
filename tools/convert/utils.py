@@ -62,25 +62,27 @@ def execute_conversions(conversion, model_graph):
                             ?new prov:wasDerivedFrom ?old .
                         }""")
 
-    # # Remove old classes
-    # model_graph.update("""
-    #                     DELETE{
-    #                         ?entity ?p ?old .
-    #                     }
-    #                     WHERE {
-    #                         ?new prov:wasDerivedFrom ?old .
-    #                         ?entity ?p ?old .
-    #                     }""")
-    #
-    # # Remove old relationships
-    # model_graph.update("""
-    #                     DELETE{
-    #                         ?s ?old ?o .
-    #                     }
-    #                     WHERE {
-    #                         ?s ?old ?o .
-    #                         ?new prov:wasDerivedFrom ?old .
-    #                     }""")
+    # Remove old classes
+    model_graph.update("""
+                        DELETE{
+                            ?s ?p ?old .
+                        }
+                        WHERE {
+                            ?new prov:wasDerivedFrom ?old .
+                            ?s ?p ?old .
+                            FILTER ( ( ?old != ?new ) && ( ?p != prov:wasDerivedFrom ) )
+                        }""")
+
+    # Remove old relationships
+    model_graph.update("""
+                        DELETE{
+                            ?s ?old ?o .
+                        }
+                        WHERE {
+                            ?s ?old ?o .
+                            ?new prov:wasDerivedFrom ?old .
+                            FILTER ( ?old != ?new )
+                        }""")
 
     # Remove provenance data
     model_graph.update("""
