@@ -1,9 +1,5 @@
 from dijkstar import Graph, find_path
-from rdflib import Namespace
-from json import load
-from logging import info
 from shutil import copyfile
-from tqdm import tqdm
 from os.path import dirname
 import sys
 
