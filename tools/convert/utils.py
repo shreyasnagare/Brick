@@ -46,7 +46,7 @@ def execute_conversions(conversion, model_graph):
     directory = dirname(sys.argv[0]) or '.'
     model_graph.parse(directory + '/conversions/{}-{}.ttl'.format(*conversion), format='turtle')
 
-    # Add updated classes
+    # Add new classes
     model_graph.update("""
                         INSERT{ 
                             ?entity ?p ?new . 
@@ -56,17 +56,7 @@ def execute_conversions(conversion, model_graph):
                             ?entity ?p ?old .
                         }""")
 
-    # Remove old classes
-    model_graph.update("""
-                        DELETE{ 
-                            ?entity ?p ?old . 
-                        } 
-                        WHERE { 
-                            ?new prov:wasDerivedFrom ?old .
-                            ?entity ?p ?old .
-                        }""")
-
-    # Add updated relationships
+    # Add new relationships
     model_graph.update("""
                         INSERT{ 
                             ?s ?new ?o . 
@@ -76,22 +66,32 @@ def execute_conversions(conversion, model_graph):
                             ?new prov:wasDerivedFrom ?old .
                         }""")
 
-    # Remove old relationships
-    model_graph.update("""
-                        DELETE{ 
-                            ?s ?old ?o . 
-                        } 
-                        WHERE { 
-                            ?s ?old ?o .
-                            ?new prov:wasDerivedFrom ?old .
-                        }""")
+    # # Remove old classes
+    # model_graph.update("""
+    #                     DELETE{
+    #                         ?entity ?p ?old .
+    #                     }
+    #                     WHERE {
+    #                         ?new prov:wasDerivedFrom ?old .
+    #                         ?entity ?p ?old .
+    #                     }""")
+    #
+    # # Remove old relationships
+    # model_graph.update("""
+    #                     DELETE{
+    #                         ?s ?old ?o .
+    #                     }
+    #                     WHERE {
+    #                         ?s ?old ?o .
+    #                         ?new prov:wasDerivedFrom ?old .
+    #                     }""")
 
     # Remove provenance data
     model_graph.update("""
-                        DELETE{ 
-                            ?s prov:wasDerivedFrom ?o . 
-                        } 
-                        WHERE { 
+                        DELETE{
+                            ?s prov:wasDerivedFrom ?o .
+                        }
+                        WHERE {
                             ?s prov:wasDerivedFrom ?o .
                         }""")
 
