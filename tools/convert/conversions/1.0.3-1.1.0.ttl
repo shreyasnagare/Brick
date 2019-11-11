@@ -456,7 +456,7 @@ brick110:Velocity_Pressure  prov:wasDerivedFrom brick103:Exhaust_Air_Velocity_Pr
 
 brick110:Velocity_Pressure  prov:wasDerivedFrom brick103:Exhaust_Air_Velocity_Pressure .
 
-brick110:Air Flow Setpoint prov:wasDerivedFrom brick103:Exhaust_Fan_Air_Flow_Setpoint .
+brick110:Air_Flow_Setpoint prov:wasDerivedFrom brick103:Exhaust_Fan_Air_Flow_Setpoint .
 
 brick110:Command prov:wasDerivedFrom brick103:Exhaust_Fan_Command .
 
