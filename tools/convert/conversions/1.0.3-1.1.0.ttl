@@ -1,7 +1,7 @@
-@prefix brick103: <https://brickschema.org/schema/1.0.3/Brick#>.
-@prefix bf103: <https://brickschema.org/schema/1.0.3/BrickFrame#>.
-@prefix brick110: <https://brickschema.org/schema/1.1.0/Brick#>.
-@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix brick103: <https://brickschema.org/schema/1.0.3/Brick#> .
+@prefix bf103: <https://brickschema.org/schema/1.0.3/BrickFrame#> .
+@prefix brick110: <https://brickschema.org/schema/1.1.0/Brick#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 
 
 #  BrickFrame Relationships
@@ -46,770 +46,1778 @@ brick110:Equipment prov:wasDerivedFrom bf103:Equipment .
 
 # Brick Classes
 
-brick110:Automatic_Mode_Command prov:wasDerivedFrom brick103:AHU_Automatic_Mode_Command .
+brick110:AHU prov:wasDerivedFrom bf103:AHU .
 
-brick110:Average_Exhaust_Air_Static_Pressure_Sensor prov:wasDerivedFrom brick103:AHU_Average_Exhaust_Air_Static_Pressure_Sensor .
+brick110:Automatic_Mode_Command prov:wasDerivedFrom bf103:AHU_Automatic_Mode_Command .
 
-brick110:Bypass_Air_Flow_Sensor prov:wasDerivedFrom brick103:AHU_Bypass_Air_Flow_Sensor .
+brick110:Average_Exhaust_Air_Static_Pressure_Sensor prov:wasDerivedFrom bf103:AHU_Average_Exhaust_Air_Static_Pressure_Sensor .
 
-brick110:CO2_Differential_Sensor prov:wasDerivedFrom brick103:AHU_CO2_Differential_Sensor .
+brick110:Average_Zone_Air_Temperature_Sensor prov:wasDerivedFrom bf103:AHU_Average_Zone_Temperature_Sensor .
 
-brick110:Cooling_Demand_Setpoint prov:wasDerivedFrom brick103:AHU_Cooling_Demand_Setpoint .
+brick110:Static_Pressure_Sensor prov:wasDerivedFrom bf103:AHU_Building_Static_Pressure_Sensor .
 
-brick110:Cooling_Request_Percent_Setpoint prov:wasDerivedFrom brick103:AHU_Cooling_Request_Percent_Setpoint .
+brick110:Static_Pressure_Setpoint prov:wasDerivedFrom bf103:AHU_Building_Static_Pressure_Setpoint .
 
-brick110:Cooling_Request_Setpoint prov:wasDerivedFrom brick103:AHU_Cooling_Request_Setpoint .
+brick110:Bypass_Air_Flow_Sensor prov:wasDerivedFrom bf103:AHU_Bypass_Air_Flow_Sensor .
 
-brick110:Curtailment_Override_Command prov:wasDerivedFrom brick103:AHU_Curtailment_Override_Command .
+brick110:CO2_Differential_Sensor prov:wasDerivedFrom bf103:AHU_CO2_Differential_Sensor .
 
-brick110:Differential_Pressure_Sensor prov:wasDerivedFrom brick103:AHU_Differential_Pressure_Sensor .
+brick110:Coldest_Zone_Air_Temperature_Sensor prov:wasDerivedFrom bf103:AHU_Coldest_Zone_Temperature_Sensor .
 
-brick110:Discharge_Air_Flow_Demand_Setpoint prov:wasDerivedFrom brick103:AHU_Discharge_Air_Flow_Demand_Setpoint .
+brick110:Discharge_Air_Temperature_Sensor prov:wasDerivedFrom bf103:AHU_Cooling_Coil_Discharge_Air_Temperature_Sensor .
 
-brick110:Discharge_Air_Humidity_Sensor prov:wasDerivedFrom brick103:AHU_Discharge_Air_Humidity_Sensor .
+brick110:Supply_Air_Temperature_Sensor prov:wasDerivedFrom bf103:AHU_Cooling_Coil_Supply_Air_Temperature_Sensor .
 
-brick110:Discharge_Air_Static_Pressure_Sensor prov:wasDerivedFrom brick103:AHU_Discharge_Air_Static_Pressure_Sensor .
+brick110:Cooling_Demand_Setpoint prov:wasDerivedFrom bf103:AHU_Cooling_Demand_Setpoint .
 
-brick110:Discharge_Air_Static_Pressure_Setpoint prov:wasDerivedFrom brick103:AHU_Discharge_Air_Static_Pressure_Setpoint .
+brick110:Cooling_Discharge_Air_Temperature_Proportional_Band_Parameter prov:wasDerivedFrom bf103:AHU_Cooling_Discharge_Air_Temperature_Proportional_Band_Setpoint .
 
-brick110:Discharge_Air_Temperature_Cooling_Setpoint prov:wasDerivedFrom brick103:AHU_Discharge_Air_Temperature_Cooling_Setpoint .
+brick110:Cooling_Request_Percent_Setpoint prov:wasDerivedFrom bf103:AHU_Cooling_Request_Percent_Setpoint .
 
-brick110:Discharge_Air_Temperature_Heating_Setpoint prov:wasDerivedFrom brick103:AHU_Discharge_Air_Temperature_Heating_Setpoint .
+brick110:Cooling_Request_Setpoint prov:wasDerivedFrom bf103:AHU_Cooling_Request_Setpoint .
 
-brick110:Discharge_Air_Temperature_Sensor prov:wasDerivedFrom brick103:AHU_Discharge_Air_Temperature_Sensor .
+brick110:Cooling_Supply_Air_Temperature_Proportional_Band_Parameter prov:wasDerivedFrom bf103:AHU_Cooling_Supply_Air_Temperature_Proportional_Band_Setpoint .
 
-brick110:Discharge_Air_Temperature_Setpoint prov:wasDerivedFrom brick103:AHU_Discharge_Air_Temperature_Setpoint .
+brick110:Cooling_Command prov:wasDerivedFrom bf103:AHU_Cooling_Valve_Command .
 
-brick110:Discharge_Fan_Air_Flow_Sensor prov:wasDerivedFrom brick103:AHU_Discharge_Fan_Air_Flow_Sensor .
+brick110:Valve_Command prov:wasDerivedFrom bf103:AHU_Cooling_Valve_Command .
 
-brick110:Dual_Band_Mode_Setpoint prov:wasDerivedFrom brick103:AHU_Dual_Band_Mode_Setpoint .
+brick110:Curtailment_Override_Command prov:wasDerivedFrom bf103:AHU_Curtailment_Override_Command .
 
-brick110:Exhaust_Air_Flow_Sensor prov:wasDerivedFrom brick103:AHU_Exhaust_Air_Flow_Sensor .
+brick110:Differential_Pressure_Sensor prov:wasDerivedFrom bf103:AHU_Differential_Pressure_Sensor .
 
-brick110:Exhaust_Air_Humidity_Sensor prov:wasDerivedFrom brick103:AHU_Exhaust_Air_Humidity_Sensor .
+brick110:Discharge_Air_Flow_Demand_Setpoint prov:wasDerivedFrom bf103:AHU_Discharge_Air_Flow_Demand_Setpoint .
 
-brick110:Exhaust_Air_Stack_Flow_Sensor prov:wasDerivedFrom brick103:AHU_Exhaust_Air_Stack_Flow_Sensor .
+brick110:Discharge_Air_Humidity_Sensor prov:wasDerivedFrom bf103:AHU_Discharge_Air_Humidity_Sensor .
 
-brick110:Exhaust_Air_Stack_Flow_Deadband_Setpoint  prov:wasDerivedFrom brick103:AHU_Exhaust_Air_Stack_Flow_Setpoint .
+brick110:Discharge_Air_Static_Pressure_Proportional_Band_Parameter prov:wasDerivedFrom bf103:AHU_Discharge_Air_Static_Pressure_Proportional_Band_Setpoint .
 
-brick110:Exhaust_Air_Stack_Flow_Deadband_Setpoint  prov:wasDerivedFrom brick103:AHU_Exhaust_Air_Stack_Flow_Setpoint .
+brick110:Discharge_Air_Static_Pressure_Sensor prov:wasDerivedFrom bf103:AHU_Discharge_Air_Static_Pressure_Sensor .
 
-brick110:Exhaust_Air_Static_Pressure_Sensor prov:wasDerivedFrom brick103:AHU_Exhaust_Air_Static_Pressure_Sensor .
+brick110:Discharge_Air_Static_Pressure_Setpoint prov:wasDerivedFrom bf103:AHU_Discharge_Air_Static_Pressure_Setpoint .
 
-brick110:Exhaust_Air_Static_Pressure_Setpoint prov:wasDerivedFrom brick103:AHU_Exhaust_Air_Static_Pressure_Setpoint .
+brick110:Discharge_Air_Temperature_Cooling_Setpoint prov:wasDerivedFrom bf103:AHU_Discharge_Air_Temperature_Cooling_Setpoint .
 
-brick110:Exhaust_Air_Temperature_Sensor prov:wasDerivedFrom brick103:AHU_Exhaust_Air_Temperature_Sensor .
+brick110:Discharge_Air_Temperature_Heating_Setpoint prov:wasDerivedFrom bf103:AHU_Discharge_Air_Temperature_Heating_Setpoint .
 
-brick110:Exhaust_Air_Velocity_Pressure_Sensor prov:wasDerivedFrom brick103:AHU_Exhaust_Air_Velocity_Pressure_Sensor .
+brick110:Discharge_Air_Temperature_Sensor prov:wasDerivedFrom bf103:AHU_Discharge_Air_Temperature_Sensor .
 
-brick110:Exhaust_Fan_Disable_Command prov:wasDerivedFrom brick103:AHU_Exhaust_Fan_Disable_Command .
+brick110:Discharge_Air_Temperature_Setpoint prov:wasDerivedFrom bf103:AHU_Discharge_Air_Temperature_Setpoint .
 
-brick110:Exhaust_Fan_Enable_Command prov:wasDerivedFrom brick103:AHU_Exhaust_Fan_Enable_Command .
+brick110:Discharge_Fan_Air_Flow_Sensor prov:wasDerivedFrom bf103:AHU_Discharge_Fan_Air_Flow_Sensor .
 
-brick110:Fan_Start_Stop_Status prov:wasDerivedFrom brick103:AHU_Fan_Start_Stop_Status .
+brick110:Command prov:wasDerivedFrom bf103:AHU_Discharge_Fan_Command .
 
-brick110:Heat_Exchanger_System_Enable_Status prov:wasDerivedFrom brick103:AHU_Heat_Exchanger_System_Enable_Status .
+brick110:Start_Stop_Command prov:wasDerivedFrom bf103:AHU_Discharge_Fan_Start_Stop_Command .
 
-brick110:Heating_Demand_Setpoint prov:wasDerivedFrom brick103:AHU_Heating_Demand_Setpoint .
+brick110:Start_Stop_Status prov:wasDerivedFrom bf103:AHU_Discharge_Fan_Start_Stop_Status .
 
-brick110:Heating_Request_Percent_Setpoint prov:wasDerivedFrom brick103:AHU_Heating_Request_Percent_Setpoint .
+brick110:Status prov:wasDerivedFrom bf103:AHU_Discharge_Fan_Status .
 
-brick110:Heating_Request_Setpoint prov:wasDerivedFrom brick103:AHU_Heating_Request_Setpoint .
+brick110:Dual_Band_Mode_Setpoint prov:wasDerivedFrom bf103:AHU_Dual_Band_Mode_Setpoint .
 
-brick110:Highest_Zone_Cooling_Command prov:wasDerivedFrom brick103:AHU_Highest_Zone_Cooling_Command .
+brick110:Damper_Command prov:wasDerivedFrom bf103:AHU_Economizer_Damper_Command .
 
-brick110:Low_Outside_Air_Temperature_Enable_Setpoint prov:wasDerivedFrom brick103:AHU_Low_Outside_Air_Temperature_Enable_Setpoint .
+brick110:Min_Damper_Position_Setpoint_Limit prov:wasDerivedFrom bf103:AHU_Economizer_Damper_Min_Position_Setpoint .
 
-brick110:Lowest_Exhaust_Air_Static_Pressure_Sensor prov:wasDerivedFrom brick103:AHU_Lowest_Exhaust_Air_Static_Pressure_Sensor .
+brick110:Mode_Status prov:wasDerivedFrom bf103:AHU_Economizer_Mode_Status .
 
-brick110:Max_Discharge_Air_Static_Pressure_Setpoint_Limit prov:wasDerivedFrom brick103:AHU_Max_Discharge_Air_Static_Pressure_Setpoint .
+brick110:Outside_Air_Flow_Setpoint prov:wasDerivedFrom bf103:AHU_Economizer_Outside_Air_Flow_Setpoint .
 
-brick110:Max_Return_Air_CO2_Setpoint prov:wasDerivedFrom brick103:AHU_Max_Return_Air_CO2_Setpoint .
+brick110:Exhaust_Air_Flow_Sensor prov:wasDerivedFrom bf103:AHU_Exhaust_Air_Flow_Sensor .
 
-brick110:Max_Supply_Air_Static_Pressure_Setpoint_Limit prov:wasDerivedFrom brick103:AHU_Max_Supply_Air_Static_Pressure_Setpoint .
+brick110:Exhaust_Air_Humidity_Sensor prov:wasDerivedFrom bf103:AHU_Exhaust_Air_Humidity_Sensor .
 
-brick110:Min_Discharge_Air_Static_Pressure_Setpoint_Limit prov:wasDerivedFrom brick103:AHU_Min_Discharge_Air_Static_Pressure_Setpoint .
+brick110:Exhaust_Air_Stack_Flow_Sensor prov:wasDerivedFrom bf103:AHU_Exhaust_Air_Stack_Flow_Sensor .
 
-brick110:Min_Supply_Air_Static_Pressure_Setpoint_Limit prov:wasDerivedFrom brick103:AHU_Min_Supply_Air_Static_Pressure_Setpoint .
+brick110:Exhaust_Air_Stack_Flow_Setpoint prov:wasDerivedFrom bf103:AHU_Exhaust_Air_Stack_Flow_Setpoint .
 
-brick110:Mixed_Air_Temperature_Sensor prov:wasDerivedFrom brick103:AHU_Mixed_Air_Temperature_Sensor .
+brick110:Exhaust_Air_Static_Pressure_Proportional_Band_Parameter prov:wasDerivedFrom bf103:AHU_Exhaust_Air_Static_Pressure_Proportional_Band_Setpoint .
 
-brick110:Mixed_Air_Temperature_Setpoint prov:wasDerivedFrom brick103:AHU_Mixed_Air_Temperature_Setpoint .
+brick110:Exhaust_Air_Static_Pressure_Sensor prov:wasDerivedFrom bf103:AHU_Exhaust_Air_Static_Pressure_Sensor .
 
-brick110:Occupied_Mode_Status prov:wasDerivedFrom brick103:AHU_Occupied_Mode_Status .
+brick110:Exhaust_Air_Static_Pressure_Setpoint prov:wasDerivedFrom bf103:AHU_Exhaust_Air_Static_Pressure_Setpoint .
 
-brick110:Outside_Air_CO2_Sensor prov:wasDerivedFrom brick103:AHU_Outside_Air_CO2_Sensor .
+brick110:Exhaust_Air_Temperature_Sensor prov:wasDerivedFrom bf103:AHU_Exhaust_Air_Temperature_Sensor .
 
-brick110:Outside_Air_Dewpoint_Sensor prov:wasDerivedFrom brick103:AHU_Outside_Air_Dewpoint_Sensor .
+brick110:Exhaust_Air_Velocity_Pressure_Sensor prov:wasDerivedFrom bf103:AHU_Exhaust_Air_Velocity_Pressure_Sensor .
 
-brick110:Outside_Air_Enthalpy_Sensor prov:wasDerivedFrom brick103:AHU_Outside_Air_Enthalpy_Sensor .
+brick110:Air_Flow_Setpoint prov:wasDerivedFrom bf103:AHU_Exhaust_Fan_Air_Flow_Setpoint .
 
-brick110:Outside_Air_Flow_Sensor prov:wasDerivedFrom brick103:AHU_Outside_Air_Flow_Sensor .
+brick110:Exhaust_Fan_Disable_Command prov:wasDerivedFrom bf103:AHU_Exhaust_Fan_Disable_Command .
 
-brick110:Outside_Air_Grains_Sensor prov:wasDerivedFrom brick103:AHU_Outside_Air_Grains_Sensor .
+brick110:Exhaust_Fan_Disable_Command prov:wasDerivedFrom bf103:AHU_Exhaust_Fan_Disable_Status .
 
-brick110:Outside_Air_Humidity_Sensor prov:wasDerivedFrom brick103:AHU_Outside_Air_Humidity_Sensor .
+brick110:Exhaust_Fan_Enable_Command prov:wasDerivedFrom bf103:AHU_Exhaust_Fan_Enable_Command .
 
-brick110:Outside_Air_Lockout_Temperature_Differential_Sensor prov:wasDerivedFrom brick103:AHU_Outside_Air_Lockout_Temperature_Differential_Sensor .
+brick110:Overridden_Off_Status prov:wasDerivedFrom bf103:AHU_Exhaust_Fan_Overridden_Off_Status .
 
-brick110:Outside_Air_Lockout_Temperature_Setpoint prov:wasDerivedFrom brick103:AHU_Outside_Air_Lockout_Temperature_Setpoint .
+brick110:Overridden_On_Status prov:wasDerivedFrom bf103:AHU_Exhaust_Fan_Overridden_On_Status .
 
-brick110:Outside_Air_Temperature_Sensor prov:wasDerivedFrom brick103:AHU_Outside_Air_Temperature_Sensor .
+brick110:Start_Stop_Command prov:wasDerivedFrom bf103:AHU_Exhaust_Fan_Start_Stop_Command .
 
-brick110:Min_Outside_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:AHU_Outside_Min_Air_Flow_Setpoint .
+brick110:Start_Stop_Status prov:wasDerivedFrom bf103:AHU_Exhaust_Fan_Start_Stop_Status .
 
-brick110:Overridden_Off_Status prov:wasDerivedFrom brick103:AHU_Overridden_Off_Status .
+brick110:Status prov:wasDerivedFrom bf103:AHU_Exhaust_Fan_Status .
 
-brick110:Overridden_On_Status prov:wasDerivedFrom brick103:AHU_Overridden_On_Status .
+brick110:System_Enable_Command prov:wasDerivedFrom bf103:AHU_Exhaust_Fan_System_Enable_Command .
 
-brick110:Pre_Filter_Status prov:wasDerivedFrom brick103:AHU_Pre_Filter_Status .
+brick110:Fan_Start_Stop_Status prov:wasDerivedFrom bf103:AHU_Fan_Start_Stop_Status .
 
-brick110:Preheat_Demand_Setpoint prov:wasDerivedFrom brick103:AHU_Preheat_Demand_Setpoint .
+brick110:Filter_Status prov:wasDerivedFrom bf103:AHU_Filter_Status .
 
-brick110:Preheat_Discharge_Air_Temperature_Sensor prov:wasDerivedFrom brick103:AHU_Preheat_Discharge_Air_Temperature_Sensor .
+brick110:Frost_Sensor prov:wasDerivedFrom bf103:AHU_Frost_Sensor .
 
-brick110:Preheat_Supply_Air_Temperature_Sensor prov:wasDerivedFrom brick103:AHU_Preheat_Supply_Air_Temperature_Sensor .
+brick110:Start_Stop_Command prov:wasDerivedFrom bf103:AHU_Heat_Exchanger_Start_Stop_Command .
 
-brick110:Return_Air_CO2_Sensor prov:wasDerivedFrom brick103:AHU_Return_Air_CO2_Sensor .
+brick110:Heat_Exchanger_System_Enable_Status prov:wasDerivedFrom bf103:AHU_Heat_Exchanger_System_Enable_Status .
 
-brick110:Return_Air_Dewpoint_Sensor prov:wasDerivedFrom brick103:AHU_Return_Air_Dewpoint_Sensor .
+brick110:Heating_Demand_Setpoint prov:wasDerivedFrom bf103:AHU_Heating_Demand_Setpoint .
 
-brick110:Return_Air_Enthalpy_Sensor prov:wasDerivedFrom brick103:AHU_Return_Air_Enthalpy_Sensor .
+brick110:Heating_Request_Percent_Setpoint prov:wasDerivedFrom bf103:AHU_Heating_Request_Percent_Setpoint .
 
-brick110:Return_Air_Flow_Sensor prov:wasDerivedFrom brick103:AHU_Return_Air_Flow_Sensor .
+brick110:Heating_Request_Setpoint prov:wasDerivedFrom bf103:AHU_Heating_Request_Setpoint .
 
-brick110:Return_Air_Grains_Sensor prov:wasDerivedFrom brick103:AHU_Return_Air_Grains_Sensor .
+brick110:Highest_Zone_Cooling_Command prov:wasDerivedFrom bf103:AHU_Highest_Zone_Cooling_Command .
 
-brick110:Return_Air_Humidity_Sensor prov:wasDerivedFrom brick103:AHU_Return_Air_Humidity_Sensor .
+brick110:Low_Outside_Air_Temperature_Enable_Setpoint prov:wasDerivedFrom bf103:AHU_Low_Outside_Air_Temperature_Enable_Setpoint .
 
-brick110:Return_Air_Temperature_Sensor prov:wasDerivedFrom brick103:AHU_Return_Air_Temperature_Sensor .
+brick110:Lowest_Exhaust_Air_Static_Pressure_Sensor prov:wasDerivedFrom bf103:AHU_Lowest_Exhaust_Air_Static_Pressure_Sensor .
 
-brick110:Return_Fan_Air_Flow_Sensor prov:wasDerivedFrom brick103:AHU_Return_Fan_Air_Flow_Sensor .
+brick110:Max_Discharge_Air_Static_Pressure_Setpoint_Limit prov:wasDerivedFrom bf103:AHU_Max_Discharge_Air_Static_Pressure_Setpoint .
 
-brick110:Return_Fan_Differential_Speed_Setpoint prov:wasDerivedFrom brick103:AHU_Return_Fan_Differential_Speed_Setpoint .
+brick110:Max_Return_Air_CO2_Setpoint prov:wasDerivedFrom bf103:AHU_Max_Return_Air_CO2_Setpoint .
 
-brick110:Run_Time_Sensor prov:wasDerivedFrom brick103:AHU_Run_Time_Sensor .
+brick110:Max_Supply_Air_Static_Pressure_Setpoint_Limit prov:wasDerivedFrom bf103:AHU_Max_Supply_Air_Static_Pressure_Setpoint .
 
-brick110:Static_Pressure_Sensor prov:wasDerivedFrom brick103:AHU_Static_Pressure_Sensor .
+brick110:Min_Discharge_Air_Static_Pressure_Setpoint_Limit prov:wasDerivedFrom bf103:AHU_Min_Discharge_Air_Static_Pressure_Setpoint .
 
-brick110:Steam_On_Off_Command prov:wasDerivedFrom brick103:AHU_Steam_On_Off_Command .
+brick110:Min_Supply_Air_Static_Pressure_Setpoint_Limit prov:wasDerivedFrom bf103:AHU_Min_Supply_Air_Static_Pressure_Setpoint .
 
-brick110:Supply_Air_Flow_Demand_Setpoint prov:wasDerivedFrom brick103:AHU_Supply_Air_Flow_Demand_Setpoint .
+brick110:Mixed_Air_Temperature_Sensor prov:wasDerivedFrom bf103:AHU_Mixed_Air_Temperature_Sensor .
 
-brick110:Supply_Air_Humidity_Sensor prov:wasDerivedFrom brick103:AHU_Supply_Air_Humidity_Sensor .
+brick110:Mixed_Air_Temperature_Setpoint prov:wasDerivedFrom bf103:AHU_Mixed_Air_Temperature_Setpoint .
 
-brick110:Supply_Air_Static_Pressure_Sensor prov:wasDerivedFrom brick103:AHU_Supply_Air_Static_Pressure_Sensor .
+brick110:Occupied_Mode_Status prov:wasDerivedFrom bf103:AHU_Occupied_Mode_Status .
 
-brick110:Supply_Air_Static_Pressure_Setpoint prov:wasDerivedFrom brick103:AHU_Supply_Air_Static_Pressure_Setpoint .
+brick110:Outside_Air_CO2_Sensor prov:wasDerivedFrom bf103:AHU_Outside_Air_CO2_Sensor .
 
-brick110:Supply_Air_Temperature_Sensor prov:wasDerivedFrom brick103:AHU_Supply_Air_Temperature_Sensor .
+brick110:Damper_Position_Command prov:wasDerivedFrom bf103:AHU_Outside_Air_Damper_Position_Command .
 
-brick110:Supply_Fan_Air_Flow_Sensor prov:wasDerivedFrom brick103:AHU_Supply_Fan_Air_Flow_Sensor .
+brick110:Damper_Position_Sensor prov:wasDerivedFrom bf103:AHU_Outside_Air_Damper_Position_Sensor .
 
-brick110:System_Enable_Command prov:wasDerivedFrom brick103:AHU_System_Enable_Command .
+brick110:Outside_Air_Dewpoint_Sensor prov:wasDerivedFrom bf103:AHU_Outside_Air_Dewpoint_Sensor .
 
-brick110:System_Shutdown_Status prov:wasDerivedFrom brick103:AHU_System_Shutdown_Status .
+brick110:Outside_Air_Enthalpy_Sensor prov:wasDerivedFrom bf103:AHU_Outside_Air_Enthalpy_Sensor .
 
-brick110:Trace_Heat_Sensor prov:wasDerivedFrom brick103:AHU_Trace_Heat_Sensor .
+brick110:Outside_Air_Flow_Sensor prov:wasDerivedFrom bf103:AHU_Outside_Air_Flow_Sensor .
 
-brick110:Unoccupied_Mode_Setpoint prov:wasDerivedFrom brick103:AHU_Unoccupied_Mode_Setpoint .
+brick110:Outside_Air_Grains_Sensor prov:wasDerivedFrom bf103:AHU_Outside_Air_Grains_Sensor .
 
-brick110:Velocity_Pressure_Setpoint prov:wasDerivedFrom brick103:AHU_Velocity_Pressure_Setpoint .
+brick110:Outside_Air_Humidity_Sensor prov:wasDerivedFrom bf103:AHU_Outside_Air_Humidity_Sensor .
 
-brick110:VFD_Enable_Command prov:wasDerivedFrom brick103:AHU_VFD_Enable_Command .
+brick110:Outside_Air_Lockout_Temperature_Differential_Sensor prov:wasDerivedFrom bf103:AHU_Outside_Air_Lockout_Temperature_Differential_Sensor .
 
-brick110:Zone_Air_Temperature_Sensor prov:wasDerivedFrom brick103:AHU_Zone_Air_Temperature_Sensor .
+brick110:Outside_Air_Lockout_Temperature_Setpoint prov:wasDerivedFrom bf103:AHU_Outside_Air_Lockout_Temperature_Setpoint .
 
-brick110:Average_Zone_Air_Temperature_Sensor prov:wasDerivedFrom brick103:Average_Zone_Temperature_Sensor .
+brick110:Outside_Air_Temperature_Sensor prov:wasDerivedFrom bf103:AHU_Outside_Air_Temperature_Sensor .
 
-brick110:On_Off_Status prov:wasDerivedFrom brick103:Boiler_On_Off_Status .
+brick110:Min_Outside_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:AHU_Outside_Min_Air_Flow_Setpoint .
 
-brick110:Run_Time_Sensor prov:wasDerivedFrom brick103:Boiler_Run_Time_Sensor .
+brick110:Overridden_Off_Status prov:wasDerivedFrom bf103:AHU_Overridden_Off_Status .
 
-brick110:Start_Stop_Status prov:wasDerivedFrom brick103:Boiler_Start_Stop_Status .
+brick110:Overridden_On_Status prov:wasDerivedFrom bf103:AHU_Overridden_On_Status .
 
-brick110:Fan_Air_Flow_Setpoint prov:wasDerivedFrom brick103:Booster_Fan_Air_Flow_Setpoint .
+brick110:Pre_Filter_Status prov:wasDerivedFrom bf103:AHU_Pre_Filter_Status .
 
-brick110:Building_Air_Static_Pressure_Sensor prov:wasDerivedFrom brick103:Building_Static_Pressure_Sensor .
+brick110:Preheat_Demand_Setpoint prov:wasDerivedFrom bf103:AHU_Preheat_Demand_Setpoint .
 
-brick110:Building_Air_Static_Pressure_Setpoint prov:wasDerivedFrom brick103:Building_Static_Pressure_Setpoint .
+brick110:Preheat_Discharge_Air_Temperature_Sensor prov:wasDerivedFrom bf103:AHU_Preheat_Discharge_Air_Temperature_Sensor .
 
-brick110:Damper_Position_Sensor prov:wasDerivedFrom brick103:Bypass_Damper_Position_Sensor .
+brick110:Preheat_Supply_Air_Temperature_Sensor prov:wasDerivedFrom bf103:AHU_Preheat_Supply_Air_Temperature_Sensor .
 
-brick110:Chilled_Water_Differential_Pressure_Load_Shed_Status prov:wasDerivedFrom brick103:Chilled_Water_Differential_Pressure_Load_Shed .
+brick110:Return_Air_CO2_Sensor prov:wasDerivedFrom bf103:AHU_Return_Air_CO2_Sensor .
 
-brick110:Chilled_Water_Differential_Pressure_Load_Shed_Reset_Status prov:wasDerivedFrom brick103:Chilled_Water_Differential_Pressure_Load_Shed_Reset .
+brick110:Return_Air_Dewpoint_Sensor prov:wasDerivedFrom bf103:AHU_Return_Air_Dewpoint_Sensor .
 
-brick110:Chilled_Water_Differential_Pressure_Proportional_Band_Parameter prov:wasDerivedFrom brick103:Chilled_Water_Differential_Pressure_Proportional_Band .
+brick110:Return_Air_Enthalpy_Sensor prov:wasDerivedFrom bf103:AHU_Return_Air_Enthalpy_Sensor .
 
-brick110:Flow  prov:wasDerivedFrom brick103:Chilled_Water_Discharge_Flow .
+brick110:Return_Air_Flow_Sensor prov:wasDerivedFrom bf103:AHU_Return_Air_Flow_Sensor .
 
-brick110:Flow  prov:wasDerivedFrom brick103:Chilled_Water_Discharge_Flow .
+brick110:Return_Air_Grains_Sensor prov:wasDerivedFrom bf103:AHU_Return_Air_Grains_Sensor .
 
-brick110:Temperature  prov:wasDerivedFrom brick103:Chilled_Water_Discharge_Temperature .
+brick110:Return_Air_Humidity_Sensor prov:wasDerivedFrom bf103:AHU_Return_Air_Humidity_Sensor .
 
-brick110:Temperature  prov:wasDerivedFrom brick103:Chilled_Water_Discharge_Temperature .
+brick110:Return_Air_Temperature_Sensor prov:wasDerivedFrom bf103:AHU_Return_Air_Temperature_Sensor .
 
-brick110:Alarm prov:wasDerivedFrom brick103:Chilled_Water_Pump_Alarm .
+brick110:Return_Fan_Air_Flow_Sensor prov:wasDerivedFrom bf103:AHU_Return_Fan_Air_Flow_Sensor .
 
-brick110:Command prov:wasDerivedFrom brick103:Chilled_Water_Pump_Command .
+brick110:Return_Fan_Differential_Speed_Setpoint prov:wasDerivedFrom bf103:AHU_Return_Fan_Differential_Speed_Setpoint .
 
-brick110:Status prov:wasDerivedFrom brick103:Chilled_Water_Pump_Status .
+brick110:Run_Time_Sensor prov:wasDerivedFrom bf103:AHU_Run_Time_Sensor .
 
-brick110:Temperature  prov:wasDerivedFrom brick103:Chilled_Water_Return_Temperature .
+brick110:Static_Pressure_Sensor prov:wasDerivedFrom bf103:AHU_Static_Pressure_Sensor .
 
-brick110:Temperature  prov:wasDerivedFrom brick103:Chilled_Water_Return_Temperature .
+brick110:Steam_On_Off_Command prov:wasDerivedFrom bf103:AHU_Steam_On_Off_Command .
 
-brick110:Flow  prov:wasDerivedFrom brick103:Chilled_Water_Supply_Flow .
+brick110:Supply_Air_Flow_Demand_Setpoint prov:wasDerivedFrom bf103:AHU_Supply_Air_Flow_Demand_Setpoint .
 
-brick110:Flow  prov:wasDerivedFrom brick103:Chilled_Water_Supply_Flow .
+brick110:Supply_Air_Humidity_Sensor prov:wasDerivedFrom bf103:AHU_Supply_Air_Humidity_Sensor .
 
-brick110:Temperature  prov:wasDerivedFrom brick103:Chilled_Water_Supply_Temperature .
+brick110:Supply_Air_Static_Pressure_Sensor prov:wasDerivedFrom bf103:AHU_Supply_Air_Static_Pressure_Sensor .
 
-brick110:Temperature  prov:wasDerivedFrom brick103:Chilled_Water_Supply_Temperature .
+brick110:Supply_Air_Static_Pressure_Setpoint prov:wasDerivedFrom bf103:AHU_Supply_Air_Static_Pressure_Setpoint .
 
-brick110:Chilled_Water_System_Enable_Command prov:wasDerivedFrom brick103:Chilled_Water_System_Enable .
+brick110:Supply_Air_Temperature_Sensor prov:wasDerivedFrom bf103:AHU_Supply_Air_Temperature_Sensor .
 
-brick110:Chilled_Water_Differential_Temperature_Sensor prov:wasDerivedFrom brick103:Chilled_Water_Temperature_Differential_Sensor .
+brick110:Supply_Fan_Air_Flow_Sensor prov:wasDerivedFrom bf103:AHU_Supply_Fan_Air_Flow_Sensor .
 
-brick110:Max_Load_Setpoint prov:wasDerivedFrom brick103:Chiller_Max_Load_Setpoint .
+brick110:Piezoelectric_Sensor prov:wasDerivedFrom bf103:AHU_Supply_Fan_Piezoelectric_Sensor .
 
-brick110:On_Off_Status prov:wasDerivedFrom brick103:Chiller_On_Off_Status .
+brick110:Start_Stop_Command prov:wasDerivedFrom bf103:AHU_Supply_Fan_Start_Stop_Command .
 
-brick110:On_Timer_Sensor prov:wasDerivedFrom brick103:Chiller_On_Timer_Sensor .
+brick110:Start_Stop_Status prov:wasDerivedFrom bf103:AHU_Supply_Fan_Start_Stop_Status .
 
-brick110:Run_Time_Sensor prov:wasDerivedFrom brick103:Chiller_Run_Time_Sensor .
+brick110:Status prov:wasDerivedFrom bf103:AHU_Supply_Fan_Status .
 
-brick110:Start_Stop_Status prov:wasDerivedFrom brick103:Chiller_Start_Stop_Status .
+brick110:System_Enable_Command prov:wasDerivedFrom bf103:AHU_System_Enable_Command .
 
-brick110:Coldest_Zone_Air_Temperature_Sensor prov:wasDerivedFrom brick103:Coldest_Zone_Temperature_Sensor .
+brick110:System_Shutdown_Status prov:wasDerivedFrom bf103:AHU_System_Shutdown_Status .
 
-brick110:Cooling_Discharge_Air_Temperature_Proportional_Band_Parameter prov:wasDerivedFrom brick103:Cooling_Discharge_Air_Temperature_Proportional_Band .
+brick110:System_Status prov:wasDerivedFrom bf103:AHU_System_Status .
 
-brick110:Max_Cooling_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:Cooling_Max_Discharge_Air_Flow_Setpoint .
+brick110:Trace_Heat_Sensor prov:wasDerivedFrom bf103:AHU_Trace_Heat_Sensor .
 
-brick110:Max_Cooling_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:Cooling_Max_Supply_Air_Flow_Setpoint .
+brick110:Unoccupied_Mode_Setpoint prov:wasDerivedFrom bf103:AHU_Unoccupied_Mode_Setpoint .
 
-brick110:Min_Cooling_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:Cooling_Min_Discharge_Air_Flow_Setpoint .
+brick110:Velocity_Pressure_Setpoint prov:wasDerivedFrom bf103:AHU_Velocity_Pressure_Setpoint .
 
-brick110:Min_Cooling_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:Cooling_Min_Supply_Air_Flow_Setpoint .
+brick110:VFD_Enable_Command prov:wasDerivedFrom bf103:AHU_VFD_Enable_Command .
 
-brick110:Cooling_On_Off_Status prov:wasDerivedFrom brick103:Cooling_On_Off .
+brick110:Zone_Air_Temperature_Sensor prov:wasDerivedFrom bf103:AHU_Zone_Air_Temperature_Sensor .
 
-brick110:Cooling_Supply_Air_Temperature_Proportional_Band_Parameter prov:wasDerivedFrom brick103:Cooling_Supply_Air_Temperature_Proportional_Band .
+brick110:Air prov:wasDerivedFrom bf103:Air .
 
-brick110:Cooling_Supply_Air_Temperature_Proportional_Band_Parameter prov:wasDerivedFrom brick103:Cooling_Supply_Air_Temperature_Proportional_Band_Setpoint .
+brick110:CO2 prov:wasDerivedFrom bf103:Air_CO2 .
 
-brick110:Cooling_On_Off_Status prov:wasDerivedFrom brick103:CRAC_Cooling_On_Off_Status .
+brick110:Dewpoint prov:wasDerivedFrom bf103:Air_Dewpoint .
 
-brick110:Dehumidification_On_Off_Status prov:wasDerivedFrom brick103:CRAC_Dehumidification_On_Off_Status .
+brick110:Enthalpy prov:wasDerivedFrom bf103:Air_Enthalpy .
 
-brick110:EconCycle_On_Off_Status prov:wasDerivedFrom brick103:CRAC_EconCycle_On_Off_Status .
+brick110:Flow prov:wasDerivedFrom bf103:Air_Flow .
 
-brick110:Emergency_Power_Off_Activated_By_High_Temperature_Status prov:wasDerivedFrom brick103:CRAC_Emergency_Power_Off_Activated_By_High_Temperature_Status .
+brick110:Air_Flow_Sensor prov:wasDerivedFrom bf103:Air_Flow_Sensor .
 
-brick110:Emergency_Power_Off_Activated_By_Leak_Detection_System_Status prov:wasDerivedFrom brick103:CRAC_Emergency_Power_Off_Activated_By_Leak_Detection_System_Status .
+brick110:Air_Flow_Setpoint prov:wasDerivedFrom bf103:Air_Flow_Setpoint .
 
-brick110:Emergency_Power_Off_Enable_Status prov:wasDerivedFrom brick103:CRAC_Emergency_Power_Off_Enable_Status .
+brick110:Grains prov:wasDerivedFrom bf103:Air_Grains .
 
-brick110:Emergency_Power_Off_System_Enable_Status prov:wasDerivedFrom brick103:CRAC_Emergency_Power_Off_System_Enable_Status .
+brick110:Air_Grains_Sensor prov:wasDerivedFrom bf103:Air_Grains_Sensor .
 
-brick110:Heating_On_Off_Status prov:wasDerivedFrom brick103:CRAC_Heating_On_Off_Status .
+brick110:Air_Handler_Unit prov:wasDerivedFrom bf103:Air_Handler_Unit .
 
-brick110:High_Humidity_Alarm_Setpoint prov:wasDerivedFrom brick103:CRAC_High_Humidity_Alarm_Setpoint .
+brick110:Humidity prov:wasDerivedFrom bf103:Air_Humidity .
 
-brick110:Humidification_On_Off_Status prov:wasDerivedFrom brick103:CRAC_Humidification_On_Off_Status .
+brick110:Temperature prov:wasDerivedFrom bf103:Air_Temperature .
 
-brick110:Humidifier_Fault_Status prov:wasDerivedFrom brick103:CRAC_Humidifier_Fault_Status .
+brick110:Angle prov:wasDerivedFrom bf103:Angle .
 
-brick110:Locally_On_Off_Status prov:wasDerivedFrom brick103:CRAC_Locally_On_Off_Status .
+brick110:Angle_Sensor prov:wasDerivedFrom bf103:Angle_Sensor .
 
-brick110:Low_Humidity_Alarm_Setpoint prov:wasDerivedFrom brick103:CRAC_Low_Humidity_Alarm_Setpoint .
+brick110:Automatic_Mode_Command prov:wasDerivedFrom bf103:Automatic_Mode .
 
-brick110:On_Off_Status prov:wasDerivedFrom brick103:CRAC_On_Off_Status .
+brick110:Automatic_Mode_Command prov:wasDerivedFrom bf103:Automatic_Mode_Command .
 
-brick110:Remotely_On_Off_Status prov:wasDerivedFrom brick103:CRAC_Remotely_On_Off_Status .
+brick110:Average_Discharge_Air_Flow_Sensor prov:wasDerivedFrom bf103:Average_Discharge_Air_Flow_Sensor .
 
-brick110:Standby_Glycool_Unit_On_Off_Status prov:wasDerivedFrom brick103:CRAC_Standby_Glycool_Unit_On_Off_Status .
+brick110:Average_Exhaust_Air_Static_Pressure_Sensor prov:wasDerivedFrom bf103:Average_Exhaust_Air_Static_Pressure_Sensor .
 
-brick110:Standby_Unit_On_Off_Status prov:wasDerivedFrom brick103:CRAC_Standby_Unit_On_Off_Status .
+brick110:Average_Supply_Air_Flow_Sensor prov:wasDerivedFrom bf103:Average_Supply_Air_Flow_Sensor .
 
-brick110:Start_Stop_Command prov:wasDerivedFrom brick103:CRAC_Start_Stop_Command .
+brick110:Average_Zone_Air_Temperature_Sensor prov:wasDerivedFrom bf103:Average_Zone_Temperature_Sensor .
 
-brick110:Start_Stop_Status prov:wasDerivedFrom brick103:CRAC_Start_Stop_Status .
+brick110:Basement prov:wasDerivedFrom bf103:Basement .
 
-brick110:System_Enable_Command prov:wasDerivedFrom brick103:CRAC_System_Enable_Command .
+brick110:Battery_Voltage_Sensor prov:wasDerivedFrom bf103:Battery_Voltage_Sensor .
 
-brick110:Chilled_Water_Differential_Pressure_Sensor prov:wasDerivedFrom brick103:CWS_Chilled_Water_Differential_Pressure_Sensor .
+brick110:Boiler prov:wasDerivedFrom bf103:Boiler .
 
-brick110:Chilled_Water_Differential_Pressure_Setpoint prov:wasDerivedFrom brick103:CWS_Chilled_Water_Differential_Pressure_Setpoint .
+brick110:On_Off_Status prov:wasDerivedFrom bf103:Boiler_On_Off_Status .
 
-brick110:Chilled_Water_Discharge_Flow_Sensor prov:wasDerivedFrom brick103:CWS_Chilled_Water_Discharge_Flow_Sensor .
+brick110:Run_Time_Sensor prov:wasDerivedFrom bf103:Boiler_Run_Time_Sensor .
 
-brick110:Chilled_Water_Return_Temperature_Sensor prov:wasDerivedFrom brick103:CWS_Chilled_Water_Return_Temperature_Sensor .
+brick110:Start_Stop_Status prov:wasDerivedFrom bf103:Boiler_Start_Stop_Status .
 
-brick110:Chilled_Water_Static_Pressure_Setpoint prov:wasDerivedFrom brick103:CWS_Chilled_Water_Static_Pressure_Setpoint .
+brick110:Booster_Fan prov:wasDerivedFrom bf103:Booster_Fan .
 
-brick110:Chilled_Water_Supply_Flow_Sensor prov:wasDerivedFrom brick103:CWS_Chilled_Water_Supply_Flow_Sensor .
+brick110:Booster_Fan_Air_Flow_Sensor prov:wasDerivedFrom bf103:Booster_Fan_Air_Flow_Sensor .
 
-brick110:Chilled_Water_Supply_Temperature_Sensor prov:wasDerivedFrom brick103:CWS_Chilled_Water_Supply_Temperature_Sensor .
+brick110:Fan_Air_Flow_Setpoint prov:wasDerivedFrom bf103:Booster_Fan_Air_Flow_Setpoint .
 
-brick110:Chilled_Water_System_Enable_Command prov:wasDerivedFrom brick103:CWS_Chilled_Water_System_Enable_Command .
+brick110:Box_Mode_Command prov:wasDerivedFrom bf103:Box_Mode .
 
-brick110:Chilled_Water_Differential_Temperature_Sensor prov:wasDerivedFrom brick103:CWS_Chilled_Water_Temperature_Differential_Sensor .
+brick110:Box_Mode_Command prov:wasDerivedFrom bf103:Box_Mode_Command .
 
-brick110:Max_Chilled_Water_Differential_Pressure_Setpoint_Limit prov:wasDerivedFrom brick103:CWS_Max_Chilled_Water_Differential_Pressure_Setpoint .
+brick110:Building prov:wasDerivedFrom bf103:Building .
 
-brick110:Min_Chilled_Water_Differential_Pressure_Setpoint_Limit prov:wasDerivedFrom brick103:CWS_Min_Chilled_Water_Differential_Pressure_Setpoint .
+brick110:Building_Air_Static_Pressure_Sensor prov:wasDerivedFrom bf103:Building_Static_Pressure_Sensor .
 
-brick110:Dehumidification_On_Off_Status prov:wasDerivedFrom brick103:Dehumidification_On_Off .
+brick110:Building_Air_Static_Pressure_Setpoint prov:wasDerivedFrom bf103:Building_Static_Pressure_Setpoint .
 
-brick110:Chilled_Water_Differential_Pressure_Load_Shed_Reset_Status prov:wasDerivedFrom brick103:DemandResponse_Chilled_Water_Differential_Pressure_Load_Shed_Reset_Status .
+brick110:Bypass_Air_Flow_Sensor prov:wasDerivedFrom bf103:Bypass_Air_Flow_Sensor .
 
-brick110:Chilled_Water_Differential_Pressure_Load_Shed_Setpoint prov:wasDerivedFrom brick103:DemandResponse_Chilled_Water_Differential_Pressure_Load_Shed_Setpoint .
+brick110:Damper_Position_Sensor prov:wasDerivedFrom bf103:Bypass_Damper_Position_Sensor .
 
-brick110:Chilled_Water_Differential_Pressure_Load_Shed_Status prov:wasDerivedFrom brick103:DemandResponse_Chilled_Water_Differential_Pressure_Load_Shed_Status .
+brick110:Capacity_Sensor prov:wasDerivedFrom bf103:Capacity_Sensor .
 
-brick110:Load_Shed_Command prov:wasDerivedFrom brick103:DemandResponse_Load_Shed_Command .
+brick110:Chilled_Water prov:wasDerivedFrom bf103:Chilled_Water .
 
-brick110:Load_Shed_Status prov:wasDerivedFrom brick103:DemandResponse_Load_Shed_Status .
+brick110:Chilled_Water_Differential_Pressure_Load_Shed_Status prov:wasDerivedFrom bf103:Chilled_Water_Differential_Pressure_Load_Shed .
 
-brick110:Standby_Load_Shed_Command prov:wasDerivedFrom brick103:DemandResponse_Standby_Load_Shed_Command .
+brick110:Chilled_Water_Differential_Pressure_Load_Shed_Reset_Status prov:wasDerivedFrom bf103:Chilled_Water_Differential_Pressure_Load_Shed_Reset .
 
-brick110:Unoccupied_Load_Shed_Command prov:wasDerivedFrom brick103:DemandResponse_Unoccupied_Load_Shed_Command .
+brick110:Chilled_Water_Differential_Pressure_Load_Shed_Reset_Status prov:wasDerivedFrom bf103:Chilled_Water_Differential_Pressure_Load_Shed_Reset_Status .
 
-brick110:Zone_Standby_Load_Shed_Command prov:wasDerivedFrom brick103:DemandResponse_Zone_Standby_Load_Shed_Command .
+brick110:Chilled_Water_Differential_Pressure_Load_Shed_Setpoint prov:wasDerivedFrom bf103:Chilled_Water_Differential_Pressure_Load_Shed_Setpoint .
 
-brick110:Zone_Unoccupied_Load_Shed_Command prov:wasDerivedFrom brick103:DemandResponse_Zone_Unoccupied_Load_Shed_Command .
+brick110:Chilled_Water_Differential_Pressure_Load_Shed_Status prov:wasDerivedFrom bf103:Chilled_Water_Differential_Pressure_Load_Shed_Status .
 
-brick110:Domestic_Hot_Water_Supply_Temperature_Sensor prov:wasDerivedFrom brick103:DHWS_Domestic_Hot_Water_Supply_Temperature_Sensor .
+brick110:Chilled_Water_Differential_Pressure_Proportional_Band_Parameter prov:wasDerivedFrom bf103:Chilled_Water_Differential_Pressure_Proportional_Band .
 
-brick110:Domestic_Hot_Water_System_Enable_Command prov:wasDerivedFrom brick103:DHWS_Domestic_Hot_Water_System_Enable_Command .
+brick110:Chilled_Water_Differential_Pressure_Sensor prov:wasDerivedFrom bf103:Chilled_Water_Differential_Pressure_Sensor .
 
-brick110:Water_Level_Sensor prov:wasDerivedFrom brick103:DI_Water_Level_Sensor .
+brick110:Chilled_Water_Differential_Pressure_Setpoint prov:wasDerivedFrom bf103:Chilled_Water_Differential_Pressure_Setpoint .
 
-brick110:Flow  prov:wasDerivedFrom brick103:Discharge_Air_Flow .
+brick110:Flow prov:wasDerivedFrom bf103:Chilled_Water_Discharge_Flow .
 
-brick110:Flow  prov:wasDerivedFrom brick103:Discharge_Air_Flow .
+brick110:Discharge_Chilled_Water prov:wasDerivedFrom bf103:Chilled_Water_Discharge_Flow .
 
-brick110:Discharge_Air_Static_Pressure_Proportional_Band_Parameter prov:wasDerivedFrom brick103:Discharge_Air_Static_Pressure_Proportional_Band .
+brick110:Chilled_Water_Discharge_Flow_Sensor prov:wasDerivedFrom bf103:Chilled_Water_Discharge_Flow_Sensor .
 
-brick110:Temperature  prov:wasDerivedFrom brick103:Discharge_Air_Temperature .
+brick110:Temperature prov:wasDerivedFrom bf103:Chilled_Water_Discharge_Temperature .
 
-brick110:Temperature  prov:wasDerivedFrom brick103:Discharge_Air_Temperature .
+brick110:Chilled_Discharge_Water prov:wasDerivedFrom bf103:Chilled_Water_Discharge_Temperature .
 
-brick110:Velocity_Pressure  prov:wasDerivedFrom brick103:Discharge_Air_Velocity_Pressure .
+brick110:Chilled_Water_Pump prov:wasDerivedFrom bf103:Chilled_Water_Pump .
 
-brick110:Velocity_Pressure  prov:wasDerivedFrom brick103:Discharge_Air_Velocity_Pressure .
+brick110:Alarm prov:wasDerivedFrom bf103:Chilled_Water_Pump_Alarm .
 
-brick110:Discharge_Water_Differential_Pressure_Proportional_Band_Parameter prov:wasDerivedFrom brick103:Discharge_Water_Differential_Pressure_Proportional_Band .
+brick110:Command prov:wasDerivedFrom bf103:Chilled_Water_Pump_Command .
 
-brick110:Temperature  prov:wasDerivedFrom brick103:Domestic_Hot_Water_Supply_Temperature .
+brick110:Chilled_Water_Pump_Differential_Pressure_Deadband_Setpoint prov:wasDerivedFrom bf103:Chilled_Water_Pump_Differential_Pressure_Dead_Band_Setpoint .
 
-brick110:Temperature  prov:wasDerivedFrom brick103:Domestic_Hot_Water_Supply_Temperature .
+brick110:Differential_Pressure_Proportional_Band prov:wasDerivedFrom bf103:Chilled_Water_Pump_Differential_Pressure_Proportional_Band .
 
-brick110:Domestic_Hot_Water_System_Enable_Command prov:wasDerivedFrom brick103:Domestic_Hot_Water_System_Enable .
+brick110:Chilled_Water_Differential_Pressure_Proportional_Band_Parameter prov:wasDerivedFrom bf103:Chilled_Water_Pump_Differential_Pressure_Proportional_Band_Setpoint .
 
-brick110:Command prov:wasDerivedFrom brick103:Domestic_Hot_Water_Valve_Command .
+brick110:Enable_Status prov:wasDerivedFrom bf103:Chilled_Water_Pump_Enable_Status .
 
-brick110:EconCycle_On_Off_Status prov:wasDerivedFrom brick103:EconCycle_On_Off .
+brick110:Lead_Lag_Status prov:wasDerivedFrom bf103:Chilled_Water_Pump_Lead_Lag_Status .
 
-brick110:Discharge_Air_Temperature_Proportional_Band_Parameter prov:wasDerivedFrom brick103:Economizer_Discharge_Air_Temperature_Proportional_Band .
+brick110:Status prov:wasDerivedFrom bf103:Chilled_Water_Pump_Status .
 
-brick110:Outside_Air_Flow_Setpoint prov:wasDerivedFrom brick103:Economizer_Outside_Air_Flow_Setpoint .
+brick110:Temperature prov:wasDerivedFrom bf103:Chilled_Water_Return_Temperature .
 
-brick110:Supply_Air_Temperature_Proportional_Band_Parameter prov:wasDerivedFrom brick103:Economizer_Supply_Air_Temperature_Proportional_Band .
+brick110:Chilled_Return_Water prov:wasDerivedFrom bf103:Chilled_Water_Return_Temperature .
 
-brick110:Emergency_Air_Flow_Status prov:wasDerivedFrom brick103:Emergency_Air_Flow .
+brick110:Chilled_Water_Return_Temperature_Sensor prov:wasDerivedFrom bf103:Chilled_Water_Return_Temperature_Sensor .
 
-brick110:Emergency_Power_Off_Status prov:wasDerivedFrom brick103:Emergency_Power_Off .
+brick110:Chilled_Water_Static_Pressure_Setpoint prov:wasDerivedFrom bf103:Chilled_Water_Static_Pressure_Setpoint .
 
-brick110:Emergency_Power_Off_Activated_By_High_Temperature_Status prov:wasDerivedFrom brick103:Emergency_Power_Off_Activated_By_High_Temperature .
+brick110:Flow prov:wasDerivedFrom bf103:Chilled_Water_Supply_Flow .
 
-brick110:Emergency_Power_Off_Activated_By_Leak_Detection_System_Status prov:wasDerivedFrom brick103:Emergency_Power_Off_Activated_By_Leak_Detection_System .
+brick110:Chilled_Supply_Water prov:wasDerivedFrom bf103:Chilled_Water_Supply_Flow .
 
-brick110:Emergency_Power_Off_Enable_Status prov:wasDerivedFrom brick103:Emergency_Power_Off_Enable .
+brick110:Chilled_Water_Supply_Flow_Sensor prov:wasDerivedFrom bf103:Chilled_Water_Supply_Flow_Sensor .
 
-brick110:Emergency_Power_Off_System_Enable_Status prov:wasDerivedFrom brick103:Emergency_Power_Off_System_Enable .
+brick110:Temperature prov:wasDerivedFrom bf103:Chilled_Water_Supply_Temperature .
 
-brick110:Emergency_Push_Button_Status prov:wasDerivedFrom brick103:Emergency_Push_Button .
+brick110:Chilled_Supply_Water prov:wasDerivedFrom bf103:Chilled_Water_Supply_Temperature .
 
-brick110:Flow  prov:wasDerivedFrom brick103:Exhaust_Air_Flow .
+brick110:Chilled_Water_Supply_Temperature_Sensor prov:wasDerivedFrom bf103:Chilled_Water_Supply_Temperature_Sensor .
 
-brick110:Flow  prov:wasDerivedFrom brick103:Exhaust_Air_Flow .
+brick110:Chilled_Water_System prov:wasDerivedFrom bf103:Chilled_Water_System .
 
-brick110:Exhaust_Air_Flow_Proportional_Band_Parameter prov:wasDerivedFrom brick103:Exhaust_Air_Flow_Proportional_Band_Setpoint .
+brick110:Chilled_Water_System_Enable_Command prov:wasDerivedFrom bf103:Chilled_Water_System_Enable .
 
-brick110:Flow  prov:wasDerivedFrom brick103:Exhaust_Air_Stack_Flow .
+brick110:Chilled_Water_System_Enable_Command prov:wasDerivedFrom bf103:Chilled_Water_System_Enable_Command .
 
-brick110:Flow  prov:wasDerivedFrom brick103:Exhaust_Air_Stack_Flow .
+brick110:Chilled_Water_Differential_Temperature_Sensor prov:wasDerivedFrom bf103:Chilled_Water_Temperature_Differential_Sensor .
 
-brick110:Exhaust_Air_Flow_Proportional_Band_Parameter prov:wasDerivedFrom brick103:Exhaust_Air_Stack_Flow_Proportional_Band .
+brick110:Chilled_Water_Valve prov:wasDerivedFrom bf103:Chilled_Water_Valve .
 
-brick110:Exhaust_Air_Static_Pressure_Proportional_Band_Parameter prov:wasDerivedFrom brick103:Exhaust_Air_Static_Pressure_Proportional_Band .
+brick110:Chiller prov:wasDerivedFrom bf103:Chiller .
 
-brick110:Temperature  prov:wasDerivedFrom brick103:Exhaust_Air_Temperature .
+brick110:Max_Load_Setpoint prov:wasDerivedFrom bf103:Chiller_Max_Load_Setpoint .
 
-brick110:Temperature  prov:wasDerivedFrom brick103:Exhaust_Air_Temperature .
+brick110:On_Off_Status prov:wasDerivedFrom bf103:Chiller_On_Off_Status .
 
-brick110:Velocity_Pressure  prov:wasDerivedFrom brick103:Exhaust_Air_Velocity_Pressure .
+brick110:On_Timer_Sensor prov:wasDerivedFrom bf103:Chiller_On_Timer_Sensor .
 
-brick110:Velocity_Pressure  prov:wasDerivedFrom brick103:Exhaust_Air_Velocity_Pressure .
+brick110:Run_Time_Sensor prov:wasDerivedFrom bf103:Chiller_Run_Time_Sensor .
 
-brick110:Air_Flow_Setpoint prov:wasDerivedFrom brick103:Exhaust_Fan_Air_Flow_Setpoint .
+brick110:Start_Stop_Status prov:wasDerivedFrom bf103:Chiller_Start_Stop_Status .
 
-brick110:Command prov:wasDerivedFrom brick103:Exhaust_Fan_Command .
+brick110:City prov:wasDerivedFrom bf103:City .
 
-brick110:Exhaust_Fan_Disable_Command prov:wasDerivedFrom brick103:Exhaust_Fan_Disable .
+brick110:CO2 prov:wasDerivedFrom bf103:CO2 .
 
-brick110:Exhaust_Fan_Enable_Command prov:wasDerivedFrom brick103:Exhaust_Fan_Enable .
+brick110:CO2_Differential_Sensor prov:wasDerivedFrom bf103:CO2_Differential_Sensor .
 
-brick110:Fan_Start_Stop_Status prov:wasDerivedFrom brick103:Exhaust_Fan_Start_Stop_Status .
+brick110:CO2_Level prov:wasDerivedFrom bf103:CO2_Level .
 
-brick110:Enable_Command prov:wasDerivedFrom brick103:Exhaust_Fan_System_Enable_Command .
+brick110:CO2_Level_Sensor prov:wasDerivedFrom bf103:CO2_Level_Sensor .
 
-brick110:Fan_Speed_Reset_Command prov:wasDerivedFrom brick103:Fan_Speed_Reset .
+brick110:CO2_Sensor prov:wasDerivedFrom bf103:CO2_Sensor .
 
-brick110:Fan_Start_Stop_Status prov:wasDerivedFrom brick103:Fan_Start_Stop .
+brick110:CO2_Setpoint prov:wasDerivedFrom bf103:CO2_Setpoint .
 
-brick110:Discharge_Air_Temperature_Cooling_Setpoint prov:wasDerivedFrom brick103:FCU_Discharge_Air_Temperature_Cooling_Setpoint .
+brick110:Coil prov:wasDerivedFrom bf103:Coil .
 
-brick110:Discharge_Air_Temperature_Heating_Setpoint prov:wasDerivedFrom brick103:FCU_Discharge_Air_Temperature_Heating_Setpoint .
+brick110:Cold_Box prov:wasDerivedFrom bf103:Cold_Box .
 
-brick110:Discharge_Air_Temperature_Sensor prov:wasDerivedFrom brick103:FCU_Discharge_Air_Temperature_Sensor .
+brick110:Coldest_Zone_Air_Temperature_Sensor prov:wasDerivedFrom bf103:Coldest_Zone_Temperature_Sensor .
 
-brick110:Discharge_Air_Temperature_Setpoint prov:wasDerivedFrom brick103:FCU_Discharge_Air_Temperature_Setpoint .
+brick110:Command prov:wasDerivedFrom bf103:Command .
 
-brick110:Return_Air_CO2_Sensor prov:wasDerivedFrom brick103:FCU_Return_Air_CO2_Sensor .
+brick110:Compressor prov:wasDerivedFrom bf103:Compressor .
 
-brick110:Return_Air_Humidity_Sensor prov:wasDerivedFrom brick103:FCU_Return_Air_Humidity_Sensor .
+brick110:Computer_Room_Air_Conditioning prov:wasDerivedFrom bf103:Computer_Room_Air_Conditioning .
 
-brick110:Return_Air_Temperature_Sensor prov:wasDerivedFrom brick103:FCU_Return_Air_Temperature_Sensor .
+brick110:Condenser prov:wasDerivedFrom bf103:Condenser .
 
-brick110:Run_Time_Sensor prov:wasDerivedFrom brick103:FCU_Run_Time_Sensor .
+brick110:Temperature_Sensor prov:wasDerivedFrom bf103:Condenser_Condensor_Temperature_Sensor .
 
-brick110:Supply_Air_Temperature_Sensor prov:wasDerivedFrom brick103:FCU_Supply_Air_Temperature_Sensor .
+brick110:Condenser prov:wasDerivedFrom bf103:Condensor .
 
-brick110:Zone_Air_Temperature_Sensor prov:wasDerivedFrom brick103:FCU_Zone_Air_Temperature_Sensor .
+brick110:Temperature prov:wasDerivedFrom bf103:Condensor_Temperature .
 
-brick110:Temperature  prov:wasDerivedFrom brick103:Heat_Exchanger_Supply_Water_Temperature .
+brick110:Temperature_Sensor prov:wasDerivedFrom bf103:Condensor_Temperature_Sensor .
 
-brick110:Temperature  prov:wasDerivedFrom brick103:Heat_Exchanger_Supply_Water_Temperature .
+brick110:Conductivity prov:wasDerivedFrom bf103:Conductivity .
 
-brick110:Heat_Exchanger_System_Enable_Status prov:wasDerivedFrom brick103:Heat_Exchanger_System_Enable .
+brick110:Conductivity_Sensor prov:wasDerivedFrom bf103:Conductivity_Sensor .
 
-brick110:Heating_Discharge_Air_Temperature_Proportional_Band_Parameter prov:wasDerivedFrom brick103:Heating_Discharge_Air_Temperature_Proportional_Band .
+brick110:Cooling_Coil prov:wasDerivedFrom bf103:Cooling_Coil .
 
-brick110:Max_Heating_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:Heating_Max_Discharge_Air_Flow_Setpoint .
+brick110:Cooling_Command prov:wasDerivedFrom bf103:Cooling_Command .
 
-brick110:Max_Heating_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:Heating_Max_Supply_Air_Flow_Setpoint .
+brick110:Cooling_Demand_Setpoint prov:wasDerivedFrom bf103:Cooling_Demand_Setpoint .
 
-brick110:Min_Heating_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:Heating_Min_Discharge_Air_Flow_Setpoint .
+brick110:Cooling_Discharge_Air_Flow_Setpoint prov:wasDerivedFrom bf103:Cooling_Discharge_Air_Flow_Setpoint .
 
-brick110:Min_Heating_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:Heating_Min_Supply_Air_Flow_Setpoint .
+brick110:Cooling_Discharge_Air_Temperature_Proportional_Band_Parameter prov:wasDerivedFrom bf103:Cooling_Discharge_Air_Temperature_Proportional_Band .
 
-brick110:Heating_On_Off_Status prov:wasDerivedFrom brick103:Heating_On_Off .
+brick110:Max_Cooling_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:Cooling_Max_Discharge_Air_Flow_Setpoint .
 
-brick110:Heating_Supply_Air_Temperature_Proportional_Band_Parameter prov:wasDerivedFrom brick103:Heating_Supply_Air_Temperature_Proportional_Band .
+brick110:Max_Cooling_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:Cooling_Max_Supply_Air_Flow_Setpoint .
 
-brick110:High_Static_Pressure_Cutout_Setpoint_Limit prov:wasDerivedFrom brick103:High_Static_Pressure_Cutout_Limit_Setpoint .
+brick110:Min_Cooling_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:Cooling_Min_Discharge_Air_Flow_Setpoint .
 
-brick110:Highest_Zone_Air_Temperature_Sensor prov:wasDerivedFrom brick103:Highest_Zone_Temperature_Sensor .
+brick110:Min_Cooling_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:Cooling_Min_Supply_Air_Flow_Setpoint .
 
-brick110:Hot_Water_Differential_Pressure_Proportional_Band_Parameter prov:wasDerivedFrom brick103:Hot_Water_Differential_Pressure_Proportional_Band .
+brick110:Cooling_On_Off_Status prov:wasDerivedFrom bf103:Cooling_On_Off .
 
-brick110:Hot_Water_System_Enable_Command prov:wasDerivedFrom brick103:Hot_Water_System_Enable .
+brick110:Cooling_On_Off_Status prov:wasDerivedFrom bf103:Cooling_On_Off_Status .
 
-brick110:Humidification_On_Off_Status prov:wasDerivedFrom brick103:Humidification_On_Off .
+brick110:Cooling_Request_Percent_Setpoint prov:wasDerivedFrom bf103:Cooling_Request_Percent_Setpoint .
 
-brick110:Average_Discharge_Air_Flow_Sensor prov:wasDerivedFrom brick103:HVAC_Average_Discharge_Air_Flow_Sensor .
+brick110:Cooling_Request_Setpoint prov:wasDerivedFrom bf103:Cooling_Request_Setpoint .
 
-brick110:Average_Supply_Air_Flow_Sensor prov:wasDerivedFrom brick103:HVAC_Average_Supply_Air_Flow_Sensor .
+brick110:Cooling_Supply_Air_Temperature_Proportional_Band_Parameter prov:wasDerivedFrom bf103:Cooling_Supply_Air_Temperature_Proportional_Band .
 
-brick110:Highest_Zone_Cooling_Command prov:wasDerivedFrom brick103:HVAC_Highest_Zone_Cooling_Command .
+brick110:Cooling_Supply_Air_Temperature_Proportional_Band_Parameter prov:wasDerivedFrom bf103:Cooling_Supply_Air_Temperature_Proportional_Band_Setpoint .
 
-brick110:Heat_Exchanger_Supply_Water_Temperature_Sensor prov:wasDerivedFrom brick103:HWS_Heat_Exchanger_Supply_Water_Temperature_Sensor .
+brick110:Cooling_Tower_Fan prov:wasDerivedFrom bf103:Cooling_Tower_Fan .
 
-brick110:Heat_Exchanger_System_Enable_Status prov:wasDerivedFrom brick103:HWS_Heat_Exchanger_System_Enable_Status .
+brick110:Speed prov:wasDerivedFrom bf103:Cooling_Tower_Fan_Speed .
 
-brick110:High_Temperature_Hot_Water_Supply_Temperature_Sensor prov:wasDerivedFrom brick103:HWS_High_Temperature_Hot_Water_Supply_Temperature_Sensor .
+brick110:Speed_Setpoint prov:wasDerivedFrom bf103:Cooling_Tower_Fan_Speed_Setpoint .
 
-brick110:Hot_Water_Differential_Pressure_Sensor prov:wasDerivedFrom brick103:HWS_Hot_Water_Differential_Pressure_Sensor .
+brick110:CRAC prov:wasDerivedFrom bf103:CRAC .
 
-brick110:Hot_Water_Differential_Pressure_Setpoint prov:wasDerivedFrom brick103:HWS_Hot_Water_Differential_Pressure_Setpoint .
+brick110:Capacity_Sensor prov:wasDerivedFrom bf103:CRAC_Capacity_Sensor .
 
-brick110:Hot_Water_Return_Temperature_Sensor prov:wasDerivedFrom brick103:HWS_Hot_Water_Return_Temperature_Sensor .
+brick110:Cooling_On_Off_Status prov:wasDerivedFrom bf103:CRAC_Cooling_On_Off_Status .
 
-brick110:Hot_Water_Static_Pressure_Setpoint prov:wasDerivedFrom brick103:HWS_Hot_Water_Static_Pressure_Setpoint .
+brick110:Dehumidification_On_Off_Status prov:wasDerivedFrom bf103:CRAC_Dehumidification_On_Off_Status .
 
-brick110:Hot_Water_Supply_Temperature_Sensor prov:wasDerivedFrom brick103:HWS_Hot_Water_Supply_Temperature_Sensor .
+brick110:Disable_Command prov:wasDerivedFrom bf103:CRAC_Disable_Command .
 
-brick110:Hot_Water_System_Enable_Command prov:wasDerivedFrom brick103:HWS_Hot_Water_System_Enable_Command .
+brick110:EconCycle_On_Off_Status prov:wasDerivedFrom bf103:CRAC_EconCycle_On_Off_Status .
 
-brick110:Medium_Temperature_Hot_Water_Supply_Temperature_Sensor prov:wasDerivedFrom brick103:HWS_Medium_Temperature_Hot_Water_Supply_Temperature_Sensor .
+brick110:Emergency_Power_Off_Activated_By_High_Temperature_Status prov:wasDerivedFrom bf103:CRAC_Emergency_Power_Off_Activated_By_High_Temperature_Status .
 
-brick110:Open_Heating_Valve_Outside_Air_Temperature_Setpoint prov:wasDerivedFrom brick103:HWS_Open_Heating_Valve_Outside_Air_Temperature_Setpoint .
+brick110:Emergency_Power_Off_Activated_By_Leak_Detection_System_Status prov:wasDerivedFrom bf103:CRAC_Emergency_Power_Off_Activated_By_Leak_Detection_System_Status .
 
-brick110:Last_Fault_Code_Status prov:wasDerivedFrom brick103:Last_Fault_Code .
+brick110:Emergency_Power_Off_Enable_Status prov:wasDerivedFrom bf103:CRAC_Emergency_Power_Off_Enable_Status .
 
-brick110:Locally_On_Off_Status prov:wasDerivedFrom brick103:Locally_On_Off .
+brick110:Emergency_Power_Off_System_Enable_Status prov:wasDerivedFrom bf103:CRAC_Emergency_Power_Off_System_Enable_Status .
 
-brick110:Lowest_Zone_Air_Temperature_Sensor prov:wasDerivedFrom brick103:Lowest_Zone_Temperature_Sensor .
+brick110:Heating_On_Off_Status prov:wasDerivedFrom bf103:CRAC_Heating_On_Off_Status .
 
-brick110:Max_Chilled_Water_Differential_Pressure_Setpoint_Limit prov:wasDerivedFrom brick103:Max_Chilled_Water_Differential_Pressure_Setpoint .
+brick110:High_Humidity_Alarm_Setpoint prov:wasDerivedFrom bf103:CRAC_High_Humidity_Alarm_Setpoint .
 
-brick110:Max_Discharge_Air_Static_Pressure_Setpoint_Limit prov:wasDerivedFrom brick103:Max_Discharge_Air_Static_Pressure_Setpoint .
+brick110:Humidification_On_Off_Status prov:wasDerivedFrom bf103:CRAC_Humidification_On_Off_Status .
 
-brick110:Max_Supply_Air_Static_Pressure_Setpoint_Limit prov:wasDerivedFrom brick103:Max_Supply_Air_Static_Pressure_Setpoint .
+brick110:Humidifier_Fault_Status prov:wasDerivedFrom bf103:CRAC_Humidifier_Fault_Status .
 
-brick110:Min_Chilled_Water_Differential_Pressure_Setpoint_Limit prov:wasDerivedFrom brick103:Min_Chilled_Water_Differential_Pressure_Setpoint .
+brick110:Locally_On_Off_Status prov:wasDerivedFrom bf103:CRAC_Locally_On_Off_Status .
 
-brick110:Min_Discharge_Air_Static_Pressure_Setpoint_Limit prov:wasDerivedFrom brick103:Min_Discharge_Air_Static_Pressure_Setpoint .
+brick110:Low_Humidity_Alarm_Setpoint prov:wasDerivedFrom bf103:CRAC_Low_Humidity_Alarm_Setpoint .
 
-brick110:Min_Supply_Air_Static_Pressure_Setpoint_Limit prov:wasDerivedFrom brick103:Min_Supply_Air_Static_Pressure_Setpoint .
+brick110:On_Off_Status prov:wasDerivedFrom bf103:CRAC_On_Off_Status .
 
-brick110:Motor_Start_Stop_Status prov:wasDerivedFrom brick103:Motor_Start_Stop .
+brick110:Remotely_On_Off_Status prov:wasDerivedFrom bf103:CRAC_Remotely_On_Off_Status .
 
-brick110:Start_Stop_Command prov:wasDerivedFrom brick103:Motor_Start_Stop_Command .
+brick110:Run_Status prov:wasDerivedFrom bf103:CRAC_Run_Status .
 
-brick110:Max_Occupied_Cooling_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:Occupied_Cooling_Max_Discharge_Air_Flow_Setpoint .
+brick110:Stages_Status prov:wasDerivedFrom bf103:CRAC_Stages_Status .
 
-brick110:Max_Occupied_Cooling_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:Occupied_Cooling_Max_Supply_Air_Flow_Setpoint .
+brick110:Standby_Glycool_Unit_On_Off_Status prov:wasDerivedFrom bf103:CRAC_Standby_Glycool_Unit_On_Off_Status .
 
-brick110:Min_Occupied_Cooling_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:Occupied_Cooling_Min_Discharge_Air_Flow_Setpoint .
+brick110:Standby_Unit_On_Off_Status prov:wasDerivedFrom bf103:CRAC_Standby_Unit_On_Off_Status .
 
-brick110:Min_Occupied_Cooling_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:Occupied_Cooling_Min_Supply_Air_Flow_Setpoint .
+brick110:Start_Stop_Command prov:wasDerivedFrom bf103:CRAC_Start_Stop_Command .
 
-brick110:Max_Occupied_Heating_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:Occupied_Heating_Max_Discharge_Air_Flow_Setpoint .
+brick110:Start_Stop_Status prov:wasDerivedFrom bf103:CRAC_Start_Stop_Status .
 
-brick110:Max_Occupied_Heating_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:Occupied_Heating_Max_Supply_Air_Flow_Setpoint .
+brick110:System_Enable_Command prov:wasDerivedFrom bf103:CRAC_System_Enable_Command .
 
-brick110:Min_Occupied_Heating_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:Occupied_Heating_Min_Discharge_Air_Flow_Setpoint .
+brick110:Temperature_Sensor prov:wasDerivedFrom bf103:CRAC_Temperature_Sensor .
 
-brick110:Min_Occupied_Heating_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:Occupied_Heating_Min_Supply_Air_Flow_Setpoint .
+brick110:Temperature_Setpoint prov:wasDerivedFrom bf103:CRAC_Temperature_Setpoint .
 
-brick110:Outside_Air_Enthalpy_Sensor prov:wasDerivedFrom brick103:Outside_Enthalpy_Sensor .
+brick110:Current prov:wasDerivedFrom bf103:Current .
 
-brick110:Min_Outside_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:Outside_Min_Air_Flow_Setpoint .
+brick110:Current_Sensor prov:wasDerivedFrom bf103:Current_Sensor .
 
-brick110:Peak_Power_Demand_Sensor prov:wasDerivedFrom brick103:Power_System_Peak_Power_Demand_Sensor .
+brick110:Curtailment_Override_Command prov:wasDerivedFrom bf103:Curtailment_Override_Command .
 
-brick110:Lead_Lag_Status prov:wasDerivedFrom brick103:Pump_Lead_Lag_Status .
+brick110:Chilled_Water_Differential_Pressure_Sensor prov:wasDerivedFrom bf103:CWS_Chilled_Water_Differential_Pressure_Sensor .
 
-brick110:Pump_Start_Stop_Status prov:wasDerivedFrom brick103:Pump_Start_Stop .
+brick110:Chilled_Water_Differential_Pressure_Setpoint prov:wasDerivedFrom bf103:CWS_Chilled_Water_Differential_Pressure_Setpoint .
 
-brick110:Start_Stop_Command prov:wasDerivedFrom brick103:Pump_Start_Stop_Command .
+brick110:Chilled_Water_Discharge_Flow_Sensor prov:wasDerivedFrom bf103:CWS_Chilled_Water_Discharge_Flow_Sensor .
 
-brick110:Remotely_On_Off_Status prov:wasDerivedFrom brick103:Remotely_On_Off .
+brick110:Chilled_Water_Return_Temperature_Sensor prov:wasDerivedFrom bf103:CWS_Chilled_Water_Return_Temperature_Sensor .
 
-brick110:Return_Fan_Differential_Speed_Setpoint prov:wasDerivedFrom brick103:Return_Discharge_Fan_Differential_Speed_Setpoint .
+brick110:Chilled_Water_Static_Pressure_Setpoint prov:wasDerivedFrom bf103:CWS_Chilled_Water_Static_Pressure_Setpoint .
 
-brick110:Return_Fan_Air_Flow_Sensor prov:wasDerivedFrom brick103:Return_Fan_Fan_Air_Flow_Sensor .
+brick110:Chilled_Water_Supply_Flow_Sensor prov:wasDerivedFrom bf103:CWS_Chilled_Water_Supply_Flow_Sensor .
 
-brick110:Return_Fan_Differential_Speed_Setpoint prov:wasDerivedFrom brick103:Return_Supply_Fan_Differential_Speed_Setpoint .
+brick110:Chilled_Water_Supply_Temperature_Sensor prov:wasDerivedFrom bf103:CWS_Chilled_Water_Supply_Temperature_Sensor .
 
-brick110:Room_Air_Temperature_Setpoint prov:wasDerivedFrom brick103:Room_Temperature_Setpoint .
+brick110:Chilled_Water_System_Enable_Command prov:wasDerivedFrom bf103:CWS_Chilled_Water_System_Enable_Command .
 
-brick110:Solar_Azimuth_Angle_Sensor prov:wasDerivedFrom brick103:Solar_Panel_Solar_Azimuth_Angle_Sensor .
+brick110:Chilled_Water_Differential_Temperature_Sensor prov:wasDerivedFrom bf103:CWS_Chilled_Water_Temperature_Differential_Sensor .
 
-brick110:Solar_Zenith_Angle_Sensor prov:wasDerivedFrom brick103:Solar_Panel_Solar_Zenith_Angle_Sensor .
+brick110:Max_Chilled_Water_Differential_Pressure_Setpoint_Limit prov:wasDerivedFrom bf103:CWS_Max_Chilled_Water_Differential_Pressure_Setpoint .
 
-brick110:Standby_Glycool_Unit_On_Off_Status prov:wasDerivedFrom brick103:Standby_Glycool_Unit_On_Off .
+brick110:Min_Chilled_Water_Differential_Pressure_Setpoint_Limit prov:wasDerivedFrom bf103:CWS_Min_Chilled_Water_Differential_Pressure_Setpoint .
 
-brick110:Standby_Load_Shed_Command prov:wasDerivedFrom brick103:Standby_Load_Shed .
+brick110:Damper prov:wasDerivedFrom bf103:Damper .
 
-brick110:Standby_Unit_On_Off_Status prov:wasDerivedFrom brick103:Standby_Unit_On_Off .
+brick110:Damper_Command prov:wasDerivedFrom bf103:Damper_Command .
 
-brick110:Max_Static_Pressure_Setpoint_Limit prov:wasDerivedFrom brick103:Static_Pressure_Max_Setpoint .
+brick110:Damper_Position_Sensor prov:wasDerivedFrom bf103:Damper_Position_Sensor .
 
-brick110:Min_Static_Pressure_Setpoint_Limit prov:wasDerivedFrom brick103:Static_Pressure_Min_Setpoint .
+brick110:Damper_Position_Setpoint prov:wasDerivedFrom bf103:Damper_Position_Setpoint .
 
-brick110:Steam_On_Off_Command prov:wasDerivedFrom brick103:Steam_On_Off .
+brick110:DC_Bus_Voltage_Sensor prov:wasDerivedFrom bf103:DC_Bus_Voltage_Sensor .
 
-brick110:Flow  prov:wasDerivedFrom brick103:Supply_Air_Flow .
+brick110:Dehumidification_On_Off_Status prov:wasDerivedFrom bf103:Dehumidification_On_Off .
 
-brick110:Flow  prov:wasDerivedFrom brick103:Supply_Air_Flow .
+brick110:Dehumidification_On_Off_Status prov:wasDerivedFrom bf103:Dehumidification_On_Off_Status .
 
-brick110:Supply_Air_Static_Pressure_Proportional_Band_Parameter prov:wasDerivedFrom brick103:Supply_Air_Static_Pressure_Proportional_Band .
+brick110:Deionised_Water_Conductivity_Sensor prov:wasDerivedFrom bf103:Deionised_Water_Conductivity_Sensor .
 
-brick110:Temperature  prov:wasDerivedFrom brick103:Supply_Air_Temperature .
+brick110:Deionised_Water_Level_Sensor prov:wasDerivedFrom bf103:Deionised_Water_Level_Sensor .
 
-brick110:Temperature  prov:wasDerivedFrom brick103:Supply_Air_Temperature .
+brick110:Demand_Sensor prov:wasDerivedFrom bf103:Demand_Sensor .
 
-brick110:Speed_Reset_Command prov:wasDerivedFrom brick103:Supply_Fan_Fan_Speed_Reset_Command .
+brick110:Demand_Setpoint prov:wasDerivedFrom bf103:Demand_Setpoint .
 
-brick110:Supply_Water_Differential_Pressure_Proportional_Band_Parameter prov:wasDerivedFrom brick103:Supply_Water_Differential_Pressure_Proportional_Band .
+brick110:Chilled_Water_Differential_Pressure_Load_Shed_Reset_Status prov:wasDerivedFrom bf103:DemandResponse_Chilled_Water_Differential_Pressure_Load_Shed_Reset_Status .
 
-brick110:Supply_Water_Differential_Pressure_Proportional_Band_Parameter prov:wasDerivedFrom brick103:Supply_Water_Differential_Pressure_Proportional_Band_Setpoint .
+brick110:Chilled_Water_Differential_Pressure_Load_Shed_Setpoint prov:wasDerivedFrom bf103:DemandResponse_Chilled_Water_Differential_Pressure_Load_Shed_Setpoint .
 
-brick110:Supply_Water_Temperature_Proportional_Band_Parameter prov:wasDerivedFrom brick103:Supply_Water_Temperature_Proportional_Band_Setpoint .
+brick110:Chilled_Water_Differential_Pressure_Load_Shed_Status prov:wasDerivedFrom bf103:DemandResponse_Chilled_Water_Differential_Pressure_Load_Shed_Status .
 
-brick110:Thermal_Energy_Storage_Supply_Water_Differential_Pressure_Deadband_Setpoint prov:wasDerivedFrom brick103:Thermal_Energy_Storage_Supply_Water_Differential_Pressure_Dead_Band_Setpoint .
+brick110:Load_Shed_Command prov:wasDerivedFrom bf103:DemandResponse_Load_Shed_Command .
 
-brick110:Unoccupied_Load_Shed_Command prov:wasDerivedFrom brick103:Unoccupied_Load_Shed .
+brick110:Load_Shed_Status prov:wasDerivedFrom bf103:DemandResponse_Load_Shed_Status .
 
-brick110:Variable_Air_Volume_Box prov:wasDerivedFrom brick103:Variable_Air_Volume .
+brick110:Standby_Load_Shed_Command prov:wasDerivedFrom bf103:DemandResponse_Standby_Load_Shed_Command .
 
-brick110:Booster_Fan_Air_Flow_Sensor prov:wasDerivedFrom brick103:VAV_Booster_Fan_Air_Flow_Sensor .
+brick110:Unoccupied_Load_Shed_Command prov:wasDerivedFrom bf103:DemandResponse_Unoccupied_Load_Shed_Command .
 
-brick110:Box_Mode_Command prov:wasDerivedFrom brick103:VAV_Box_Mode_Command .
+brick110:Zone_Standby_Load_Shed_Command prov:wasDerivedFrom bf103:DemandResponse_Zone_Standby_Load_Shed_Command .
 
-brick110:CO2_Level_Sensor prov:wasDerivedFrom brick103:VAV_CO2_Level_Sensor .
+brick110:Zone_Unoccupied_Load_Shed_Command prov:wasDerivedFrom bf103:DemandResponse_Zone_Unoccupied_Load_Shed_Command .
 
-brick110:Cooling_Demand_Setpoint prov:wasDerivedFrom brick103:VAV_Cooling_Demand_Setpoint .
+brick110:Dewpoint prov:wasDerivedFrom bf103:Dewpoint .
 
-brick110:Max_Cooling_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:VAV_Cooling_Max_Discharge_Air_Flow_Setpoint .
+brick110:Dewpoint_Sensor prov:wasDerivedFrom bf103:Dewpoint_Sensor .
 
-brick110:Max_Cooling_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:VAV_Cooling_Max_Supply_Air_Flow_Setpoint .
+brick110:Domestic_Hot_Water_Supply_Temperature_Sensor prov:wasDerivedFrom bf103:DHWS_Domestic_Hot_Water_Supply_Temperature_Sensor .
 
-brick110:Min_Cooling_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:VAV_Cooling_Min_Discharge_Air_Flow_Setpoint .
+brick110:Domestic_Hot_Water_System_Enable_Command prov:wasDerivedFrom bf103:DHWS_Domestic_Hot_Water_System_Enable_Command .
 
-brick110:Min_Cooling_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:VAV_Cooling_Min_Supply_Air_Flow_Setpoint .
+brick110:Water prov:wasDerivedFrom bf103:DI_Water .
 
-brick110:Cooling_Request_Setpoint prov:wasDerivedFrom brick103:VAV_Cooling_Request_Setpoint .
+brick110:Water_Level_Sensor prov:wasDerivedFrom bf103:DI_Water_Level_Sensor .
 
-brick110:Damper_Position_Sensor prov:wasDerivedFrom brick103:VAV_Damper_Position_Sensor .
+brick110:Differential_Pressure_Load_Shed_Status prov:wasDerivedFrom bf103:Differential_Pressure_Load_Shed_Status .
 
-brick110:Discharge_Air_Duct_Pressure_Status prov:wasDerivedFrom brick103:VAV_Discharge_Air_Duct_Pressure_Status .
+brick110:Differential_Pressure_Sensor prov:wasDerivedFrom bf103:Differential_Pressure_Sensor .
 
-brick110:Discharge_Air_Flow_Sensor prov:wasDerivedFrom brick103:VAV_Discharge_Air_Flow_Sensor .
+brick110:Differential_Pressure_Setpoint prov:wasDerivedFrom bf103:Differential_Pressure_Setpoint .
 
-brick110:Discharge_Air_Flow_Setpoint prov:wasDerivedFrom brick103:VAV_Discharge_Air_Flow_Setpoint .
+brick110:Differential_Speed_Sensor prov:wasDerivedFrom bf103:Differential_Speed_Sensor .
 
-brick110:Discharge_Air_Temperature_Cooling_Setpoint prov:wasDerivedFrom brick103:VAV_Discharge_Air_Temperature_Cooling_Setpoint .
+brick110:Differential_Speed_Setpoint prov:wasDerivedFrom bf103:Differential_Speed_Setpoint .
 
-brick110:Discharge_Air_Temperature_Heating_Setpoint prov:wasDerivedFrom brick103:VAV_Discharge_Air_Temperature_Heating_Setpoint .
+brick110:Direction prov:wasDerivedFrom bf103:Direction .
 
-brick110:Discharge_Air_Temperature_Sensor prov:wasDerivedFrom brick103:VAV_Discharge_Air_Temperature_Sensor .
+brick110:Direction_Command prov:wasDerivedFrom bf103:Direction_Command .
 
-brick110:Discharge_Air_Temperature_Setpoint prov:wasDerivedFrom brick103:VAV_Discharge_Air_Temperature_Setpoint .
+brick110:Direction_Sensor prov:wasDerivedFrom bf103:Direction_Sensor .
 
-brick110:Discharge_Air_Velocity_Pressure_Sensor prov:wasDerivedFrom brick103:VAV_Discharge_Air_Velocity_Pressure_Sensor .
+brick110:Direction_Status prov:wasDerivedFrom bf103:Direction_Status .
 
-brick110:Heating_Demand_Setpoint prov:wasDerivedFrom brick103:VAV_Heating_Demand_Setpoint .
+brick110:Disable_Command prov:wasDerivedFrom bf103:Disable_Command .
 
-brick110:Heating_Discharge_Air_Flow_Setpoint prov:wasDerivedFrom brick103:VAV_Heating_Discharge_Air_Flow_Setpoint .
+brick110:Disable_Status prov:wasDerivedFrom bf103:Disable_Status .
 
-brick110:Max_Heating_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:VAV_Heating_Max_Discharge_Air_Flow_Setpoint .
+brick110:Discharge_Air prov:wasDerivedFrom bf103:Discharge_Air .
 
-brick110:Max_Heating_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:VAV_Heating_Max_Supply_Air_Flow_Setpoint .
+brick110:Discharge_Air_Duct_Pressure_Status prov:wasDerivedFrom bf103:Discharge_Air_Duct_Pressure_Status .
 
-brick110:Min_Heating_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:VAV_Heating_Min_Discharge_Air_Flow_Setpoint .
+brick110:Flow prov:wasDerivedFrom bf103:Discharge_Air_Flow .
 
-brick110:Min_Heating_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:VAV_Heating_Min_Supply_Air_Flow_Setpoint .
+brick110:Discharge_Air prov:wasDerivedFrom bf103:Discharge_Air_Flow .
 
-brick110:Heating_Request_Setpoint prov:wasDerivedFrom brick103:VAV_Heating_Request_Setpoint .
+brick110:Discharge_Air_Flow_Demand_Setpoint prov:wasDerivedFrom bf103:Discharge_Air_Flow_Demand_Setpoint .
 
-brick110:Heating_Supply_Air_Flow_Setpoint prov:wasDerivedFrom brick103:VAV_Heating_Supply_Air_Flow_Setpoint .
+brick110:Discharge_Air_Flow_Sensor prov:wasDerivedFrom bf103:Discharge_Air_Flow_Sensor .
 
-brick110:High_Static_Pressure_Cutout_Setpoint_Limit prov:wasDerivedFrom brick103:VAV_High_Static_Pressure_Cutout_Limit_Setpoint .
+brick110:Discharge_Air_Flow_Setpoint prov:wasDerivedFrom bf103:Discharge_Air_Flow_Setpoint .
 
-brick110:Max_Occupied_Cooling_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:VAV_Occupied_Cooling_Max_Discharge_Air_Flow_Setpoint .
+brick110:Discharge_Air_Humidity_Sensor prov:wasDerivedFrom bf103:Discharge_Air_Humidity_Sensor .
 
-brick110:Max_Occupied_Cooling_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:VAV_Occupied_Cooling_Max_Supply_Air_Flow_Setpoint .
+brick110:Discharge_Air_Static_Pressure_Proportional_Band_Parameter prov:wasDerivedFrom bf103:Discharge_Air_Static_Pressure_Proportional_Band .
 
-brick110:Min_Occupied_Cooling_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:VAV_Occupied_Cooling_Min_Discharge_Air_Flow_Setpoint .
+brick110:Discharge_Air_Static_Pressure_Sensor prov:wasDerivedFrom bf103:Discharge_Air_Static_Pressure_Sensor .
 
-brick110:Min_Occupied_Cooling_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:VAV_Occupied_Cooling_Min_Supply_Air_Flow_Setpoint .
+brick110:Discharge_Air_Static_Pressure_Setpoint prov:wasDerivedFrom bf103:Discharge_Air_Static_Pressure_Setpoint .
 
-brick110:Occupied_Cooling_Supply_Air_Flow_Setpoint prov:wasDerivedFrom brick103:VAV_Occupied_Cooling_Supply_Air_Flow_Setpoint .
+brick110:Temperature prov:wasDerivedFrom bf103:Discharge_Air_Temperature .
 
-brick110:Max_Occupied_Heating_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:VAV_Occupied_Heating_Max_Discharge_Air_Flow_Setpoint .
+brick110:Discharge_Air prov:wasDerivedFrom bf103:Discharge_Air_Temperature .
 
-brick110:Max_Occupied_Heating_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:VAV_Occupied_Heating_Max_Supply_Air_Flow_Setpoint .
+brick110:Discharge_Air_Temperature_Cooling_Setpoint prov:wasDerivedFrom bf103:Discharge_Air_Temperature_Cooling_Setpoint .
 
-brick110:Min_Occupied_Heating_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:VAV_Occupied_Heating_Min_Discharge_Air_Flow_Setpoint .
+brick110:Discharge_Air_Temperature_Heating_Setpoint prov:wasDerivedFrom bf103:Discharge_Air_Temperature_Heating_Setpoint .
 
-brick110:Min_Occupied_Heating_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom brick103:VAV_Occupied_Heating_Min_Supply_Air_Flow_Setpoint .
+brick110:Discharge_Air_Temperature_Sensor prov:wasDerivedFrom bf103:Discharge_Air_Temperature_Sensor .
 
-brick110:Occupied_Heating_Supply_Air_Flow_Setpoint prov:wasDerivedFrom brick103:VAV_Occupied_Heating_Supply_Air_Flow_Setpoint .
+brick110:Discharge_Air_Temperature_Setpoint prov:wasDerivedFrom bf103:Discharge_Air_Temperature_Setpoint .
 
-brick110:Return_Air_Temperature_Sensor prov:wasDerivedFrom brick103:VAV_Return_Air_Temperature_Sensor .
+brick110:Velocity_Pressure prov:wasDerivedFrom bf103:Discharge_Air_Velocity_Pressure .
 
-brick110:Supply_Air_Duct_Pressure_Status prov:wasDerivedFrom brick103:VAV_Supply_Air_Duct_Pressure_Status .
+brick110:Discharge_Air prov:wasDerivedFrom bf103:Discharge_Air_Velocity_Pressure .
 
-brick110:Supply_Air_Flow_Sensor prov:wasDerivedFrom brick103:VAV_Supply_Air_Flow_Sensor .
+brick110:Discharge_Air_Velocity_Pressure_Sensor prov:wasDerivedFrom bf103:Discharge_Air_Velocity_Pressure_Sensor .
 
-brick110:Supply_Air_Flow_Setpoint prov:wasDerivedFrom brick103:VAV_Supply_Air_Flow_Setpoint .
+brick110:Discharge_Fan prov:wasDerivedFrom bf103:Discharge_Fan .
 
-brick110:Supply_Air_Temperature_Sensor prov:wasDerivedFrom brick103:VAV_Supply_Air_Temperature_Sensor .
+brick110:Discharge_Fan_Air_Flow_Sensor prov:wasDerivedFrom bf103:Discharge_Fan_Air_Flow_Sensor .
 
-brick110:Supply_Air_Velocity_Pressure_Sensor prov:wasDerivedFrom brick103:VAV_Supply_Air_Velocity_Pressure_Sensor .
+brick110:Discharge_Water_Differential_Pressure_Proportional_Band_Parameter prov:wasDerivedFrom bf103:Discharge_Water_Differential_Pressure_Proportional_Band .
 
-brick110:Vent_Operating_Mode_Status prov:wasDerivedFrom brick103:VAV_Vent_Operating_Mode_Status .
+brick110:Temperature prov:wasDerivedFrom bf103:Domestic_Hot_Water_Supply_Temperature .
 
-brick110:Zone_Air_Temperature_Sensor prov:wasDerivedFrom brick103:VAV_Zone_Air_Temperature_Sensor .
+brick110:Domestic_Hot_Supply_Water prov:wasDerivedFrom bf103:Domestic_Hot_Water_Supply_Temperature .
 
-brick110:Vent_Operating_Mode_Status prov:wasDerivedFrom brick103:Vent_Operating_Mode .
+brick110:Domestic_Hot_Water_Supply_Temperature_Sensor prov:wasDerivedFrom bf103:Domestic_Hot_Water_Supply_Temperature_Sensor .
 
-brick110:DC_Bus_Voltage_Sensor prov:wasDerivedFrom brick103:VFD_DC_Bus_Voltage_Sensor .
+brick110:Domestic_Hot_Water_System_Enable_Command prov:wasDerivedFrom bf103:Domestic_Hot_Water_System_Enable .
 
-brick110:Drive_Ready_Status prov:wasDerivedFrom brick103:VFD_Drive_Ready_Status .
+brick110:Domestic_Hot_Water_System_Enable_Command prov:wasDerivedFrom bf103:Domestic_Hot_Water_System_Enable_Command .
 
-brick110:Fault_Reset_Command prov:wasDerivedFrom brick103:VFD_Fault_Reset_Command .
+brick110:Domestic_Hot_Water_Valve prov:wasDerivedFrom bf103:Domestic_Hot_Water_Valve .
 
-brick110:Filter_Reset_Command prov:wasDerivedFrom brick103:VFD_Filter_Reset_Command .
+brick110:Command prov:wasDerivedFrom bf103:Domestic_Hot_Water_Valve_Command .
 
-brick110:Hand_Auto_Status prov:wasDerivedFrom brick103:VFD_Hand_Auto_Status .
+brick110:Drive_Ready_Status prov:wasDerivedFrom bf103:Drive_Ready_Status .
 
-brick110:Last_Fault_Code_Status prov:wasDerivedFrom brick103:VFD_Last_Fault_Code_Status .
+brick110:Dual_Band_Mode_Setpoint prov:wasDerivedFrom bf103:Dual_Band_Mode_Setpoint .
 
-brick110:Load_Current_Sensor prov:wasDerivedFrom brick103:VFD_Load_Current_Sensor .
+brick110:EconCycle_On_Off_Status prov:wasDerivedFrom bf103:EconCycle_On_Off .
 
-brick110:Maintenance_Mode_Command prov:wasDerivedFrom brick103:VFD_Maintenance_Mode_Command .
+brick110:EconCycle_On_Off_Status prov:wasDerivedFrom bf103:EconCycle_On_Off_Status .
 
-brick110:Manual_Auto_Status prov:wasDerivedFrom brick103:VFD_Manual_Auto_Status .
+brick110:Economizer prov:wasDerivedFrom bf103:Economizer .
 
-brick110:Motor_Current_Sensor prov:wasDerivedFrom brick103:VFD_Motor_Current_Sensor .
+brick110:Economizer_Damper prov:wasDerivedFrom bf103:Economizer_Damper .
 
-brick110:Motor_Direction_Status prov:wasDerivedFrom brick103:VFD_Motor_Direction_Status .
+brick110:Discharge_Air_Temperature_Proportional_Band_Parameter prov:wasDerivedFrom bf103:Economizer_Discharge_Air_Temperature_Proportional_Band .
 
-brick110:Motor_Speed_Sensor prov:wasDerivedFrom brick103:VFD_Motor_Speed_Sensor .
+brick110:Outside_Air_Flow_Setpoint prov:wasDerivedFrom bf103:Economizer_Outside_Air_Flow_Setpoint .
 
-brick110:Motor_Start_Stop_Status prov:wasDerivedFrom brick103:VFD_Motor_Start_Stop_Status .
+brick110:Supply_Air_Temperature_Proportional_Band_Parameter prov:wasDerivedFrom bf103:Economizer_Supply_Air_Temperature_Proportional_Band .
 
-brick110:Motor_Torque_Sensor prov:wasDerivedFrom brick103:VFD_Motor_Torque_Sensor .
+brick110:Elevator prov:wasDerivedFrom bf103:Elevator .
 
-brick110:On_Off_Status prov:wasDerivedFrom brick103:VFD_On_Off_Status .
+brick110:Emergency_Air_Flow_Status prov:wasDerivedFrom bf103:Emergency_Air_Flow .
 
-brick110:On_Timer_Sensor prov:wasDerivedFrom brick103:VFD_On_Timer_Sensor .
+brick110:Emergency_Air_Flow_Status prov:wasDerivedFrom bf103:Emergency_Air_Flow_Status .
 
-brick110:Output_Frequency_Sensor prov:wasDerivedFrom brick103:VFD_Output_Frequency_Sensor .
+brick110:Emergency_Generator_Status prov:wasDerivedFrom bf103:Emergency_Generator_Status .
 
-brick110:Output_Voltage_Sensor prov:wasDerivedFrom brick103:VFD_Output_Voltage_Sensor .
+brick110:Emergency_Power_Off_Status prov:wasDerivedFrom bf103:Emergency_Power_Off .
 
-brick110:Enable_Command prov:wasDerivedFrom brick103:VFD_Run_Enable_Command .
+brick110:Emergency_Power_Off_Activated_By_High_Temperature_Status prov:wasDerivedFrom bf103:Emergency_Power_Off_Activated_By_High_Temperature .
 
-brick110:Run_Enable_Status prov:wasDerivedFrom brick103:VFD_Run_Enable_Status .
+brick110:Emergency_Power_Off_Activated_By_High_Temperature_Status prov:wasDerivedFrom bf103:Emergency_Power_Off_Activated_By_High_Temperature_Status .
 
-brick110:Run_Time_Sensor prov:wasDerivedFrom brick103:VFD_Run_Time_Sensor .
+brick110:Emergency_Power_Off_Activated_By_Leak_Detection_System_Status prov:wasDerivedFrom bf103:Emergency_Power_Off_Activated_By_Leak_Detection_System .
 
-brick110:Speed_Reset_Command prov:wasDerivedFrom brick103:VFD_Speed_Reset_Command .
+brick110:Emergency_Power_Off_Activated_By_Leak_Detection_System_Status prov:wasDerivedFrom bf103:Emergency_Power_Off_Activated_By_Leak_Detection_System_Status .
 
-brick110:Start_Stop_Command prov:wasDerivedFrom brick103:VFD_Start_Stop_Command .
+brick110:Emergency_Power_Off_Enable_Status prov:wasDerivedFrom bf103:Emergency_Power_Off_Enable .
 
-brick110:Start_Stop_Status prov:wasDerivedFrom brick103:VFD_Start_Stop_Status .
+brick110:Emergency_Power_Off_Enable_Status prov:wasDerivedFrom bf103:Emergency_Power_Off_Enable_Status .
 
-brick110:Enable_Command prov:wasDerivedFrom brick103:VFD_System_Enable_Command .
+brick110:Emergency_Power_Off_Status prov:wasDerivedFrom bf103:Emergency_Power_Off_Status .
 
-brick110:Warmest_Zone_Air_Temperature_Sensor prov:wasDerivedFrom brick103:Warmest_Zone_Temperature_Sensor .
+brick110:Emergency_Power_Off_System_Enable_Status prov:wasDerivedFrom bf103:Emergency_Power_Off_System_Enable .
 
-brick110:Deionised_Water_Conductivity_Sensor prov:wasDerivedFrom brick103:Water_System_Deionised_Water_Conductivity_Sensor .
+brick110:Emergency_Power_Off_System_Enable_Status prov:wasDerivedFrom bf103:Emergency_Power_Off_System_Enable_Status .
 
-brick110:Deionised_Water_Level_Sensor prov:wasDerivedFrom brick103:Water_System_Deionised_Water_Level_Sensor .
+brick110:Emergency_Push_Button_Status prov:wasDerivedFrom bf103:Emergency_Push_Button .
 
-brick110:Rain_Duration_Sensor prov:wasDerivedFrom brick103:Weather_Rain_Duration_Sensor .
+brick110:Emergency_Push_Button_Status prov:wasDerivedFrom bf103:Emergency_Push_Button_Status .
 
-brick110:Relative_Humidity_Sensor prov:wasDerivedFrom brick103:Weather_Relative_Humidity_Sensor .
+brick110:Enable_Command prov:wasDerivedFrom bf103:Enable_Command .
 
-brick110:Solar_Radiance_Sensor prov:wasDerivedFrom brick103:Weather_Solar_Radiance_Sensor .
+brick110:Enable_Status prov:wasDerivedFrom bf103:Enable_Status .
 
-brick110:Wind_Direction_Sensor prov:wasDerivedFrom brick103:Weather_Wind_Direction_Sensor .
+brick110:Energy prov:wasDerivedFrom bf103:Energy .
 
-brick110:Wind_Speed_Sensor prov:wasDerivedFrom brick103:Weather_Wind_Speed_Sensor .
+brick110:Energy_Sensor prov:wasDerivedFrom bf103:Energy_Sensor .
 
-brick110:Zone_Air_Humidity_Sensor prov:wasDerivedFrom brick103:Zone_Humidity_Sensor .
+brick110:Energy_Storage prov:wasDerivedFrom bf103:Energy_Storage .
 
-brick110:Zone_Air_Temperature_Sensor prov:wasDerivedFrom brick103:Zone_Temperature_Sensor .
+brick110:Entering_Water_Temperature_Sensor prov:wasDerivedFrom bf103:Entering_Water_Temperature_Sensor .
 
-brick110:Zone_Air_Temperature_Setpoint prov:wasDerivedFrom brick103:Zone_Temperature_Setpoint .
+brick110:Enthalpy prov:wasDerivedFrom bf103:Enthalpy .
+
+brick110:Enthalpy_Sensor prov:wasDerivedFrom bf103:Enthalpy_Sensor .
+
+brick110:Enthalpy_Setpoint prov:wasDerivedFrom bf103:Enthalpy_Setpoint .
+
+brick110:Environment_Box prov:wasDerivedFrom bf103:Environment_Box .
+
+brick110:Equipment prov:wasDerivedFrom bf103:Equipment .
+
+brick110:Even_Month_Status prov:wasDerivedFrom bf103:Even_Month_Status .
+
+brick110:Exhaust_Air prov:wasDerivedFrom bf103:Exhaust_Air .
+
+brick110:Flow prov:wasDerivedFrom bf103:Exhaust_Air_Flow .
+
+brick110:Exhaust_Air prov:wasDerivedFrom bf103:Exhaust_Air_Flow .
+
+brick110:Exhaust_Air_Flow_Proportional_Band_Parameter prov:wasDerivedFrom bf103:Exhaust_Air_Flow_Proportional_Band_Setpoint .
+
+brick110:Exhaust_Air_Flow_Sensor prov:wasDerivedFrom bf103:Exhaust_Air_Flow_Sensor .
+
+brick110:Exhaust_Air_Flow_Setpoint prov:wasDerivedFrom bf103:Exhaust_Air_Flow_Setpoint .
+
+brick110:Exhaust_Air_Humidity_Sensor prov:wasDerivedFrom bf103:Exhaust_Air_Humidity_Sensor .
+
+brick110:Flow prov:wasDerivedFrom bf103:Exhaust_Air_Stack_Flow .
+
+brick110:Exhaust_Air_Stack prov:wasDerivedFrom bf103:Exhaust_Air_Stack_Flow .
+
+brick110:Exhaust_Air_Flow_Proportional_Band_Parameter prov:wasDerivedFrom bf103:Exhaust_Air_Stack_Flow_Proportional_Band .
+
+brick110:Exhaust_Air_Stack_Flow_Sensor prov:wasDerivedFrom bf103:Exhaust_Air_Stack_Flow_Sensor .
+
+brick110:Exhaust_Air_Stack_Flow_Setpoint prov:wasDerivedFrom bf103:Exhaust_Air_Stack_Flow_Setpoint .
+
+brick110:Exhaust_Air_Static_Pressure_Proportional_Band_Parameter prov:wasDerivedFrom bf103:Exhaust_Air_Static_Pressure_Proportional_Band .
+
+brick110:Exhaust_Air_Static_Pressure_Sensor prov:wasDerivedFrom bf103:Exhaust_Air_Static_Pressure_Sensor .
+
+brick110:Exhaust_Air_Static_Pressure_Setpoint prov:wasDerivedFrom bf103:Exhaust_Air_Static_Pressure_Setpoint .
+
+brick110:Temperature prov:wasDerivedFrom bf103:Exhaust_Air_Temperature .
+
+brick110:Exhaust_Air prov:wasDerivedFrom bf103:Exhaust_Air_Temperature .
+
+brick110:Exhaust_Air_Temperature_Sensor prov:wasDerivedFrom bf103:Exhaust_Air_Temperature_Sensor .
+
+brick110:Velocity_Pressure prov:wasDerivedFrom bf103:Exhaust_Air_Velocity_Pressure .
+
+brick110:Exhaust_Air prov:wasDerivedFrom bf103:Exhaust_Air_Velocity_Pressure .
+
+brick110:Exhaust_Air_Velocity_Pressure_Sensor prov:wasDerivedFrom bf103:Exhaust_Air_Velocity_Pressure_Sensor .
+
+brick110:Exhaust_Fan prov:wasDerivedFrom bf103:Exhaust_Fan .
+
+brick110:Air_Flow_Setpoint prov:wasDerivedFrom bf103:Exhaust_Fan_Air_Flow_Setpoint .
+
+brick110:Command prov:wasDerivedFrom bf103:Exhaust_Fan_Command .
+
+brick110:Exhaust_Fan_Disable_Command prov:wasDerivedFrom bf103:Exhaust_Fan_Disable .
+
+brick110:Exhaust_Fan_Disable_Command prov:wasDerivedFrom bf103:Exhaust_Fan_Disable_Command .
+
+brick110:Exhaust_Fan_Enable_Command prov:wasDerivedFrom bf103:Exhaust_Fan_Enable .
+
+brick110:Exhaust_Fan_Enable_Command prov:wasDerivedFrom bf103:Exhaust_Fan_Enable_Command .
+
+brick110:Fan_Start_Stop_Status prov:wasDerivedFrom bf103:Exhaust_Fan_Start_Stop_Status .
+
+brick110:Enable_Command prov:wasDerivedFrom bf103:Exhaust_Fan_System_Enable_Command .
+
+brick110:Fan prov:wasDerivedFrom bf103:Fan .
+
+brick110:Fan_Air_Flow_Sensor prov:wasDerivedFrom bf103:Fan_Air_Flow_Sensor .
+
+brick110:Fan_Air_Flow_Setpoint prov:wasDerivedFrom bf103:Fan_Air_Flow_Setpoint .
+
+brick110:Fan_Coil_Unit prov:wasDerivedFrom bf103:Fan_Coil_Unit .
+
+brick110:Fan_Speed_Reset_Command prov:wasDerivedFrom bf103:Fan_Speed_Reset .
+
+brick110:Fan_Speed_Reset_Command prov:wasDerivedFrom bf103:Fan_Speed_Reset_Command .
+
+brick110:Fan_Start_Stop_Status prov:wasDerivedFrom bf103:Fan_Start_Stop .
+
+brick110:Fan_Start_Stop_Status prov:wasDerivedFrom bf103:Fan_Start_Stop_Status .
+
+brick110:Fan_Status prov:wasDerivedFrom bf103:Fan_Status .
+
+brick110:Fault_Indicator_Status prov:wasDerivedFrom bf103:Fault_Indicator_Status .
+
+brick110:Fault_Reset_Command prov:wasDerivedFrom bf103:Fault_Reset_Command .
+
+brick110:Fault_Status prov:wasDerivedFrom bf103:Fault_Status .
+
+brick110:FCU prov:wasDerivedFrom bf103:FCU .
+
+brick110:Discharge_Air_Temperature_Cooling_Setpoint prov:wasDerivedFrom bf103:FCU_Discharge_Air_Temperature_Cooling_Setpoint .
+
+brick110:Discharge_Air_Temperature_Heating_Setpoint prov:wasDerivedFrom bf103:FCU_Discharge_Air_Temperature_Heating_Setpoint .
+
+brick110:Discharge_Air_Temperature_Sensor prov:wasDerivedFrom bf103:FCU_Discharge_Air_Temperature_Sensor .
+
+brick110:Discharge_Air_Temperature_Setpoint prov:wasDerivedFrom bf103:FCU_Discharge_Air_Temperature_Setpoint .
+
+brick110:Return_Air_CO2_Sensor prov:wasDerivedFrom bf103:FCU_Return_Air_CO2_Sensor .
+
+brick110:Return_Air_Humidity_Sensor prov:wasDerivedFrom bf103:FCU_Return_Air_Humidity_Sensor .
+
+brick110:Return_Air_Temperature_Sensor prov:wasDerivedFrom bf103:FCU_Return_Air_Temperature_Sensor .
+
+brick110:Run_Time_Sensor prov:wasDerivedFrom bf103:FCU_Run_Time_Sensor .
+
+brick110:Supply_Air_Temperature_Sensor prov:wasDerivedFrom bf103:FCU_Supply_Air_Temperature_Sensor .
+
+brick110:Zone_Air_Temperature_Sensor prov:wasDerivedFrom bf103:FCU_Zone_Air_Temperature_Sensor .
+
+brick110:Filter prov:wasDerivedFrom bf103:Filter .
+
+brick110:Filter_Differential_Pressure_Sensor prov:wasDerivedFrom bf103:Filter_Differential_Pressure_Sensor .
+
+brick110:Filter_Reset_Command prov:wasDerivedFrom bf103:Filter_Reset_Command .
+
+brick110:Filter_Status prov:wasDerivedFrom bf103:Filter_Status .
+
+brick110:Fire_Safety_System prov:wasDerivedFrom bf103:Fire_Safety_System .
+
+brick110:Floor prov:wasDerivedFrom bf103:Floor .
+
+brick110:Flow prov:wasDerivedFrom bf103:Flow .
+
+brick110:Flow_Sensor prov:wasDerivedFrom bf103:Flow_Sensor .
+
+brick110:Flow_Setpoint prov:wasDerivedFrom bf103:Flow_Setpoint .
+
+brick110:Freeze_Status prov:wasDerivedFrom bf103:Freeze_Status .
+
+brick110:Freezer prov:wasDerivedFrom bf103:Freezer .
+
+brick110:Frequency prov:wasDerivedFrom bf103:Frequency .
+
+brick110:Frequency_Command prov:wasDerivedFrom bf103:Frequency_Command .
+
+brick110:Frequency_Sensor prov:wasDerivedFrom bf103:Frequency_Sensor .
+
+brick110:Frost prov:wasDerivedFrom bf103:Frost .
+
+brick110:Frost_Sensor prov:wasDerivedFrom bf103:Frost_Sensor .
+
+brick110:Fume_Hood prov:wasDerivedFrom bf103:Fume_Hood .
+
+brick110:Fume_Hood_Air_Flow_Sensor prov:wasDerivedFrom bf103:Fume_Hood_Air_Flow_Sensor .
+
+brick110:Furniture prov:wasDerivedFrom bf103:Furniture .
+
+brick110:Grains prov:wasDerivedFrom bf103:Grains .
+
+brick110:Hail prov:wasDerivedFrom bf103:Hail .
+
+brick110:Hail_Sensor prov:wasDerivedFrom bf103:Hail_Sensor .
+
+brick110:Hand_Auto_Status prov:wasDerivedFrom bf103:Hand_Auto_Status .
+
+brick110:Heat_Exchanger prov:wasDerivedFrom bf103:Heat_Exchanger .
+
+brick110:Temperature prov:wasDerivedFrom bf103:Heat_Exchanger_Supply_Water_Temperature .
+
+brick110:Heat_Exchanger_Supply_Water prov:wasDerivedFrom bf103:Heat_Exchanger_Supply_Water_Temperature .
+
+brick110:Heat_Exchanger_Supply_Water_Temperature_Sensor prov:wasDerivedFrom bf103:Heat_Exchanger_Supply_Water_Temperature_Sensor .
+
+brick110:Heat_Exchanger_System_Enable_Status prov:wasDerivedFrom bf103:Heat_Exchanger_System_Enable .
+
+brick110:Heat_Exchanger_System_Enable_Status prov:wasDerivedFrom bf103:Heat_Exchanger_System_Enable_Status .
+
+brick110:Heat_Wheel_VFD prov:wasDerivedFrom bf103:Heat_Wheel_VFD .
+
+brick110:Heating_Coil prov:wasDerivedFrom bf103:Heating_Coil .
+
+brick110:Heating_Command prov:wasDerivedFrom bf103:Heating_Command .
+
+brick110:Heating_Demand_Setpoint prov:wasDerivedFrom bf103:Heating_Demand_Setpoint .
+
+brick110:Heating_Discharge_Air_Flow_Setpoint prov:wasDerivedFrom bf103:Heating_Discharge_Air_Flow_Setpoint .
+
+brick110:Heating_Discharge_Air_Temperature_Proportional_Band_Parameter prov:wasDerivedFrom bf103:Heating_Discharge_Air_Temperature_Proportional_Band .
+
+brick110:Max_Heating_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:Heating_Max_Discharge_Air_Flow_Setpoint .
+
+brick110:Max_Heating_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:Heating_Max_Supply_Air_Flow_Setpoint .
+
+brick110:Min_Heating_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:Heating_Min_Discharge_Air_Flow_Setpoint .
+
+brick110:Min_Heating_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:Heating_Min_Supply_Air_Flow_Setpoint .
+
+brick110:Heating_On_Off_Status prov:wasDerivedFrom bf103:Heating_On_Off .
+
+brick110:Heating_On_Off_Status prov:wasDerivedFrom bf103:Heating_On_Off_Status .
+
+brick110:Heating_Request_Percent_Setpoint prov:wasDerivedFrom bf103:Heating_Request_Percent_Setpoint .
+
+brick110:Heating_Request_Setpoint prov:wasDerivedFrom bf103:Heating_Request_Setpoint .
+
+brick110:Heating_Supply_Air_Flow_Setpoint prov:wasDerivedFrom bf103:Heating_Supply_Air_Flow_Setpoint .
+
+brick110:Heating_Supply_Air_Temperature_Proportional_Band_Parameter prov:wasDerivedFrom bf103:Heating_Supply_Air_Temperature_Proportional_Band .
+
+brick110:Heating_Valve prov:wasDerivedFrom bf103:Heating_Valve .
+
+brick110:Heating_Ventilation_Air_Conditioning_System prov:wasDerivedFrom bf103:Heating_Ventilation_Air_Conditioning_System .
+
+brick110:High_Humidity_Alarm_Setpoint prov:wasDerivedFrom bf103:High_Humidity_Alarm_Setpoint .
+
+brick110:High_Static_Pressure_Cutout_Setpoint_Limit prov:wasDerivedFrom bf103:High_Static_Pressure_Cutout_Limit_Setpoint .
+
+brick110:High_Temperature_Hot_Water_Supply_Temperature_Sensor prov:wasDerivedFrom bf103:High_Temperature_Hot_Water_Supply_Temperature_Sensor .
+
+brick110:Highest_Zone_Cooling_Command prov:wasDerivedFrom bf103:Highest_Zone_Cooling_Command .
+
+brick110:Highest_Zone_Air_Temperature_Sensor prov:wasDerivedFrom bf103:Highest_Zone_Temperature_Sensor .
+
+brick110:Hold_Status prov:wasDerivedFrom bf103:Hold_Status .
+
+brick110:Hot_Box prov:wasDerivedFrom bf103:Hot_Box .
+
+brick110:Hot_Water prov:wasDerivedFrom bf103:Hot_Water .
+
+brick110:Hot_Water_Differential_Pressure_Proportional_Band_Parameter prov:wasDerivedFrom bf103:Hot_Water_Differential_Pressure_Proportional_Band .
+
+brick110:Hot_Water_Differential_Pressure_Sensor prov:wasDerivedFrom bf103:Hot_Water_Differential_Pressure_Sensor .
+
+brick110:Hot_Water_Differential_Pressure_Setpoint prov:wasDerivedFrom bf103:Hot_Water_Differential_Pressure_Setpoint .
+
+brick110:Hot_Water_Pump prov:wasDerivedFrom bf103:Hot_Water_Pump .
+
+brick110:Hot_Water_Return_Temperature_Sensor prov:wasDerivedFrom bf103:Hot_Water_Return_Temperature_Sensor .
+
+brick110:Hot_Water_Static_Pressure_Setpoint prov:wasDerivedFrom bf103:Hot_Water_Static_Pressure_Setpoint .
+
+brick110:Hot_Water_Supply_Temperature_Sensor prov:wasDerivedFrom bf103:Hot_Water_Supply_Temperature_Sensor .
+
+brick110:Hot_Water_System prov:wasDerivedFrom bf103:Hot_Water_System .
+
+brick110:Hot_Water_System_Enable_Command prov:wasDerivedFrom bf103:Hot_Water_System_Enable .
+
+brick110:Hot_Water_System_Enable_Command prov:wasDerivedFrom bf103:Hot_Water_System_Enable_Command .
+
+brick110:Humidification_On_Off_Status prov:wasDerivedFrom bf103:Humidification_On_Off .
+
+brick110:Humidification_On_Off_Status prov:wasDerivedFrom bf103:Humidification_On_Off_Status .
+
+brick110:Humidifier_Fault_Status prov:wasDerivedFrom bf103:Humidifier_Fault_Status .
+
+brick110:Humidity prov:wasDerivedFrom bf103:Humidity .
+
+brick110:Humidity_Sensor prov:wasDerivedFrom bf103:Humidity_Sensor .
+
+brick110:Humidity_Setpoint prov:wasDerivedFrom bf103:Humidity_Setpoint .
+
+brick110:HVAC prov:wasDerivedFrom bf103:HVAC .
+
+brick110:Average_Discharge_Air_Flow_Sensor prov:wasDerivedFrom bf103:HVAC_Average_Discharge_Air_Flow_Sensor .
+
+brick110:Average_Supply_Air_Flow_Sensor prov:wasDerivedFrom bf103:HVAC_Average_Supply_Air_Flow_Sensor .
+
+brick110:Highest_Zone_Cooling_Command prov:wasDerivedFrom bf103:HVAC_Highest_Zone_Cooling_Command .
+
+brick110:HVAC_Zone prov:wasDerivedFrom bf103:HVAC_Zone .
+
+brick110:Heat_Exchanger_Supply_Water_Temperature_Sensor prov:wasDerivedFrom bf103:HWS_Heat_Exchanger_Supply_Water_Temperature_Sensor .
+
+brick110:Heat_Exchanger_System_Enable_Status prov:wasDerivedFrom bf103:HWS_Heat_Exchanger_System_Enable_Status .
+
+brick110:High_Temperature_Hot_Water_Supply_Temperature_Sensor prov:wasDerivedFrom bf103:HWS_High_Temperature_Hot_Water_Supply_Temperature_Sensor .
+
+brick110:Hot_Water_Differential_Pressure_Sensor prov:wasDerivedFrom bf103:HWS_Hot_Water_Differential_Pressure_Sensor .
+
+brick110:Hot_Water_Differential_Pressure_Setpoint prov:wasDerivedFrom bf103:HWS_Hot_Water_Differential_Pressure_Setpoint .
+
+brick110:Hot_Water_Return_Temperature_Sensor prov:wasDerivedFrom bf103:HWS_Hot_Water_Return_Temperature_Sensor .
+
+brick110:Hot_Water_Static_Pressure_Setpoint prov:wasDerivedFrom bf103:HWS_Hot_Water_Static_Pressure_Setpoint .
+
+brick110:Hot_Water_Supply_Temperature_Sensor prov:wasDerivedFrom bf103:HWS_Hot_Water_Supply_Temperature_Sensor .
+
+brick110:Hot_Water_System_Enable_Command prov:wasDerivedFrom bf103:HWS_Hot_Water_System_Enable_Command .
+
+brick110:Medium_Temperature_Hot_Water_Supply_Temperature_Sensor prov:wasDerivedFrom bf103:HWS_Medium_Temperature_Hot_Water_Supply_Temperature_Sensor .
+
+brick110:Open_Heating_Valve_Outside_Air_Temperature_Setpoint prov:wasDerivedFrom bf103:HWS_Open_Heating_Valve_Outside_Air_Temperature_Setpoint .
+
+brick110:HX prov:wasDerivedFrom bf103:HX .
+
+brick110:Ice_Tank_Leaving_Water_Temperature_Sensor prov:wasDerivedFrom bf103:Ice_Tank_Leaving_Water_Temperature_Sensor .
+
+brick110:Isolation_Valve prov:wasDerivedFrom bf103:Isolation_Valve .
+
+brick110:Laboratory prov:wasDerivedFrom bf103:Laboratory .
+
+brick110:Last_Fault_Code_Status prov:wasDerivedFrom bf103:Last_Fault_Code .
+
+brick110:Last_Fault_Code_Status prov:wasDerivedFrom bf103:Last_Fault_Code_Status .
+
+brick110:Leaving_Water_Temperature_Sensor prov:wasDerivedFrom bf103:Leaving_Water_Temperature_Sensor .
+
+brick110:Lighting_System prov:wasDerivedFrom bf103:Lighting_System .
+
+brick110:Lighting_Zone prov:wasDerivedFrom bf103:Lighting_Zone .
+
+brick110:Load_Current_Sensor prov:wasDerivedFrom bf103:Load_Current_Sensor .
+
+brick110:Load_Setpoint prov:wasDerivedFrom bf103:Load_Setpoint .
+
+brick110:Load_Shed_Command prov:wasDerivedFrom bf103:Load_Shed_Command .
+
+brick110:Load_Shed_Differential_Pressure_Setpoint prov:wasDerivedFrom bf103:Load_Shed_Differential_Pressure_Setpoint .
+
+brick110:Load_Shed_Status prov:wasDerivedFrom bf103:Load_Shed_Status .
+
+brick110:Locally_On_Off_Status prov:wasDerivedFrom bf103:Locally_On_Off .
+
+brick110:Locally_On_Off_Status prov:wasDerivedFrom bf103:Locally_On_Off_Status .
+
+brick110:Location prov:wasDerivedFrom bf103:Location .
+
+brick110:Low_Humidity_Alarm_Setpoint prov:wasDerivedFrom bf103:Low_Humidity_Alarm_Setpoint .
+
+brick110:Low_Outside_Air_Temperature_Enable_Setpoint prov:wasDerivedFrom bf103:Low_Outside_Air_Temperature_Enable_Setpoint .
+
+brick110:Lowest_Exhaust_Air_Static_Pressure_Sensor prov:wasDerivedFrom bf103:Lowest_Exhaust_Air_Static_Pressure_Sensor .
+
+brick110:Lowest_Zone_Air_Temperature_Sensor prov:wasDerivedFrom bf103:Lowest_Zone_Temperature_Sensor .
+
+brick110:Luminance prov:wasDerivedFrom bf103:Luminance .
+
+brick110:Luminance_Command prov:wasDerivedFrom bf103:Luminance_Command .
+
+brick110:Luminance_Sensor prov:wasDerivedFrom bf103:Luminance_Sensor .
+
+brick110:Luminance_Setpoint prov:wasDerivedFrom bf103:Luminance_Setpoint .
+
+brick110:Maintenance_Mode_Command prov:wasDerivedFrom bf103:Maintenance_Mode_Command .
+
+brick110:Manual_Auto_Status prov:wasDerivedFrom bf103:Manual_Auto_Status .
+
+brick110:Max_Chilled_Water_Differential_Pressure_Setpoint_Limit prov:wasDerivedFrom bf103:Max_Chilled_Water_Differential_Pressure_Setpoint .
+
+brick110:Max_Discharge_Air_Static_Pressure_Setpoint_Limit prov:wasDerivedFrom bf103:Max_Discharge_Air_Static_Pressure_Setpoint .
+
+brick110:Max_Load_Setpoint prov:wasDerivedFrom bf103:Max_Load_Setpoint .
+
+brick110:Max_Return_Air_CO2_Setpoint prov:wasDerivedFrom bf103:Max_Return_Air_CO2_Setpoint .
+
+brick110:Max_Supply_Air_Static_Pressure_Setpoint_Limit prov:wasDerivedFrom bf103:Max_Supply_Air_Static_Pressure_Setpoint .
+
+brick110:Medium_Temperature_Hot_Water_Supply_Temperature_Sensor prov:wasDerivedFrom bf103:Medium_Temperature_Hot_Water_Supply_Temperature_Sensor .
+
+brick110:Meter prov:wasDerivedFrom bf103:Meter .
+
+brick110:Min_Chilled_Water_Differential_Pressure_Setpoint_Limit prov:wasDerivedFrom bf103:Min_Chilled_Water_Differential_Pressure_Setpoint .
+
+brick110:Min_Discharge_Air_Static_Pressure_Setpoint_Limit prov:wasDerivedFrom bf103:Min_Discharge_Air_Static_Pressure_Setpoint .
+
+brick110:Min_Supply_Air_Static_Pressure_Setpoint_Limit prov:wasDerivedFrom bf103:Min_Supply_Air_Static_Pressure_Setpoint .
+
+brick110:Mixed_Air prov:wasDerivedFrom bf103:Mixed_Air .
+
+brick110:Mixed_Air_Filter prov:wasDerivedFrom bf103:Mixed_Air_Filter .
+
+brick110:Mixed_Air_Temperature_Sensor prov:wasDerivedFrom bf103:Mixed_Air_Temperature_Sensor .
+
+brick110:Mixed_Air_Temperature_Setpoint prov:wasDerivedFrom bf103:Mixed_Air_Temperature_Setpoint .
+
+brick110:Mode_Command prov:wasDerivedFrom bf103:Mode_Command .
+
+brick110:Mode_Setpoint prov:wasDerivedFrom bf103:Mode_Setpoint .
+
+brick110:Mode_Status prov:wasDerivedFrom bf103:Mode_Status .
+
+brick110:Motion_Sensor prov:wasDerivedFrom bf103:Motion_Sensor .
+
+brick110:Motor_Current_Sensor prov:wasDerivedFrom bf103:Motor_Current_Sensor .
+
+brick110:Motor_Direction_Status prov:wasDerivedFrom bf103:Motor_Direction_Status .
+
+brick110:Motor_Speed_Sensor prov:wasDerivedFrom bf103:Motor_Speed_Sensor .
+
+brick110:Motor_Start_Stop_Status prov:wasDerivedFrom bf103:Motor_Start_Stop .
+
+brick110:Start_Stop_Command prov:wasDerivedFrom bf103:Motor_Start_Stop_Command .
+
+brick110:Motor_Start_Stop_Status prov:wasDerivedFrom bf103:Motor_Start_Stop_Status .
+
+brick110:Motor_Torque_Sensor prov:wasDerivedFrom bf103:Motor_Torque_Sensor .
+
+brick110:Occupancy prov:wasDerivedFrom bf103:Occupancy .
+
+brick110:Occupancy_Sensor prov:wasDerivedFrom bf103:Occupancy_Sensor .
+
+brick110:Max_Occupied_Cooling_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:Occupied_Cooling_Max_Discharge_Air_Flow_Setpoint .
+
+brick110:Max_Occupied_Cooling_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:Occupied_Cooling_Max_Supply_Air_Flow_Setpoint .
+
+brick110:Min_Occupied_Cooling_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:Occupied_Cooling_Min_Discharge_Air_Flow_Setpoint .
+
+brick110:Min_Occupied_Cooling_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:Occupied_Cooling_Min_Supply_Air_Flow_Setpoint .
+
+brick110:Occupied_Cooling_Supply_Air_Flow_Setpoint prov:wasDerivedFrom bf103:Occupied_Cooling_Supply_Air_Flow_Setpoint .
+
+brick110:Max_Occupied_Heating_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:Occupied_Heating_Max_Discharge_Air_Flow_Setpoint .
+
+brick110:Max_Occupied_Heating_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:Occupied_Heating_Max_Supply_Air_Flow_Setpoint .
+
+brick110:Min_Occupied_Heating_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:Occupied_Heating_Min_Discharge_Air_Flow_Setpoint .
+
+brick110:Min_Occupied_Heating_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:Occupied_Heating_Min_Supply_Air_Flow_Setpoint .
+
+brick110:Occupied_Heating_Supply_Air_Flow_Setpoint prov:wasDerivedFrom bf103:Occupied_Heating_Supply_Air_Flow_Setpoint .
+
+brick110:Occupied_Mode_Status prov:wasDerivedFrom bf103:Occupied_Mode_Status .
+
+brick110:Off_Status prov:wasDerivedFrom bf103:Off .
+
+brick110:On_Status prov:wasDerivedFrom bf103:On .
+
+brick110:On_Off_Status prov:wasDerivedFrom bf103:On_Off .
+
+brick110:On_Off_Command prov:wasDerivedFrom bf103:On_Off_Command .
+
+brick110:On_Off_Status prov:wasDerivedFrom bf103:On_Off_Status .
+
+brick110:On_Timer_Sensor prov:wasDerivedFrom bf103:On_Timer_Sensor .
+
+brick110:Open_Heating_Valve_Outside_Air_Temperature_Setpoint prov:wasDerivedFrom bf103:Open_Heating_Valve_Outside_Air_Temperature_Setpoint .
+
+brick110:Output_Frequency_Sensor prov:wasDerivedFrom bf103:Output_Frequency_Sensor .
+
+brick110:Output_Voltage_Sensor prov:wasDerivedFrom bf103:Output_Voltage_Sensor .
+
+brick110:Outside prov:wasDerivedFrom bf103:Outside .
+
+brick110:Outside_Air prov:wasDerivedFrom bf103:Outside_Air .
+
+brick110:Outside_Air_CO2_Sensor prov:wasDerivedFrom bf103:Outside_Air_CO2_Sensor .
+
+brick110:Outside_Air_Dewpoint_Sensor prov:wasDerivedFrom bf103:Outside_Air_Dewpoint_Sensor .
+
+brick110:Outside_Air_Enthalpy_Sensor prov:wasDerivedFrom bf103:Outside_Air_Enthalpy_Sensor .
+
+brick110:Outside_Air_Flow_Sensor prov:wasDerivedFrom bf103:Outside_Air_Flow_Sensor .
+
+brick110:Outside_Air_Grains_Sensor prov:wasDerivedFrom bf103:Outside_Air_Grains_Sensor .
+
+brick110:Outside_Air_Humidity_Sensor prov:wasDerivedFrom bf103:Outside_Air_Humidity_Sensor .
+
+brick110:Outside_Air_Lockout_Temperature_Differential_Sensor prov:wasDerivedFrom bf103:Outside_Air_Lockout_Temperature_Differential_Sensor .
+
+brick110:Outside_Air_Lockout_Temperature_Setpoint prov:wasDerivedFrom bf103:Outside_Air_Lockout_Temperature_Setpoint .
+
+brick110:Outside_Air_Temperature_Sensor prov:wasDerivedFrom bf103:Outside_Air_Temperature_Sensor .
+
+brick110:Outside_Air_Enthalpy_Sensor prov:wasDerivedFrom bf103:Outside_Enthalpy_Sensor .
+
+brick110:Outside_Luminance_Sensor prov:wasDerivedFrom bf103:Outside_Luminance_Sensor .
+
+brick110:Min_Outside_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:Outside_Min_Air_Flow_Setpoint .
+
+brick110:Overridden_Off_Status prov:wasDerivedFrom bf103:Overridden_Off_Status .
+
+brick110:Overridden_On_Status prov:wasDerivedFrom bf103:Overridden_On_Status .
+
+brick110:Overridden_Status prov:wasDerivedFrom bf103:Overridden_Status .
+
+brick110:Override_Command prov:wasDerivedFrom bf103:Override_Command .
+
+brick110:Peak_Power_Demand_Sensor prov:wasDerivedFrom bf103:Peak_Power_Demand_Sensor .
+
+brick110:Photovoltaic_Current_Output_Sensor prov:wasDerivedFrom bf103:Photovoltaic_Current_Output_Sensor .
+
+brick110:Piezoelectric_Sensor prov:wasDerivedFrom bf103:Piezoelectric_Sensor .
+
+brick110:PIR_Sensor prov:wasDerivedFrom bf103:PIR_Sensor .
+
+brick110:Point prov:wasDerivedFrom bf103:Point .
+
+brick110:Position prov:wasDerivedFrom bf103:Position .
+
+brick110:Power prov:wasDerivedFrom bf103:Power .
+
+brick110:Power_System prov:wasDerivedFrom bf103:Power_System .
+
+brick110:Peak_Power_Demand_Sensor prov:wasDerivedFrom bf103:Power_System_Peak_Power_Demand_Sensor .
+
+brick110:Pre_Filter_Status prov:wasDerivedFrom bf103:Pre_Filter_Status .
+
+brick110:Preheat_Demand_Setpoint prov:wasDerivedFrom bf103:Preheat_Demand_Setpoint .
+
+brick110:Preheat_Discharge_Air_Temperature_Sensor prov:wasDerivedFrom bf103:Preheat_Discharge_Air_Temperature_Sensor .
+
+brick110:Preheat_Hot_Water_Valve prov:wasDerivedFrom bf103:Preheat_Hot_Water_Valve .
+
+brick110:Preheat_Supply_Air_Temperature_Sensor prov:wasDerivedFrom bf103:Preheat_Supply_Air_Temperature_Sensor .
+
+brick110:Preheat_Valve_VFD prov:wasDerivedFrom bf103:Preheat_Valve_VFD .
+
+brick110:Pressure prov:wasDerivedFrom bf103:Pressure .
+
+brick110:Pressure_Sensor prov:wasDerivedFrom bf103:Pressure_Sensor .
+
+brick110:Pressure_Setpoint prov:wasDerivedFrom bf103:Pressure_Setpoint .
+
+brick110:Pressure_Status prov:wasDerivedFrom bf103:Pressure_Status .
+
+brick110:Pump prov:wasDerivedFrom bf103:Pump .
+
+brick110:Pump_Command prov:wasDerivedFrom bf103:Pump_Command .
+
+brick110:Enable_Status prov:wasDerivedFrom bf103:Pump_Enable_Status .
+
+brick110:Lead_Lag_Status prov:wasDerivedFrom bf103:Pump_Lead_Lag_Status .
+
+brick110:Pump_Start_Stop_Status prov:wasDerivedFrom bf103:Pump_Start_Stop .
+
+brick110:Start_Stop_Command prov:wasDerivedFrom bf103:Pump_Start_Stop_Command .
+
+brick110:Pump_Start_Stop_Status prov:wasDerivedFrom bf103:Pump_Start_Stop_Status .
+
+brick110:PV_Current_Output_Sensor prov:wasDerivedFrom bf103:PV_Current_Output_Sensor .
+
+brick110:Rain_Duration_Sensor prov:wasDerivedFrom bf103:Rain_Duration_Sensor .
+
+brick110:Rain_Sensor prov:wasDerivedFrom bf103:Rain_Sensor .
+
+brick110:Reheat_Valve prov:wasDerivedFrom bf103:Reheat_Valve .
+
+brick110:Relative_Humidity prov:wasDerivedFrom bf103:Relative_Humidity .
+
+brick110:Relative_Humidity_Sensor prov:wasDerivedFrom bf103:Relative_Humidity_Sensor .
+
+brick110:Remotely_On_Off_Status prov:wasDerivedFrom bf103:Remotely_On_Off .
+
+brick110:Remotely_On_Off_Status prov:wasDerivedFrom bf103:Remotely_On_Off_Status .
+
+brick110:Reset_Command prov:wasDerivedFrom bf103:Reset_Command .
+
+brick110:Reset_Setpoint prov:wasDerivedFrom bf103:Reset_Setpoint .
+
+brick110:Return_Air prov:wasDerivedFrom bf103:Return_Air .
+
+brick110:Return_Air_CO2_Sensor prov:wasDerivedFrom bf103:Return_Air_CO2_Sensor .
+
+brick110:Return_Air_CO2_Setpoint prov:wasDerivedFrom bf103:Return_Air_CO2_Setpoint .
+
+brick110:Return_Air_Dewpoint_Sensor prov:wasDerivedFrom bf103:Return_Air_Dewpoint_Sensor .
+
+brick110:Return_Air_Enthalpy_Sensor prov:wasDerivedFrom bf103:Return_Air_Enthalpy_Sensor .
+
+brick110:Return_Air_Flow_Sensor prov:wasDerivedFrom bf103:Return_Air_Flow_Sensor .
+
+brick110:Return_Air_Grains_Sensor prov:wasDerivedFrom bf103:Return_Air_Grains_Sensor .
+
+brick110:Return_Air_Humidity_Sensor prov:wasDerivedFrom bf103:Return_Air_Humidity_Sensor .
+
+brick110:Return_Air_Temperature_Sensor prov:wasDerivedFrom bf103:Return_Air_Temperature_Sensor .
+
+brick110:Return_Fan_Differential_Speed_Setpoint prov:wasDerivedFrom bf103:Return_Discharge_Fan_Differential_Speed_Setpoint .
+
+brick110:Return_Fan prov:wasDerivedFrom bf103:Return_Fan .
+
+brick110:Return_Fan_Air_Flow_Sensor prov:wasDerivedFrom bf103:Return_Fan_Air_Flow_Sensor .
+
+brick110:Return_Fan_Differential_Speed_Setpoint prov:wasDerivedFrom bf103:Return_Fan_Differential_Speed_Setpoint .
+
+brick110:Return_Fan_Air_Flow_Sensor prov:wasDerivedFrom bf103:Return_Fan_Fan_Air_Flow_Sensor .
+
+brick110:Return_Fan_Differential_Speed_Setpoint prov:wasDerivedFrom bf103:Return_Supply_Fan_Differential_Speed_Setpoint .
+
+brick110:Return_Water_Temperature_Sensor prov:wasDerivedFrom bf103:Return_Water_Temperature_Sensor .
+
+brick110:Roof prov:wasDerivedFrom bf103:Roof .
+
+brick110:Room prov:wasDerivedFrom bf103:Room .
+
+brick110:Room_Air_Temperature_Setpoint prov:wasDerivedFrom bf103:Room_Temperature_Setpoint .
+
+brick110:Run_Enable_Command prov:wasDerivedFrom bf103:Run_Enable_Command .
+
+brick110:Run_Enable_Status prov:wasDerivedFrom bf103:Run_Enable_Status .
+
+brick110:Run_Status prov:wasDerivedFrom bf103:Run_Status .
+
+brick110:Run_Time_Sensor prov:wasDerivedFrom bf103:Run_Time_Sensor .
+
+brick110:Sensor prov:wasDerivedFrom bf103:Sensor .
+
+brick110:Server_Room prov:wasDerivedFrom bf103:Server_Room .
+
+brick110:Setpoint prov:wasDerivedFrom bf103:Setpoint .
+
+brick110:Shading_System prov:wasDerivedFrom bf103:Shading_System .
+
+brick110:Shutdown_Command prov:wasDerivedFrom bf103:Shutdown_Command .
+
+brick110:Solar_Azimuth_Angle_Sensor prov:wasDerivedFrom bf103:Solar_Azimuth_Angle_Sensor .
+
+brick110:Solar_Panel prov:wasDerivedFrom bf103:Solar_Panel .
+
+brick110:Battery_Voltage_Sensor prov:wasDerivedFrom bf103:Solar_Panel_Battery_Voltage_Sensor .
+
+brick110:Photovoltaic_Current_Output_Sensor prov:wasDerivedFrom bf103:Solar_Panel_Photovoltaic_Current_Output_Sensor .
+
+brick110:PV_Current_Output_Sensor prov:wasDerivedFrom bf103:Solar_Panel_PV_Current_Output_Sensor .
+
+brick110:Solar_Azimuth_Angle_Sensor prov:wasDerivedFrom bf103:Solar_Panel_Solar_Azimuth_Angle_Sensor .
+
+brick110:Solar_Zenith_Angle_Sensor prov:wasDerivedFrom bf103:Solar_Panel_Solar_Zenith_Angle_Sensor .
+
+brick110:Solar_Radiance prov:wasDerivedFrom bf103:Solar_Radiance .
+
+brick110:Solar_Radiance_Sensor prov:wasDerivedFrom bf103:Solar_Radiance_Sensor .
+
+brick110:Solar_Zenith_Angle_Sensor prov:wasDerivedFrom bf103:Solar_Zenith_Angle_Sensor .
+
+brick110:Space prov:wasDerivedFrom bf103:Space .
+
+brick110:Space_Heater prov:wasDerivedFrom bf103:Space_Heater .
+
+brick110:Speed prov:wasDerivedFrom bf103:Speed .
+
+brick110:Speed_Reset_Command prov:wasDerivedFrom bf103:Speed_Reset_Command .
+
+brick110:Speed_Sensor prov:wasDerivedFrom bf103:Speed_Sensor .
+
+brick110:Speed_Setpoint prov:wasDerivedFrom bf103:Speed_Setpoint .
+
+brick110:Stages_Status prov:wasDerivedFrom bf103:Stages_Status .
+
+brick110:Standby_Fan prov:wasDerivedFrom bf103:Standby_Fan .
+
+brick110:Fan_Status prov:wasDerivedFrom bf103:Standby_Fan_Status .
+
+brick110:Standby_Glycool_Unit_On_Off_Status prov:wasDerivedFrom bf103:Standby_Glycool_Unit_On_Off .
+
+brick110:Standby_Glycool_Unit_On_Off_Status prov:wasDerivedFrom bf103:Standby_Glycool_Unit_On_Off_Status .
+
+brick110:Standby_Load_Shed_Command prov:wasDerivedFrom bf103:Standby_Load_Shed .
+
+brick110:Standby_Load_Shed_Command prov:wasDerivedFrom bf103:Standby_Load_Shed_Command .
+
+brick110:Standby_Unit_On_Off_Status prov:wasDerivedFrom bf103:Standby_Unit_On_Off .
+
+brick110:Standby_Unit_On_Off_Status prov:wasDerivedFrom bf103:Standby_Unit_On_Off_Status .
+
+brick110:Start_Stop_Command prov:wasDerivedFrom bf103:Start_Stop_Command .
+
+brick110:Start_Stop_Status prov:wasDerivedFrom bf103:Start_Stop_Status .
+
+brick110:Static_Pressure prov:wasDerivedFrom bf103:Static_Pressure .
+
+brick110:Max_Static_Pressure_Setpoint_Limit prov:wasDerivedFrom bf103:Static_Pressure_Max_Setpoint .
+
+brick110:Min_Static_Pressure_Setpoint_Limit prov:wasDerivedFrom bf103:Static_Pressure_Min_Setpoint .
+
+brick110:Static_Pressure_Sensor prov:wasDerivedFrom bf103:Static_Pressure_Sensor .
+
+brick110:Static_Pressure_Setpoint prov:wasDerivedFrom bf103:Static_Pressure_Setpoint .
+
+brick110:Status prov:wasDerivedFrom bf103:Status .
+
+brick110:Steam prov:wasDerivedFrom bf103:Steam .
+
+brick110:Steam_On_Off_Command prov:wasDerivedFrom bf103:Steam_On_Off .
+
+brick110:Steam_On_Off_Command prov:wasDerivedFrom bf103:Steam_On_Off_Command .
+
+brick110:Steam_System prov:wasDerivedFrom bf103:Steam_System .
+
+brick110:Supply_Air prov:wasDerivedFrom bf103:Supply_Air .
+
+brick110:Supply_Air_Duct_Pressure_Status prov:wasDerivedFrom bf103:Supply_Air_Duct_Pressure_Status .
+
+brick110:Flow prov:wasDerivedFrom bf103:Supply_Air_Flow .
+
+brick110:Supply_Air prov:wasDerivedFrom bf103:Supply_Air_Flow .
+
+brick110:Supply_Air_Flow_Demand_Setpoint prov:wasDerivedFrom bf103:Supply_Air_Flow_Demand_Setpoint .
+
+brick110:Supply_Air_Flow_Sensor prov:wasDerivedFrom bf103:Supply_Air_Flow_Sensor .
+
+brick110:Supply_Air_Flow_Setpoint prov:wasDerivedFrom bf103:Supply_Air_Flow_Setpoint .
+
+brick110:Supply_Air_Humidity_Sensor prov:wasDerivedFrom bf103:Supply_Air_Humidity_Sensor .
+
+brick110:Supply_Air_Static_Pressure_Proportional_Band_Parameter prov:wasDerivedFrom bf103:Supply_Air_Static_Pressure_Proportional_Band .
+
+brick110:Supply_Air_Static_Pressure_Sensor prov:wasDerivedFrom bf103:Supply_Air_Static_Pressure_Sensor .
+
+brick110:Supply_Air_Static_Pressure_Setpoint prov:wasDerivedFrom bf103:Supply_Air_Static_Pressure_Setpoint .
+
+brick110:Temperature prov:wasDerivedFrom bf103:Supply_Air_Temperature .
+
+brick110:Supply_Air prov:wasDerivedFrom bf103:Supply_Air_Temperature .
+
+brick110:Supply_Air_Temperature_Sensor prov:wasDerivedFrom bf103:Supply_Air_Temperature_Sensor .
+
+brick110:Supply_Air_Velocity_Pressure_Sensor prov:wasDerivedFrom bf103:Supply_Air_Velocity_Pressure_Sensor .
+
+brick110:Supply_Fan prov:wasDerivedFrom bf103:Supply_Fan .
+
+brick110:Supply_Fan_Air_Flow_Sensor prov:wasDerivedFrom bf103:Supply_Fan_Air_Flow_Sensor .
+
+brick110:Speed_Reset_Command prov:wasDerivedFrom bf103:Supply_Fan_Fan_Speed_Reset_Command .
+
+brick110:Status prov:wasDerivedFrom bf103:Supply_Fan_Status .
+
+brick110:Supply_Water_Differential_Pressure_Proportional_Band_Parameter prov:wasDerivedFrom bf103:Supply_Water_Differential_Pressure_Proportional_Band .
+
+brick110:Supply_Water_Differential_Pressure_Proportional_Band_Parameter prov:wasDerivedFrom bf103:Supply_Water_Differential_Pressure_Proportional_Band_Setpoint .
+
+brick110:Supply_Water_Flow_Sensor prov:wasDerivedFrom bf103:Supply_Water_Flow_Sensor .
+
+brick110:Supply_Water_Temperature_Proportional_Band_Parameter prov:wasDerivedFrom bf103:Supply_Water_Temperature_Proportional_Band_Setpoint .
+
+brick110:System_Enable_Command prov:wasDerivedFrom bf103:System_Enable_Command .
+
+brick110:System_Mode_Status prov:wasDerivedFrom bf103:System_Mode_Status .
+
+brick110:System_Shutdown_Status prov:wasDerivedFrom bf103:System_Shutdown_Status .
+
+brick110:System_Status prov:wasDerivedFrom bf103:System_Status .
+
+brick110:Temperature prov:wasDerivedFrom bf103:Temperature .
+
+brick110:Temperature_Sensor prov:wasDerivedFrom bf103:Temperature_Sensor .
+
+brick110:Temperature_Setpoint prov:wasDerivedFrom bf103:Temperature_Setpoint .
+
+brick110:Terminal_Unit prov:wasDerivedFrom bf103:Terminal_Unit .
+
+brick110:Thermal_Energy_Storage_Supply_Water_Differential_Pressure_Deadband_Setpoint prov:wasDerivedFrom bf103:Thermal_Energy_Storage_Supply_Water_Differential_Pressure_Dead_Band_Setpoint .
+
+brick110:Thermostat prov:wasDerivedFrom bf103:Thermostat .
+
+brick110:Torque prov:wasDerivedFrom bf103:Torque .
+
+brick110:Torque_Sensor prov:wasDerivedFrom bf103:Torque_Sensor .
+
+brick110:Trace_Heat_Sensor prov:wasDerivedFrom bf103:Trace_Heat_Sensor .
+
+brick110:Turn_Off_Status prov:wasDerivedFrom bf103:Turn_Off_Status .
+
+brick110:Unoccupied_Load_Shed_Command prov:wasDerivedFrom bf103:Unoccupied_Load_Shed .
+
+brick110:Unoccupied_Load_Shed_Command prov:wasDerivedFrom bf103:Unoccupied_Load_Shed_Command .
+
+brick110:Unoccupied_Mode_Setpoint prov:wasDerivedFrom bf103:Unoccupied_Mode_Setpoint .
+
+brick110:Valve prov:wasDerivedFrom bf103:Valve .
+
+brick110:Valve_Command prov:wasDerivedFrom bf103:Valve_Command .
+
+brick110:Pressure_Sensor prov:wasDerivedFrom bf103:Valve_Pressure_Sensor .
+
+brick110:Status prov:wasDerivedFrom bf103:Valve_Status .
+
+brick110:Variable_Air_Volume_Box prov:wasDerivedFrom bf103:Variable_Air_Volume .
+
+brick110:Variable_Frequency_Drive prov:wasDerivedFrom bf103:Variable_Frequency_Drive .
+
+brick110:VAV prov:wasDerivedFrom bf103:VAV .
+
+brick110:Booster_Fan_Air_Flow_Sensor prov:wasDerivedFrom bf103:VAV_Booster_Fan_Air_Flow_Sensor .
+
+brick110:Box_Mode_Command prov:wasDerivedFrom bf103:VAV_Box_Mode_Command .
+
+brick110:Operating_Mode_Status prov:wasDerivedFrom bf103:VAV_Box_Operating_Mode_Status .
+
+brick110:CO2_Level_Sensor prov:wasDerivedFrom bf103:VAV_CO2_Level_Sensor .
+
+brick110:CO2_Sensor prov:wasDerivedFrom bf103:VAV_CO2_Sensor .
+
+brick110:Cooling_Demand_Setpoint prov:wasDerivedFrom bf103:VAV_Cooling_Demand_Setpoint .
+
+brick110:Max_Cooling_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:VAV_Cooling_Max_Discharge_Air_Flow_Setpoint .
+
+brick110:Max_Cooling_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:VAV_Cooling_Max_Supply_Air_Flow_Setpoint .
+
+brick110:Min_Cooling_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:VAV_Cooling_Min_Discharge_Air_Flow_Setpoint .
+
+brick110:Min_Cooling_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:VAV_Cooling_Min_Supply_Air_Flow_Setpoint .
+
+brick110:Cooling_Request_Setpoint prov:wasDerivedFrom bf103:VAV_Cooling_Request_Setpoint .
+
+brick110:Damper_Command prov:wasDerivedFrom bf103:VAV_Damper_Command .
+
+brick110:Damper_Position_Sensor prov:wasDerivedFrom bf103:VAV_Damper_Position_Sensor .
+
+brick110:Discharge_Air_Duct_Pressure_Status prov:wasDerivedFrom bf103:VAV_Discharge_Air_Duct_Pressure_Status .
+
+brick110:Discharge_Air_Flow_Sensor prov:wasDerivedFrom bf103:VAV_Discharge_Air_Flow_Sensor .
+
+brick110:Discharge_Air_Flow_Setpoint prov:wasDerivedFrom bf103:VAV_Discharge_Air_Flow_Setpoint .
+
+brick110:Discharge_Air_Temperature_Cooling_Setpoint prov:wasDerivedFrom bf103:VAV_Discharge_Air_Temperature_Cooling_Setpoint .
+
+brick110:Discharge_Air_Temperature_Heating_Setpoint prov:wasDerivedFrom bf103:VAV_Discharge_Air_Temperature_Heating_Setpoint .
+
+brick110:Discharge_Air_Temperature_Sensor prov:wasDerivedFrom bf103:VAV_Discharge_Air_Temperature_Sensor .
+
+brick110:Discharge_Air_Temperature_Setpoint prov:wasDerivedFrom bf103:VAV_Discharge_Air_Temperature_Setpoint .
+
+brick110:Discharge_Air_Velocity_Pressure_Sensor prov:wasDerivedFrom bf103:VAV_Discharge_Air_Velocity_Pressure_Sensor .
+
+brick110:Heating_Command prov:wasDerivedFrom bf103:VAV_Heating_Command .
+
+brick110:Heating_Demand_Setpoint prov:wasDerivedFrom bf103:VAV_Heating_Demand_Setpoint .
+
+brick110:Heating_Discharge_Air_Flow_Setpoint prov:wasDerivedFrom bf103:VAV_Heating_Discharge_Air_Flow_Setpoint .
+
+brick110:Max_Heating_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:VAV_Heating_Max_Discharge_Air_Flow_Setpoint .
+
+brick110:Max_Heating_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:VAV_Heating_Max_Supply_Air_Flow_Setpoint .
+
+brick110:Min_Heating_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:VAV_Heating_Min_Discharge_Air_Flow_Setpoint .
+
+brick110:Min_Heating_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:VAV_Heating_Min_Supply_Air_Flow_Setpoint .
+
+brick110:Heating_Request_Setpoint prov:wasDerivedFrom bf103:VAV_Heating_Request_Setpoint .
+
+brick110:Heating_Supply_Air_Flow_Setpoint prov:wasDerivedFrom bf103:VAV_Heating_Supply_Air_Flow_Setpoint .
+
+brick110:High_Static_Pressure_Cutout_Setpoint_Limit prov:wasDerivedFrom bf103:VAV_High_Static_Pressure_Cutout_Limit_Setpoint .
+
+brick110:Max_Occupied_Cooling_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:VAV_Occupied_Cooling_Max_Discharge_Air_Flow_Setpoint .
+
+brick110:Max_Occupied_Cooling_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:VAV_Occupied_Cooling_Max_Supply_Air_Flow_Setpoint .
+
+brick110:Min_Occupied_Cooling_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:VAV_Occupied_Cooling_Min_Discharge_Air_Flow_Setpoint .
+
+brick110:Min_Occupied_Cooling_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:VAV_Occupied_Cooling_Min_Supply_Air_Flow_Setpoint .
+
+brick110:Occupied_Cooling_Supply_Air_Flow_Setpoint prov:wasDerivedFrom bf103:VAV_Occupied_Cooling_Supply_Air_Flow_Setpoint .
+
+brick110:Max_Occupied_Heating_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:VAV_Occupied_Heating_Max_Discharge_Air_Flow_Setpoint .
+
+brick110:Max_Occupied_Heating_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:VAV_Occupied_Heating_Max_Supply_Air_Flow_Setpoint .
+
+brick110:Min_Occupied_Heating_Discharge_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:VAV_Occupied_Heating_Min_Discharge_Air_Flow_Setpoint .
+
+brick110:Min_Occupied_Heating_Supply_Air_Flow_Setpoint_Limit prov:wasDerivedFrom bf103:VAV_Occupied_Heating_Min_Supply_Air_Flow_Setpoint .
+
+brick110:Occupied_Heating_Supply_Air_Flow_Setpoint prov:wasDerivedFrom bf103:VAV_Occupied_Heating_Supply_Air_Flow_Setpoint .
+
+brick110:Return_Air_Temperature_Sensor prov:wasDerivedFrom bf103:VAV_Return_Air_Temperature_Sensor .
+
+brick110:Supply_Air_Duct_Pressure_Status prov:wasDerivedFrom bf103:VAV_Supply_Air_Duct_Pressure_Status .
+
+brick110:Supply_Air_Flow_Sensor prov:wasDerivedFrom bf103:VAV_Supply_Air_Flow_Sensor .
+
+brick110:Supply_Air_Flow_Setpoint prov:wasDerivedFrom bf103:VAV_Supply_Air_Flow_Setpoint .
+
+brick110:Supply_Air_Temperature_Sensor prov:wasDerivedFrom bf103:VAV_Supply_Air_Temperature_Sensor .
+
+brick110:Supply_Air_Velocity_Pressure_Sensor prov:wasDerivedFrom bf103:VAV_Supply_Air_Velocity_Pressure_Sensor .
+
+brick110:Vent_Operating_Mode_Status prov:wasDerivedFrom bf103:VAV_Vent_Operating_Mode_Status .
+
+brick110:Zone_Air_Temperature_Sensor prov:wasDerivedFrom bf103:VAV_Zone_Air_Temperature_Sensor .
+
+brick110:Velocity_Pressure prov:wasDerivedFrom bf103:Velocity_Pressure .
+
+brick110:Velocity_Pressure_Sensor prov:wasDerivedFrom bf103:Velocity_Pressure_Sensor .
+
+brick110:Velocity_Pressure_Setpoint prov:wasDerivedFrom bf103:Velocity_Pressure_Setpoint .
+
+brick110:Vent_Operating_Mode_Status prov:wasDerivedFrom bf103:Vent_Operating_Mode .
+
+brick110:Vent_Operating_Mode_Status prov:wasDerivedFrom bf103:Vent_Operating_Mode_Status .
+
+brick110:VFD prov:wasDerivedFrom bf103:VFD .
+
+brick110:DC_Bus_Voltage_Sensor prov:wasDerivedFrom bf103:VFD_DC_Bus_Voltage_Sensor .
+
+brick110:Drive_Ready_Status prov:wasDerivedFrom bf103:VFD_Drive_Ready_Status .
+
+brick110:VFD_Enable_Command prov:wasDerivedFrom bf103:VFD_Enable_Command .
+
+brick110:Fault_Reset_Command prov:wasDerivedFrom bf103:VFD_Fault_Reset_Command .
+
+brick110:Filter_Reset_Command prov:wasDerivedFrom bf103:VFD_Filter_Reset_Command .
+
+brick110:Hand_Auto_Status prov:wasDerivedFrom bf103:VFD_Hand_Auto_Status .
+
+brick110:Last_Fault_Code_Status prov:wasDerivedFrom bf103:VFD_Last_Fault_Code_Status .
+
+brick110:Load_Current_Sensor prov:wasDerivedFrom bf103:VFD_Load_Current_Sensor .
+
+brick110:Maintenance_Mode_Command prov:wasDerivedFrom bf103:VFD_Maintenance_Mode_Command .
+
+brick110:Manual_Auto_Status prov:wasDerivedFrom bf103:VFD_Manual_Auto_Status .
+
+brick110:Motor_Current_Sensor prov:wasDerivedFrom bf103:VFD_Motor_Current_Sensor .
+
+brick110:Motor_Direction_Status prov:wasDerivedFrom bf103:VFD_Motor_Direction_Status .
+
+brick110:Motor_Speed_Sensor prov:wasDerivedFrom bf103:VFD_Motor_Speed_Sensor .
+
+brick110:Motor_Start_Stop_Status prov:wasDerivedFrom bf103:VFD_Motor_Start_Stop_Status .
+
+brick110:Motor_Torque_Sensor prov:wasDerivedFrom bf103:VFD_Motor_Torque_Sensor .
+
+brick110:On_Off_Status prov:wasDerivedFrom bf103:VFD_On_Off_Status .
+
+brick110:On_Timer_Sensor prov:wasDerivedFrom bf103:VFD_On_Timer_Sensor .
+
+brick110:Output_Frequency_Sensor prov:wasDerivedFrom bf103:VFD_Output_Frequency_Sensor .
+
+brick110:Output_Voltage_Sensor prov:wasDerivedFrom bf103:VFD_Output_Voltage_Sensor .
+
+brick110:Direction_Status prov:wasDerivedFrom bf103:VFD_Run_Direction_Status .
+
+brick110:Run_Status prov:wasDerivedFrom bf103:VFD_Run_Direction_Status .
+
+brick110:Enable_Command prov:wasDerivedFrom bf103:VFD_Run_Enable_Command .
+
+brick110:Run_Enable_Status prov:wasDerivedFrom bf103:VFD_Run_Enable_Status .
+
+brick110:Run_Status prov:wasDerivedFrom bf103:VFD_Run_Status .
+
+brick110:Run_Time_Sensor prov:wasDerivedFrom bf103:VFD_Run_Time_Sensor .
+
+brick110:Speed_Reset_Command prov:wasDerivedFrom bf103:VFD_Speed_Reset_Command .
+
+brick110:Speed_Sensor prov:wasDerivedFrom bf103:VFD_Speed_Sensor .
+
+brick110:Speed_Setpoint prov:wasDerivedFrom bf103:VFD_Speed_Setpoint .
+
+brick110:Speed_Status prov:wasDerivedFrom bf103:VFD_Speed_Status .
+
+brick110:Start_Stop_Command prov:wasDerivedFrom bf103:VFD_Start_Stop_Command .
+
+brick110:Start_Stop_Status prov:wasDerivedFrom bf103:VFD_Start_Stop_Status .
+
+brick110:Status prov:wasDerivedFrom bf103:VFD_Status .
+
+brick110:Enable_Command prov:wasDerivedFrom bf103:VFD_System_Enable_Command .
+
+brick110:Voltage prov:wasDerivedFrom bf103:Voltage .
+
+brick110:Voltage_Sensor prov:wasDerivedFrom bf103:Voltage_Sensor .
+
+brick110:Warmest_Zone_Air_Temperature_Sensor prov:wasDerivedFrom bf103:Warmest_Zone_Temperature_Sensor .
+
+brick110:Water prov:wasDerivedFrom bf103:Water .
+
+brick110:Water_Flow_Sensor prov:wasDerivedFrom bf103:Water_Flow_Sensor .
+
+brick110:Water_Level_Sensor prov:wasDerivedFrom bf103:Water_Level_Sensor .
+
+brick110:Water_System prov:wasDerivedFrom bf103:Water_System .
+
+brick110:Deionised_Water_Conductivity_Sensor prov:wasDerivedFrom bf103:Water_System_Deionised_Water_Conductivity_Sensor .
+
+brick110:Deionised_Water_Level_Sensor prov:wasDerivedFrom bf103:Water_System_Deionised_Water_Level_Sensor .
+
+brick110:Weather prov:wasDerivedFrom bf103:Weather .
+
+brick110:Hail_Sensor prov:wasDerivedFrom bf103:Weather_Hail_Sensor .
+
+brick110:Enthalpy_Sensor prov:wasDerivedFrom bf103:Weather_Outside_Enthalpy_Sensor .
+
+brick110:Rain_Duration_Sensor prov:wasDerivedFrom bf103:Weather_Rain_Duration_Sensor .
+
+brick110:Rain_Sensor prov:wasDerivedFrom bf103:Weather_Rain_Sensor .
+
+brick110:Relative_Humidity_Sensor prov:wasDerivedFrom bf103:Weather_Relative_Humidity_Sensor .
+
+brick110:Solar_Radiance_Sensor prov:wasDerivedFrom bf103:Weather_Solar_Radiance_Sensor .
+
+brick110:Wind_Direction_Sensor prov:wasDerivedFrom bf103:Weather_Wind_Direction_Sensor .
+
+brick110:Wind_Speed_Sensor prov:wasDerivedFrom bf103:Weather_Wind_Speed_Sensor .
+
+brick110:Wind_Direction prov:wasDerivedFrom bf103:Wind_Direction .
+
+brick110:Wind_Direction_Sensor prov:wasDerivedFrom bf103:Wind_Direction_Sensor .
+
+brick110:Wind_Speed prov:wasDerivedFrom bf103:Wind_Speed .
+
+brick110:Wind_Speed_Sensor prov:wasDerivedFrom bf103:Wind_Speed_Sensor .
+
+brick110:Wing prov:wasDerivedFrom bf103:Wing .
+
+brick110:Water_System prov:wasDerivedFrom bf103:WS .
+
+brick110:Zone prov:wasDerivedFrom bf103:Zone .
+
+brick110:Zone_Air_Temperature_Sensor prov:wasDerivedFrom bf103:Zone_Air_Temperature_Sensor .
+
+brick110:Zone_Air_Humidity_Sensor prov:wasDerivedFrom bf103:Zone_Humidity_Sensor .
+
+brick110:Zone_Standby_Load_Shed_Command prov:wasDerivedFrom bf103:Zone_Standby_Load_Shed_Command .
+
+brick110:Zone_Air_Temperature_Sensor prov:wasDerivedFrom bf103:Zone_Temperature_Sensor .
+
+brick110:Zone_Air_Temperature_Setpoint prov:wasDerivedFrom bf103:Zone_Temperature_Setpoint .
+
+brick110:Zone_Unoccupied_Load_Shed_Command prov:wasDerivedFrom bf103:Zone_Unoccupied_Load_Shed_Command .
