@@ -1,9 +1,9 @@
-@prefix bf: <http://brickschema.org/schema/1.0.2/BrickFrame#> .
-@prefix brick: <http://brickschema.org/schema/1.0.2/Brick#> .
-@prefix btag: <http://brickschema.org/schema/1.0.2/BrickTag#> .
+@prefix bf: <https://brickschema.org/schema/1.0.2/BrickFrame#> .
+@prefix brick: <https://brickschema.org/schema/1.0.2/Brick#> .
+@prefix btag: <https://brickschema.org/schema/1.0.2/BrickTag#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix soda_hall: <http://brickschema.org/schema/1.0.2/building_example#> .
+@prefix soda_hall: <https://brickschema.org/schema/1.0.2/building_example#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -14,6 +14,11 @@ soda_hall:ahu rdf:contains soda_hall:exhaust_fan_E12,
         soda_hall:exhaust_fan_E19 .
 
 soda_hall:ahu_A1 a brick:AHU ;
+    rdf:contains soda_hall:supply_fan_S11 ;
+    rdf:hasPoint soda_hall:rat_SODA1_LOW_RAT2,
+        soda_hall:rat_SODA1_LOW_RAT3,
+        soda_hall:rat_SODA1_LOW_RAT4,
+        soda_hall:rat_SODA1__LOW_RAT ;
     bf:feeds soda_hall:vav_C180,
         soda_hall:vav_C300,
         soda_hall:vav_C300B,
@@ -118,23 +123,23 @@ soda_hall:ahu_A1 a brick:AHU ;
         soda_hall:override_event_SODA1____EVENT,
         soda_hall:smoke_alarm_SODA1_SMK_ALM2,
         soda_hall:smoke_alarm_SODA1_SMK_ALM3,
-        soda_hall:smoke_alarm_SODA1_SMK_ALM4 ;
-    rdf:contains soda_hall:supply_fan_S11 ;
-    rdf:hasPoint soda_hall:rat_SODA1_LOW_RAT2,
-        soda_hall:rat_SODA1_LOW_RAT3,
-        soda_hall:rat_SODA1_LOW_RAT4,
-        soda_hall:rat_SODA1__LOW_RAT .
+        soda_hall:smoke_alarm_SODA1_SMK_ALM4 .
 
 soda_hall:ahu_A2 a brick:AHU ;
+    rdf:contains soda_hall:supply_fan_S14 ;
+    rdf:hasPoint soda_hall:rat_SODA2__LOW_RAT ;
     bf:feeds soda_hall:vav_R306 ;
     bf:hasPoint soda_hall:ahu_occpy_SODA2____OCCPY,
         soda_hall:ahu_start_stop_SODA2______S_S,
         soda_hall:curtl_SODA2____CURTL,
-        soda_hall:override_event_SODA2____EVENT ;
-    rdf:contains soda_hall:supply_fan_S14 ;
-    rdf:hasPoint soda_hall:rat_SODA2__LOW_RAT .
+        soda_hall:override_event_SODA2____EVENT .
 
 soda_hall:ahu_A3 a brick:AHU ;
+    rdf:contains soda_hall:supply_fan_S16 ;
+    rdf:hasPoint soda_hall:rat_SODA3_LOW_RAT1,
+        soda_hall:rat_SODA3_LOW_RAT2,
+        soda_hall:rat_SODA3_LOW_RAT3,
+        soda_hall:rat_SODA3__LOW_RAT ;
     bf:feeds soda_hall:vav_C411,
         soda_hall:vav_C511,
         soda_hall:vav_C611,
@@ -213,14 +218,14 @@ soda_hall:ahu_A3 a brick:AHU ;
         soda_hall:override_event_SODA3____EVENT,
         soda_hall:smoke_alarm_SODA3_SMK_ALM1,
         soda_hall:smoke_alarm_SODA3_SMK_ALM2,
-        soda_hall:smoke_alarm_SODA3_SMK_ALM3 ;
-    rdf:contains soda_hall:supply_fan_S16 ;
-    rdf:hasPoint soda_hall:rat_SODA3_LOW_RAT1,
-        soda_hall:rat_SODA3_LOW_RAT2,
-        soda_hall:rat_SODA3_LOW_RAT3,
-        soda_hall:rat_SODA3__LOW_RAT .
+        soda_hall:smoke_alarm_SODA3_SMK_ALM3 .
 
 soda_hall:ahu_A4 a brick:AHU ;
+    rdf:contains soda_hall:supply_fan_S18 ;
+    rdf:hasPoint soda_hall:rat_SODA4_LOW_RAT1,
+        soda_hall:rat_SODA4_LOW_RAT2,
+        soda_hall:rat_SODA4_LOW_RAT3,
+        soda_hall:rat_SODA4__LOW_RAT ;
     bf:feeds soda_hall:vav_C300T,
         soda_hall:vav_C751,
         soda_hall:vav_R333,
@@ -297,16 +302,11 @@ soda_hall:ahu_A4 a brick:AHU ;
         soda_hall:override_event_SODA4____EVENT,
         soda_hall:smoke_alarm_SODA4_SMK_ALM1,
         soda_hall:smoke_alarm_SODA4_SMK_ALM2,
-        soda_hall:smoke_alarm_SODA4_SMK_ALM3 ;
-    rdf:contains soda_hall:supply_fan_S18 ;
-    rdf:hasPoint soda_hall:rat_SODA4_LOW_RAT1,
-        soda_hall:rat_SODA4_LOW_RAT2,
-        soda_hall:rat_SODA4_LOW_RAT3,
-        soda_hall:rat_SODA4__LOW_RAT .
+        soda_hall:smoke_alarm_SODA4_SMK_ALM3 .
 
 soda_hall:ahu_A5 a brick:AHU ;
-    bf:feeds soda_hall:vav_R800A ;
-    rdf:contains soda_hall:supply_fan_S20 .
+    rdf:contains soda_hall:supply_fan_S20 ;
+    bf:feeds soda_hall:vav_R800A .
 
 soda_hall:energy_demand_building_SOD__BLD_1_KWD a brick:Energy_Demand .
 
@@ -3798,28 +3798,28 @@ soda_hall:vav_C300B a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_C300B .
 
 soda_hall:vav_C300T a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_C300T ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_C300T,
         soda_hall:reheat_sensor_hvac_zone_C300T,
         soda_hall:temp_sensor_hvac_zone_C300T,
-        soda_hall:temp_setpoint_hvac_zone_C300T ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_C300T .
 
 soda_hall:vav_C400A a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_C400A ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_C400A,
         soda_hall:reheat_sensor_hvac_zone_C400A,
         soda_hall:temp_sensor_hvac_zone_C400A,
-        soda_hall:temp_setpoint_hvac_zone_C400A ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_C400A .
 
 soda_hall:vav_C400B a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_C400B ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_C400B,
         soda_hall:reheat_sensor_hvac_zone_C400B,
         soda_hall:temp_sensor_hvac_zone_C400B,
-        soda_hall:temp_setpoint_hvac_zone_C400B ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_C400B .
 
 soda_hall:vav_C400C a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_C400C ;
@@ -3843,12 +3843,12 @@ soda_hall:vav_C500B a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_C500B .
 
 soda_hall:vav_C511 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_C511 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_C511,
         soda_hall:reheat_sensor_hvac_zone_C511,
         soda_hall:temp_sensor_hvac_zone_C511,
-        soda_hall:temp_setpoint_hvac_zone_C511 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_C511 .
 
 soda_hall:vav_C600A a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_C600A ;
@@ -3861,60 +3861,60 @@ soda_hall:vav_C600B a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_C600B .
 
 soda_hall:vav_C611 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_C611 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_C611,
         soda_hall:reheat_sensor_hvac_zone_C611,
         soda_hall:temp_sensor_hvac_zone_C611,
-        soda_hall:temp_setpoint_hvac_zone_C611 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_C611 .
 
 soda_hall:vav_C700A a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_C700A ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_C700A,
         soda_hall:reheat_sensor_hvac_zone_C700A,
         soda_hall:temp_sensor_hvac_zone_C700A,
-        soda_hall:temp_setpoint_hvac_zone_C700A ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_C700A .
 
 soda_hall:vav_C700B a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_C700B ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_C700B,
         soda_hall:reheat_sensor_hvac_zone_C700B,
         soda_hall:temp_sensor_hvac_zone_C700B,
-        soda_hall:temp_setpoint_hvac_zone_C700B ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_C700B .
 
 soda_hall:vav_C700C a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_C700C ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_C700C,
         soda_hall:reheat_sensor_hvac_zone_C700C,
         soda_hall:temp_sensor_hvac_zone_C700C,
-        soda_hall:temp_setpoint_hvac_zone_C700C ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_C700C .
 
 soda_hall:vav_C700D a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_C700D ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_C700D,
         soda_hall:reheat_sensor_hvac_zone_C700D,
         soda_hall:temp_sensor_hvac_zone_C700D,
-        soda_hall:temp_setpoint_hvac_zone_C700D ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_C700D .
 
 soda_hall:vav_C711 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_C711 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_C711,
         soda_hall:reheat_sensor_hvac_zone_C711,
         soda_hall:temp_sensor_hvac_zone_C711,
-        soda_hall:temp_setpoint_hvac_zone_C711 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_C711 .
 
 soda_hall:vav_C751 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_C751 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_C751,
         soda_hall:reheat_sensor_hvac_zone_C751,
         soda_hall:temp_sensor_hvac_zone_C751,
-        soda_hall:temp_setpoint_hvac_zone_C751 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_C751 .
 
 soda_hall:vav_R184 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R184 ;
@@ -4024,28 +4024,28 @@ soda_hall:vav_R310 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R310 .
 
 soda_hall:vav_R311 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R311 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R311,
         soda_hall:reheat_sensor_hvac_zone_R311,
         soda_hall:temp_sensor_hvac_zone_R311,
-        soda_hall:temp_setpoint_hvac_zone_R311 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R311 .
 
 soda_hall:vav_R313 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R313 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R313,
         soda_hall:reheat_sensor_hvac_zone_R313,
         soda_hall:temp_sensor_hvac_zone_R313,
-        soda_hall:temp_setpoint_hvac_zone_R313 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R313 .
 
 soda_hall:vav_R315 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R315 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R315,
         soda_hall:reheat_sensor_hvac_zone_R315,
         soda_hall:temp_sensor_hvac_zone_R315,
-        soda_hall:temp_setpoint_hvac_zone_R315 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R315 .
 
 soda_hall:vav_R316 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R316 ;
@@ -4054,20 +4054,20 @@ soda_hall:vav_R316 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R316 .
 
 soda_hall:vav_R317 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R317 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R317,
         soda_hall:reheat_sensor_hvac_zone_R317,
         soda_hall:temp_sensor_hvac_zone_R317,
-        soda_hall:temp_setpoint_hvac_zone_R317 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R317 .
 
 soda_hall:vav_R319 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R319 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R319,
         soda_hall:reheat_sensor_hvac_zone_R319,
         soda_hall:temp_sensor_hvac_zone_R319,
-        soda_hall:temp_setpoint_hvac_zone_R319 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R319 .
 
 soda_hall:vav_R320 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R320 ;
@@ -4076,28 +4076,28 @@ soda_hall:vav_R320 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R320 .
 
 soda_hall:vav_R321 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R321 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R321,
         soda_hall:reheat_sensor_hvac_zone_R321,
         soda_hall:temp_sensor_hvac_zone_R321,
-        soda_hall:temp_setpoint_hvac_zone_R321 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R321 .
 
 soda_hall:vav_R323 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R323 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R323,
         soda_hall:reheat_sensor_hvac_zone_R323,
         soda_hall:temp_sensor_hvac_zone_R323,
-        soda_hall:temp_setpoint_hvac_zone_R323 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R323 .
 
 soda_hall:vav_R325 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R325 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R325,
         soda_hall:reheat_sensor_hvac_zone_R325,
         soda_hall:temp_sensor_hvac_zone_R325,
-        soda_hall:temp_setpoint_hvac_zone_R325 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R325 .
 
 soda_hall:vav_R326 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R326 ;
@@ -4106,20 +4106,20 @@ soda_hall:vav_R326 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R326 .
 
 soda_hall:vav_R327 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R327 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R327,
         soda_hall:reheat_sensor_hvac_zone_R327,
         soda_hall:temp_sensor_hvac_zone_R327,
-        soda_hall:temp_setpoint_hvac_zone_R327 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R327 .
 
 soda_hall:vav_R329 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R329 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R329,
         soda_hall:reheat_sensor_hvac_zone_R329,
         soda_hall:temp_sensor_hvac_zone_R329,
-        soda_hall:temp_setpoint_hvac_zone_R329 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R329 .
 
 soda_hall:vav_R330A a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R330A ;
@@ -4134,20 +4134,20 @@ soda_hall:vav_R330B a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R330B .
 
 soda_hall:vav_R331 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R331 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R331,
         soda_hall:reheat_sensor_hvac_zone_R331,
         soda_hall:temp_sensor_hvac_zone_R331,
-        soda_hall:temp_setpoint_hvac_zone_R331 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R331 .
 
 soda_hall:vav_R333 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R333 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R333,
         soda_hall:reheat_sensor_hvac_zone_R333,
         soda_hall:temp_sensor_hvac_zone_R333,
-        soda_hall:temp_setpoint_hvac_zone_R333 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R333 .
 
 soda_hall:vav_R336 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R336 ;
@@ -4156,12 +4156,12 @@ soda_hall:vav_R336 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R336 .
 
 soda_hall:vav_R337 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R337 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R337,
         soda_hall:reheat_sensor_hvac_zone_R337,
         soda_hall:temp_sensor_hvac_zone_R337,
-        soda_hall:temp_setpoint_hvac_zone_R337 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R337 .
 
 soda_hall:vav_R337A a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R337A ;
@@ -4169,12 +4169,12 @@ soda_hall:vav_R337A a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R337A .
 
 soda_hall:vav_R339 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R339 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R339,
         soda_hall:reheat_sensor_hvac_zone_R339,
         soda_hall:temp_sensor_hvac_zone_R339,
-        soda_hall:temp_setpoint_hvac_zone_R339 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R339 .
 
 soda_hall:vav_R340 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R340 ;
@@ -4183,12 +4183,12 @@ soda_hall:vav_R340 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R340 .
 
 soda_hall:vav_R341 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R341 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R341,
         soda_hall:reheat_sensor_hvac_zone_R341,
         soda_hall:temp_sensor_hvac_zone_R341,
-        soda_hall:temp_setpoint_hvac_zone_R341 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R341 .
 
 soda_hall:vav_R342 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R342 ;
@@ -4197,36 +4197,36 @@ soda_hall:vav_R342 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R342 .
 
 soda_hall:vav_R343 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R343 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R343,
         soda_hall:reheat_sensor_hvac_zone_R343,
         soda_hall:temp_sensor_hvac_zone_R343,
-        soda_hall:temp_setpoint_hvac_zone_R343 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R343 .
 
 soda_hall:vav_R345 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R345 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R345,
         soda_hall:reheat_sensor_hvac_zone_R345,
         soda_hall:temp_sensor_hvac_zone_R345,
-        soda_hall:temp_setpoint_hvac_zone_R345 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R345 .
 
 soda_hall:vav_R347 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R347 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R347,
         soda_hall:reheat_sensor_hvac_zone_R347,
         soda_hall:temp_sensor_hvac_zone_R347,
-        soda_hall:temp_setpoint_hvac_zone_R347 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R347 .
 
 soda_hall:vav_R349 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R349 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R349,
         soda_hall:reheat_sensor_hvac_zone_R349,
         soda_hall:temp_sensor_hvac_zone_R349,
-        soda_hall:temp_setpoint_hvac_zone_R349 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R349 .
 
 soda_hall:vav_R352 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R352 ;
@@ -4241,36 +4241,36 @@ soda_hall:vav_R364 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R364 .
 
 soda_hall:vav_R365 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R365 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R365,
         soda_hall:reheat_sensor_hvac_zone_R365,
         soda_hall:temp_sensor_hvac_zone_R365,
-        soda_hall:temp_setpoint_hvac_zone_R365 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R365 .
 
 soda_hall:vav_R367 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R367 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R367,
         soda_hall:reheat_sensor_hvac_zone_R367,
         soda_hall:temp_sensor_hvac_zone_R367,
-        soda_hall:temp_setpoint_hvac_zone_R367 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R367 .
 
 soda_hall:vav_R373 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R373 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R373,
         soda_hall:reheat_sensor_hvac_zone_R373,
         soda_hall:temp_sensor_hvac_zone_R373,
-        soda_hall:temp_setpoint_hvac_zone_R373 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R373 .
 
 soda_hall:vav_R375 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R375 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R375,
         soda_hall:reheat_sensor_hvac_zone_R375,
         soda_hall:temp_sensor_hvac_zone_R375,
-        soda_hall:temp_setpoint_hvac_zone_R375 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R375 .
 
 soda_hall:vav_R376A a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R376A ;
@@ -4279,20 +4279,20 @@ soda_hall:vav_R376A a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R376A .
 
 soda_hall:vav_R377 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R377 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R377,
         soda_hall:reheat_sensor_hvac_zone_R377,
         soda_hall:temp_sensor_hvac_zone_R377,
-        soda_hall:temp_setpoint_hvac_zone_R377 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R377 .
 
 soda_hall:vav_R379 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R379 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R379,
         soda_hall:reheat_sensor_hvac_zone_R379,
         soda_hall:temp_sensor_hvac_zone_R379,
-        soda_hall:temp_setpoint_hvac_zone_R379 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R379 .
 
 soda_hall:vav_R380 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R380 ;
@@ -4301,20 +4301,20 @@ soda_hall:vav_R380 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R380 .
 
 soda_hall:vav_R381 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R381 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R381,
         soda_hall:reheat_sensor_hvac_zone_R381,
         soda_hall:temp_sensor_hvac_zone_R381,
-        soda_hall:temp_setpoint_hvac_zone_R381 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R381 .
 
 soda_hall:vav_R383 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R383 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R383,
         soda_hall:reheat_sensor_hvac_zone_R383,
         soda_hall:temp_sensor_hvac_zone_R383,
-        soda_hall:temp_setpoint_hvac_zone_R383 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R383 .
 
 soda_hall:vav_R384 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R384 ;
@@ -4323,36 +4323,36 @@ soda_hall:vav_R384 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R384 .
 
 soda_hall:vav_R385 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R385 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R385,
         soda_hall:reheat_sensor_hvac_zone_R385,
         soda_hall:temp_sensor_hvac_zone_R385,
-        soda_hall:temp_setpoint_hvac_zone_R385 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R385 .
 
 soda_hall:vav_R389 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R389 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R389,
         soda_hall:reheat_sensor_hvac_zone_R389,
         soda_hall:temp_sensor_hvac_zone_R389,
-        soda_hall:temp_setpoint_hvac_zone_R389 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R389 .
 
 soda_hall:vav_R393 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R393 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R393,
         soda_hall:reheat_sensor_hvac_zone_R393,
         soda_hall:temp_sensor_hvac_zone_R393,
-        soda_hall:temp_setpoint_hvac_zone_R393 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R393 .
 
 soda_hall:vav_R395 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R395 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R395,
         soda_hall:reheat_sensor_hvac_zone_R395,
         soda_hall:temp_sensor_hvac_zone_R395,
-        soda_hall:temp_setpoint_hvac_zone_R395 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R395 .
 
 soda_hall:vav_R398 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R398 ;
@@ -4385,26 +4385,26 @@ soda_hall:vav_R410B a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R410B .
 
 soda_hall:vav_R411 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R411 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R411,
-        soda_hall:reheat_sensor_hvac_zone_R411 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:reheat_sensor_hvac_zone_R411 .
 
 soda_hall:vav_R413 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R413 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R413,
         soda_hall:reheat_sensor_hvac_zone_R413,
         soda_hall:temp_sensor_hvac_zone_R413,
-        soda_hall:temp_setpoint_hvac_zone_R413 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R413 .
 
 soda_hall:vav_R415 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R415 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R415,
         soda_hall:reheat_sensor_hvac_zone_R415,
         soda_hall:temp_sensor_hvac_zone_R415,
-        soda_hall:temp_setpoint_hvac_zone_R415 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R415 .
 
 soda_hall:vav_R416 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R416 ;
@@ -4413,20 +4413,20 @@ soda_hall:vav_R416 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R416 .
 
 soda_hall:vav_R417 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R417 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R417,
         soda_hall:reheat_sensor_hvac_zone_R417,
         soda_hall:temp_sensor_hvac_zone_R417,
-        soda_hall:temp_setpoint_hvac_zone_R417 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R417 .
 
 soda_hall:vav_R419 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R419 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R419,
         soda_hall:reheat_sensor_hvac_zone_R419,
         soda_hall:temp_sensor_hvac_zone_R419,
-        soda_hall:temp_setpoint_hvac_zone_R419 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R419 .
 
 soda_hall:vav_R420 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R420 ;
@@ -4441,12 +4441,12 @@ soda_hall:vav_R420A a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R420A .
 
 soda_hall:vav_R421 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R421 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R421,
         soda_hall:reheat_sensor_hvac_zone_R421,
         soda_hall:temp_sensor_hvac_zone_R421,
-        soda_hall:temp_setpoint_hvac_zone_R421 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R421 .
 
 soda_hall:vav_R430 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R430 ;
@@ -4461,20 +4461,20 @@ soda_hall:vav_R430A a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R430A .
 
 soda_hall:vav_R434 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R434 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R434,
         soda_hall:reheat_sensor_hvac_zone_R434,
         soda_hall:temp_sensor_hvac_zone_R434,
-        soda_hall:temp_setpoint_hvac_zone_R434 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R434 .
 
 soda_hall:vav_R438 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R438 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R438,
         soda_hall:reheat_sensor_hvac_zone_R438,
         soda_hall:temp_sensor_hvac_zone_R438,
-        soda_hall:temp_setpoint_hvac_zone_R438 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R438 .
 
 soda_hall:vav_R440 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R440 ;
@@ -4483,12 +4483,12 @@ soda_hall:vav_R440 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R440 .
 
 soda_hall:vav_R441 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R441 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R441,
         soda_hall:reheat_sensor_hvac_zone_R441,
         soda_hall:temp_sensor_hvac_zone_R441,
-        soda_hall:temp_setpoint_hvac_zone_R441 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R441 .
 
 soda_hall:vav_R442 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R442 ;
@@ -4497,12 +4497,12 @@ soda_hall:vav_R442 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R442 .
 
 soda_hall:vav_R443 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R443 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R443,
         soda_hall:reheat_sensor_hvac_zone_R443,
         soda_hall:temp_sensor_hvac_zone_R443,
-        soda_hall:temp_setpoint_hvac_zone_R443 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R443 .
 
 soda_hall:vav_R444 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R444 ;
@@ -4511,28 +4511,28 @@ soda_hall:vav_R444 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R444 .
 
 soda_hall:vav_R445 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R445 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R445,
         soda_hall:reheat_sensor_hvac_zone_R445,
         soda_hall:temp_sensor_hvac_zone_R445,
-        soda_hall:temp_setpoint_hvac_zone_R445 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R445 .
 
 soda_hall:vav_R447 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R447 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R447,
         soda_hall:reheat_sensor_hvac_zone_R447,
         soda_hall:temp_sensor_hvac_zone_R447,
-        soda_hall:temp_setpoint_hvac_zone_R447 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R447 .
 
 soda_hall:vav_R449 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R449 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R449,
         soda_hall:reheat_sensor_hvac_zone_R449,
         soda_hall:temp_sensor_hvac_zone_R449,
-        soda_hall:temp_setpoint_hvac_zone_R449 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R449 .
 
 soda_hall:vav_R452 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R452 ;
@@ -4633,12 +4633,12 @@ soda_hall:vav_R510 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R510 .
 
 soda_hall:vav_R513 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R513 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R513,
         soda_hall:reheat_sensor_hvac_zone_R513,
         soda_hall:temp_sensor_hvac_zone_R513,
-        soda_hall:temp_setpoint_hvac_zone_R513 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R513 .
 
 soda_hall:vav_R514 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R514 ;
@@ -4647,12 +4647,12 @@ soda_hall:vav_R514 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R514 .
 
 soda_hall:vav_R515 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R515 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R515,
         soda_hall:reheat_sensor_hvac_zone_R515,
         soda_hall:temp_sensor_hvac_zone_R515,
-        soda_hall:temp_setpoint_hvac_zone_R515 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R515 .
 
 soda_hall:vav_R516 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R516 ;
@@ -4661,20 +4661,20 @@ soda_hall:vav_R516 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R516 .
 
 soda_hall:vav_R517 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R517 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R517,
         soda_hall:reheat_sensor_hvac_zone_R517,
         soda_hall:temp_sensor_hvac_zone_R517,
-        soda_hall:temp_setpoint_hvac_zone_R517 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R517 .
 
 soda_hall:vav_R523 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R523 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R523,
         soda_hall:reheat_sensor_hvac_zone_R523,
         soda_hall:temp_sensor_hvac_zone_R523,
-        soda_hall:temp_setpoint_hvac_zone_R523 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R523 .
 
 soda_hall:vav_R524 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R524 ;
@@ -4683,28 +4683,28 @@ soda_hall:vav_R524 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R524 .
 
 soda_hall:vav_R525 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R525 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R525,
         soda_hall:reheat_sensor_hvac_zone_R525,
         soda_hall:temp_sensor_hvac_zone_R525,
-        soda_hall:temp_setpoint_hvac_zone_R525 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R525 .
 
 soda_hall:vav_R527 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R527 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R527,
         soda_hall:reheat_sensor_hvac_zone_R527,
         soda_hall:temp_sensor_hvac_zone_R527,
-        soda_hall:temp_setpoint_hvac_zone_R527 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R527 .
 
 soda_hall:vav_R529 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R529 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R529,
         soda_hall:reheat_sensor_hvac_zone_R529,
         soda_hall:temp_sensor_hvac_zone_R529,
-        soda_hall:temp_setpoint_hvac_zone_R529 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R529 .
 
 soda_hall:vav_R530 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R530 ;
@@ -4713,20 +4713,20 @@ soda_hall:vav_R530 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R530 .
 
 soda_hall:vav_R531 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R531 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R531,
         soda_hall:reheat_sensor_hvac_zone_R531,
         soda_hall:temp_sensor_hvac_zone_R531,
-        soda_hall:temp_setpoint_hvac_zone_R531 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R531 .
 
 soda_hall:vav_R533 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R533 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R533,
         soda_hall:reheat_sensor_hvac_zone_R533,
         soda_hall:temp_sensor_hvac_zone_R533,
-        soda_hall:temp_setpoint_hvac_zone_R533 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R533 .
 
 soda_hall:vav_R534 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R534 ;
@@ -4735,20 +4735,20 @@ soda_hall:vav_R534 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R534 .
 
 soda_hall:vav_R535 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R535 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R535,
         soda_hall:reheat_sensor_hvac_zone_R535,
         soda_hall:temp_sensor_hvac_zone_R535,
-        soda_hall:temp_setpoint_hvac_zone_R535 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R535 .
 
 soda_hall:vav_R537 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R537 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R537,
         soda_hall:reheat_sensor_hvac_zone_R537,
         soda_hall:temp_sensor_hvac_zone_R537,
-        soda_hall:temp_setpoint_hvac_zone_R537 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R537 .
 
 soda_hall:vav_R542 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R542 ;
@@ -4757,12 +4757,12 @@ soda_hall:vav_R542 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R542 .
 
 soda_hall:vav_R543 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R543 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R543,
         soda_hall:reheat_sensor_hvac_zone_R543,
         soda_hall:temp_sensor_hvac_zone_R543,
-        soda_hall:temp_setpoint_hvac_zone_R543 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R543 .
 
 soda_hall:vav_R544 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R544 ;
@@ -4771,26 +4771,26 @@ soda_hall:vav_R544 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R544 .
 
 soda_hall:vav_R545 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R545 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R545,
         soda_hall:reheat_sensor_hvac_zone_R545,
         soda_hall:temp_sensor_hvac_zone_R545,
-        soda_hall:temp_setpoint_hvac_zone_R545 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R545 .
 
 soda_hall:vav_R551 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R551 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R551,
         soda_hall:reheat_sensor_hvac_zone_R551,
         soda_hall:temp_sensor_hvac_zone_R551,
-        soda_hall:temp_setpoint_hvac_zone_R551 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R551 .
 
 soda_hall:vav_R5511 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R5511 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R5511,
-        soda_hall:reheat_sensor_hvac_zone_R5511 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:reheat_sensor_hvac_zone_R5511 .
 
 soda_hall:vav_R552 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R552 ;
@@ -4805,12 +4805,12 @@ soda_hall:vav_R562A a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R562A .
 
 soda_hall:vav_R563 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R563 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R563,
         soda_hall:reheat_sensor_hvac_zone_R563,
         soda_hall:temp_sensor_hvac_zone_R563,
-        soda_hall:temp_setpoint_hvac_zone_R563 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R563 .
 
 soda_hall:vav_R564 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R564 ;
@@ -4825,52 +4825,52 @@ soda_hall:vav_R566 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R566 .
 
 soda_hall:vav_R567 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R567 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R567,
         soda_hall:reheat_sensor_hvac_zone_R567,
         soda_hall:temp_sensor_hvac_zone_R567,
-        soda_hall:temp_setpoint_hvac_zone_R567 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R567 .
 
 soda_hall:vav_R573 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R573 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R573,
         soda_hall:reheat_sensor_hvac_zone_R573,
         soda_hall:temp_sensor_hvac_zone_R573,
-        soda_hall:temp_setpoint_hvac_zone_R573 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R573 .
 
 soda_hall:vav_R576 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R576 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R576,
         soda_hall:reheat_sensor_hvac_zone_R576,
         soda_hall:temp_sensor_hvac_zone_R576,
-        soda_hall:temp_setpoint_hvac_zone_R576 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R576 .
 
 soda_hall:vav_R577 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R577 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R577,
         soda_hall:reheat_sensor_hvac_zone_R577,
         soda_hall:temp_sensor_hvac_zone_R577,
-        soda_hall:temp_setpoint_hvac_zone_R577 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R577 .
 
 soda_hall:vav_R579 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R579 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R579,
         soda_hall:reheat_sensor_hvac_zone_R579,
         soda_hall:temp_sensor_hvac_zone_R579,
-        soda_hall:temp_setpoint_hvac_zone_R579 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R579 .
 
 soda_hall:vav_R580 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R580 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R580,
         soda_hall:reheat_sensor_hvac_zone_R580,
         soda_hall:temp_sensor_hvac_zone_R580,
-        soda_hall:temp_setpoint_hvac_zone_R580 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R580 .
 
 soda_hall:vav_R582 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R582 ;
@@ -4887,40 +4887,40 @@ soda_hall:vav_R582_2 a brick:VAV ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R582_2 .
 
 soda_hall:vav_R583 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R583 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R583,
         soda_hall:reheat_sensor_hvac_zone_R583,
         soda_hall:temp_sensor_hvac_zone_R583,
-        soda_hall:temp_setpoint_hvac_zone_R583 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R583 .
 
 soda_hall:vav_R5831 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R5831 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R5831,
-        soda_hall:reheat_sensor_hvac_zone_R5831 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:reheat_sensor_hvac_zone_R5831 .
 
 soda_hall:vav_R587 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R587 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R587,
         soda_hall:reheat_sensor_hvac_zone_R587,
         soda_hall:temp_sensor_hvac_zone_R587,
-        soda_hall:temp_setpoint_hvac_zone_R587 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R587 .
 
 soda_hall:vav_R5871 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R5871 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R5871,
-        soda_hall:reheat_sensor_hvac_zone_R5871 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:reheat_sensor_hvac_zone_R5871 .
 
 soda_hall:vav_R595 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R595 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R595,
         soda_hall:reheat_sensor_hvac_zone_R595,
         soda_hall:temp_sensor_hvac_zone_R595,
-        soda_hall:temp_setpoint_hvac_zone_R595 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R595 .
 
 soda_hall:vav_R598 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R598 ;
@@ -4943,44 +4943,44 @@ soda_hall:vav_R606 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R606 .
 
 soda_hall:vav_R615 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R615 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R615,
         soda_hall:reheat_sensor_hvac_zone_R615,
         soda_hall:temp_sensor_hvac_zone_R615,
-        soda_hall:temp_setpoint_hvac_zone_R615 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R615 .
 
 soda_hall:vav_R617 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R617 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R617,
         soda_hall:reheat_sensor_hvac_zone_R617,
         soda_hall:temp_sensor_hvac_zone_R617,
-        soda_hall:temp_setpoint_hvac_zone_R617 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R617 .
 
 soda_hall:vav_R621 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R621 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R621,
         soda_hall:reheat_sensor_hvac_zone_R621,
         soda_hall:temp_sensor_hvac_zone_R621,
-        soda_hall:temp_setpoint_hvac_zone_R621 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R621 .
 
 soda_hall:vav_R623 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R623 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R623,
         soda_hall:reheat_sensor_hvac_zone_R623,
         soda_hall:temp_sensor_hvac_zone_R623,
-        soda_hall:temp_setpoint_hvac_zone_R623 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R623 .
 
 soda_hall:vav_R625 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R625 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R625,
         soda_hall:reheat_sensor_hvac_zone_R625,
         soda_hall:temp_sensor_hvac_zone_R625,
-        soda_hall:temp_setpoint_hvac_zone_R625 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R625 .
 
 soda_hall:vav_R626 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R626 ;
@@ -4989,36 +4989,36 @@ soda_hall:vav_R626 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R626 .
 
 soda_hall:vav_R627 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R627 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R627,
         soda_hall:reheat_sensor_hvac_zone_R627,
         soda_hall:temp_sensor_hvac_zone_R627,
-        soda_hall:temp_setpoint_hvac_zone_R627 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R627 .
 
 soda_hall:vav_R629 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R629 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R629,
         soda_hall:reheat_sensor_hvac_zone_R629,
         soda_hall:temp_sensor_hvac_zone_R629,
-        soda_hall:temp_setpoint_hvac_zone_R629 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R629 .
 
 soda_hall:vav_R631 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R631 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R631,
         soda_hall:reheat_sensor_hvac_zone_R631,
         soda_hall:temp_sensor_hvac_zone_R631,
-        soda_hall:temp_setpoint_hvac_zone_R631 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R631 .
 
 soda_hall:vav_R633 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R633 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R633,
         soda_hall:reheat_sensor_hvac_zone_R633,
         soda_hall:temp_sensor_hvac_zone_R633,
-        soda_hall:temp_setpoint_hvac_zone_R633 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R633 .
 
 soda_hall:vav_R634 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R634 ;
@@ -5027,52 +5027,52 @@ soda_hall:vav_R634 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R634 .
 
 soda_hall:vav_R635 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R635 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R635,
         soda_hall:reheat_sensor_hvac_zone_R635,
         soda_hall:temp_sensor_hvac_zone_R635,
-        soda_hall:temp_setpoint_hvac_zone_R635 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R635 .
 
 soda_hall:vav_R637 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R637 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R637,
         soda_hall:reheat_sensor_hvac_zone_R637,
         soda_hall:temp_sensor_hvac_zone_R637,
-        soda_hall:temp_setpoint_hvac_zone_R637 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R637 .
 
 soda_hall:vav_R639 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R639 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R639,
         soda_hall:reheat_sensor_hvac_zone_R639,
         soda_hall:temp_sensor_hvac_zone_R639,
-        soda_hall:temp_setpoint_hvac_zone_R639 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R639 .
 
 soda_hall:vav_R643 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R643 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R643,
         soda_hall:reheat_sensor_hvac_zone_R643,
         soda_hall:temp_sensor_hvac_zone_R643,
-        soda_hall:temp_setpoint_hvac_zone_R643 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R643 .
 
 soda_hall:vav_R645 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R645 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R645,
         soda_hall:reheat_sensor_hvac_zone_R645,
         soda_hall:temp_sensor_hvac_zone_R645,
-        soda_hall:temp_setpoint_hvac_zone_R645 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R645 .
 
 soda_hall:vav_R651 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R651 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R651,
         soda_hall:reheat_sensor_hvac_zone_R651,
         soda_hall:temp_sensor_hvac_zone_R651,
-        soda_hall:temp_setpoint_hvac_zone_R651 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R651 .
 
 soda_hall:vav_R652 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R652 ;
@@ -5081,36 +5081,36 @@ soda_hall:vav_R652 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R652 .
 
 soda_hall:vav_R665 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R665 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R665,
         soda_hall:reheat_sensor_hvac_zone_R665,
         soda_hall:temp_sensor_hvac_zone_R665,
-        soda_hall:temp_setpoint_hvac_zone_R665 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R665 .
 
 soda_hall:vav_R671 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R671 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R671,
         soda_hall:reheat_sensor_hvac_zone_R671,
         soda_hall:temp_sensor_hvac_zone_R671,
-        soda_hall:temp_setpoint_hvac_zone_R671 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R671 .
 
 soda_hall:vav_R673 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R673 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R673,
         soda_hall:reheat_sensor_hvac_zone_R673,
         soda_hall:temp_sensor_hvac_zone_R673,
-        soda_hall:temp_setpoint_hvac_zone_R673 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R673 .
 
 soda_hall:vav_R675 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R675 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R675,
         soda_hall:reheat_sensor_hvac_zone_R675,
         soda_hall:temp_sensor_hvac_zone_R675,
-        soda_hall:temp_setpoint_hvac_zone_R675 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R675 .
 
 soda_hall:vav_R676 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R676 ;
@@ -5119,12 +5119,12 @@ soda_hall:vav_R676 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R676 .
 
 soda_hall:vav_R677 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R677 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R677,
         soda_hall:reheat_sensor_hvac_zone_R677,
         soda_hall:temp_sensor_hvac_zone_R677,
-        soda_hall:temp_setpoint_hvac_zone_R677 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R677 .
 
 soda_hall:vav_R678 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R678 ;
@@ -5133,20 +5133,20 @@ soda_hall:vav_R678 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R678 .
 
 soda_hall:vav_R681A a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R681A ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R681A,
         soda_hall:reheat_sensor_hvac_zone_R681A,
         soda_hall:temp_sensor_hvac_zone_R681A,
-        soda_hall:temp_setpoint_hvac_zone_R681A ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R681A .
 
 soda_hall:vav_R681B a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R681B ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R681B,
         soda_hall:reheat_sensor_hvac_zone_R681B,
         soda_hall:temp_sensor_hvac_zone_R681B,
-        soda_hall:temp_setpoint_hvac_zone_R681B ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R681B .
 
 soda_hall:vav_R682 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R682 ;
@@ -5155,12 +5155,12 @@ soda_hall:vav_R682 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R682 .
 
 soda_hall:vav_R683 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R683 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R683,
         soda_hall:reheat_sensor_hvac_zone_R683,
         soda_hall:temp_sensor_hvac_zone_R683,
-        soda_hall:temp_setpoint_hvac_zone_R683 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R683 .
 
 soda_hall:vav_R684 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R684 ;
@@ -5169,36 +5169,36 @@ soda_hall:vav_R684 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R684 .
 
 soda_hall:vav_R685 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R685 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R685,
         soda_hall:reheat_sensor_hvac_zone_R685,
         soda_hall:temp_sensor_hvac_zone_R685,
-        soda_hall:temp_setpoint_hvac_zone_R685 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R685 .
 
 soda_hall:vav_R687 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R687 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R687,
         soda_hall:reheat_sensor_hvac_zone_R687,
         soda_hall:temp_sensor_hvac_zone_R687,
-        soda_hall:temp_setpoint_hvac_zone_R687 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R687 .
 
 soda_hall:vav_R689 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R689 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R689,
         soda_hall:reheat_sensor_hvac_zone_R689,
         soda_hall:temp_sensor_hvac_zone_R689,
-        soda_hall:temp_setpoint_hvac_zone_R689 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R689 .
 
 soda_hall:vav_R695 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R695 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R695,
         soda_hall:reheat_sensor_hvac_zone_R695,
         soda_hall:temp_sensor_hvac_zone_R695,
-        soda_hall:temp_setpoint_hvac_zone_R695 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R695 .
 
 soda_hall:vav_R698 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R698 ;
@@ -5207,36 +5207,36 @@ soda_hall:vav_R698 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R698 .
 
 soda_hall:vav_R719 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R719 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R719,
         soda_hall:reheat_sensor_hvac_zone_R719,
         soda_hall:temp_sensor_hvac_zone_R719,
-        soda_hall:temp_setpoint_hvac_zone_R719 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R719 .
 
 soda_hall:vav_R721 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R721 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R721,
         soda_hall:reheat_sensor_hvac_zone_R721,
         soda_hall:temp_sensor_hvac_zone_R721,
-        soda_hall:temp_setpoint_hvac_zone_R721 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R721 .
 
 soda_hall:vav_R723 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R723 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R723,
         soda_hall:reheat_sensor_hvac_zone_R723,
         soda_hall:temp_sensor_hvac_zone_R723,
-        soda_hall:temp_setpoint_hvac_zone_R723 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R723 .
 
 soda_hall:vav_R725 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R725 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R725,
         soda_hall:reheat_sensor_hvac_zone_R725,
         soda_hall:temp_sensor_hvac_zone_R725,
-        soda_hall:temp_setpoint_hvac_zone_R725 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R725 .
 
 soda_hall:vav_R726 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R726 ;
@@ -5245,36 +5245,36 @@ soda_hall:vav_R726 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R726 .
 
 soda_hall:vav_R727 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R727 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R727,
         soda_hall:reheat_sensor_hvac_zone_R727,
         soda_hall:temp_sensor_hvac_zone_R727,
-        soda_hall:temp_setpoint_hvac_zone_R727 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R727 .
 
 soda_hall:vav_R729 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R729 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R729,
         soda_hall:reheat_sensor_hvac_zone_R729,
         soda_hall:temp_sensor_hvac_zone_R729,
-        soda_hall:temp_setpoint_hvac_zone_R729 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R729 .
 
 soda_hall:vav_R731 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R731 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R731,
         soda_hall:reheat_sensor_hvac_zone_R731,
         soda_hall:temp_sensor_hvac_zone_R731,
-        soda_hall:temp_setpoint_hvac_zone_R731 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R731 .
 
 soda_hall:vav_R733 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R733 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R733,
         soda_hall:reheat_sensor_hvac_zone_R733,
         soda_hall:temp_sensor_hvac_zone_R733,
-        soda_hall:temp_setpoint_hvac_zone_R733 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R733 .
 
 soda_hall:vav_R734 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R734 ;
@@ -5283,36 +5283,36 @@ soda_hall:vav_R734 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R734 .
 
 soda_hall:vav_R735 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R735 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R735,
         soda_hall:reheat_sensor_hvac_zone_R735,
         soda_hall:temp_sensor_hvac_zone_R735,
-        soda_hall:temp_setpoint_hvac_zone_R735 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R735 .
 
 soda_hall:vav_R737 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R737 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R737,
         soda_hall:reheat_sensor_hvac_zone_R737,
         soda_hall:temp_sensor_hvac_zone_R737,
-        soda_hall:temp_setpoint_hvac_zone_R737 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R737 .
 
 soda_hall:vav_R739 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R739 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R739,
         soda_hall:reheat_sensor_hvac_zone_R739,
         soda_hall:temp_sensor_hvac_zone_R739,
-        soda_hall:temp_setpoint_hvac_zone_R739 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R739 .
 
 soda_hall:vav_R741 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R741 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R741,
         soda_hall:reheat_sensor_hvac_zone_R741,
         soda_hall:temp_sensor_hvac_zone_R741,
-        soda_hall:temp_setpoint_hvac_zone_R741 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R741 .
 
 soda_hall:vav_R752 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R752 ;
@@ -5321,36 +5321,36 @@ soda_hall:vav_R752 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R752 .
 
 soda_hall:vav_R765 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R765 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R765,
         soda_hall:reheat_sensor_hvac_zone_R765,
         soda_hall:temp_sensor_hvac_zone_R765,
-        soda_hall:temp_setpoint_hvac_zone_R765 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R765 .
 
 soda_hall:vav_R771 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R771 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R771,
         soda_hall:reheat_sensor_hvac_zone_R771,
         soda_hall:temp_sensor_hvac_zone_R771,
-        soda_hall:temp_setpoint_hvac_zone_R771 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R771 .
 
 soda_hall:vav_R773 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R773 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R773,
         soda_hall:reheat_sensor_hvac_zone_R773,
         soda_hall:temp_sensor_hvac_zone_R773,
-        soda_hall:temp_setpoint_hvac_zone_R773 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R773 .
 
 soda_hall:vav_R775 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R775 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R775,
         soda_hall:reheat_sensor_hvac_zone_R775,
         soda_hall:temp_sensor_hvac_zone_R775,
-        soda_hall:temp_setpoint_hvac_zone_R775 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R775 .
 
 soda_hall:vav_R776 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R776 ;
@@ -5359,36 +5359,36 @@ soda_hall:vav_R776 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R776 .
 
 soda_hall:vav_R777 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R777 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R777,
         soda_hall:reheat_sensor_hvac_zone_R777,
         soda_hall:temp_sensor_hvac_zone_R777,
-        soda_hall:temp_setpoint_hvac_zone_R777 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R777 .
 
 soda_hall:vav_R779 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R779 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R779,
         soda_hall:reheat_sensor_hvac_zone_R779,
         soda_hall:temp_sensor_hvac_zone_R779,
-        soda_hall:temp_setpoint_hvac_zone_R779 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R779 .
 
 soda_hall:vav_R781 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R781 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R781,
         soda_hall:reheat_sensor_hvac_zone_R781,
         soda_hall:temp_sensor_hvac_zone_R781,
-        soda_hall:temp_setpoint_hvac_zone_R781 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R781 .
 
 soda_hall:vav_R783 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R783 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R783,
         soda_hall:reheat_sensor_hvac_zone_R783,
         soda_hall:temp_sensor_hvac_zone_R783,
-        soda_hall:temp_setpoint_hvac_zone_R783 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R783 .
 
 soda_hall:vav_R784 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R784 ;
@@ -5397,36 +5397,36 @@ soda_hall:vav_R784 a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R784 .
 
 soda_hall:vav_R785 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R785 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R785,
         soda_hall:reheat_sensor_hvac_zone_R785,
         soda_hall:temp_sensor_hvac_zone_R785,
-        soda_hall:temp_setpoint_hvac_zone_R785 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R785 .
 
 soda_hall:vav_R787 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R787 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R787,
         soda_hall:reheat_sensor_hvac_zone_R787,
         soda_hall:temp_sensor_hvac_zone_R787,
-        soda_hall:temp_setpoint_hvac_zone_R787 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R787 .
 
 soda_hall:vav_R789 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R789 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R789,
         soda_hall:reheat_sensor_hvac_zone_R789,
         soda_hall:temp_sensor_hvac_zone_R789,
-        soda_hall:temp_setpoint_hvac_zone_R789 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R789 .
 
 soda_hall:vav_R795 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R795 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R795,
         soda_hall:reheat_sensor_hvac_zone_R795,
         soda_hall:temp_sensor_hvac_zone_R795,
-        soda_hall:temp_setpoint_hvac_zone_R795 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R795 .
 
 soda_hall:vav_R798 a brick:VAV ;
     bf:feeds soda_hall:hvac_zone_R798 ;
@@ -5440,18 +5440,18 @@ soda_hall:vav_R800A a brick:VAV ;
         soda_hall:temp_setpoint_hvac_zone_R800A .
 
 soda_hall:vav_zone_337A a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_zone_337A ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_zone_337A,
-        soda_hall:reheat_sensor_hvac_zone_zone_337A ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:reheat_sensor_hvac_zone_zone_337A .
 
 soda_hall:vav_R369 a brick:VAV ;
+    rdf:hasTag brick:Reheat ;
     bf:feeds soda_hall:hvac_zone_R369 ;
     bf:hasPoint soda_hall:flow_sensor_hvac_zone_R369,
         soda_hall:reheat_sensor_hvac_zone_R369,
         soda_hall:temp_sensor_hvac_zone_R369,
-        soda_hall:temp_setpoint_hvac_zone_R369 ;
-    rdf:hasTag brick:Reheat .
+        soda_hall:temp_setpoint_hvac_zone_R369 .
 
 soda_hall:building_1 a brick:Building ;
     rdfs:label "Soda Hall" .
