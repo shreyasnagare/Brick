@@ -1,0 +1,41 @@
+name: Brick
+
+on:
+  push:
+    branches: 
+        - master
+  pull_request:
+    branches:
+        - master
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    container:
+      image: franzinc/agraph:v7.0.0
+    strategy:
+      matrix:
+        python-version: [3.6, 3.7]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install Dependencies
+      run: |
+        pip install -r requirements.txt
+    - name: Generate new Brick ontology
+      run: |
+        python generate_brick.py
+    - name: Regenerate SHACL shapes
+      run: |
+        cd shacl
+        python generate_shacl.py
+        cd ..
+    - name: Run tests
+      run: |
+        pytest -s -vvvv
+    - name: Do integration tests
+      run: |
+        cd tests/integration
+        bash run_integration_tests.sh
