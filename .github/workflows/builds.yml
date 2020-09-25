@@ -9,7 +9,6 @@ on:
         - master
 jobs:
   build:
-    runs-on: ubuntu-18.04
     container:
       image: franzinc/agraph:v7.0.0
     strategy:
