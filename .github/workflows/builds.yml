@@ -1,4 +1,4 @@
-name: Brick
+name: Build
 
 on:
   push:
