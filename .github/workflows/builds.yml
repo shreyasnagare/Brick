@@ -19,6 +19,10 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
+    - name: Set up AllegroGraph (Docker)
+    run: |
+        docker version
+        docker pull franzinc/agraph:v7.0.0
     - name: Install Dependencies
       run: |
         pip install -r requirements.txt
